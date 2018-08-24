@@ -1,0 +1,296 @@
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .main-nav__item {
+        width: auto;
+        padding: 60px 10px 0;
+    }
+    .line-break {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .sidebar {
+        float: none;
+        max-width: 270px;
+    }
+    .main-sidebar__category .sub-menu,
+    .sidebar__category .sub-menu {
+        display: none;
+        position: absolute;
+        top: 48px; left: 0;
+        z-index: 100;
+        width: 100%;
+        max-width: 270px;
+    }
+    .category-title {
+        cursor: pointer;
+        position: relative;
+    }
+    .category-title::before {
+        content: "";
+        position: absolute;
+        top: 50%; right: 15px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent; 
+        border-top: 6px solid #fff;
+    }
+    .sidebar__news {
+        display: none;
+    }
+    .goods-item {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+    }
+    .gallery-goods {
+        overflow: hidden;
+        padding: 25px;
+    }
+    .fotorama {
+        width: 320px;
+    }
+    .footer-logo {
+        margin: 0 auto;
+    }
+    .goods_another {
+        margin-top: 0px;
+    }
+    .sale-box__item.active {
+        top: 90px;
+        left: 50%; 
+        -webkit-transform: translate(-50%); 
+            -ms-transform: translate(-50%); 
+                transform: translate(-50%);
+    }
+    .sale-box {
+        display: block;
+        left: 50%; 
+        -webkit-transform: translate(-50%); 
+            -ms-transform: translate(-50%); 
+                transform: translate(-50%);   
+    }
+    .main-nav {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        -webkit-box-shadow: 1px 3px 5px 0px rgba(142, 142, 142, 0.75);
+        box-shadow: 1px 3px 5px 0px rgba(142, 142, 142, 0.75);
+    }
+    .main-nav__item {
+        display: block;
+    }
+    .main-nav__sale {
+        display: block;
+        width: 150px;
+        margin: 20px auto;
+        position: static;
+    }
+    .btn_mnu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .header-info .flex-row {
+        display: block;
+    }
+    .header-info .main-logo {
+        border-bottom: 1px solid #a4a4a4;
+        margin-bottom: 10px;
+    }
+    .header-info .med_logo {
+        margin: 0 auto;
+    }
+    .header-info .worksday,
+    .header-info .address {
+        margin-top: 7px;
+        padding-bottom: 5px;
+    }
+    .header-info .worksday {
+        float: left;
+        margin-right: 50px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .slider-goods {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background: none;
+        text-align: center;
+    }
+    .maps {
+        padding: 25px 0;
+    }
+    .footer-info {
+        text-align: center;
+    }
+    .row_goods {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .gallery-goods {
+        margin: 0 auto;
+    }
+    .goods-top {
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width : 600px) {
+    .main .goods-wrap {
+        display: none;
+    }
+    .sidebar {
+        max-width: none;
+        margin: 0;
+    }
+    .main-sidebar__category .sub-menu {
+        display: block;
+        position: static;
+        max-width: none;
+        width: 100%;
+    }
+    .main-sidebar__category .category-title {
+        display: block;
+        width: 100%;
+        padding: 0;
+    } 
+    .footer-info {
+        text-align: center;
+    }
+    .footer-info .contact {
+        margin: 0 auto;
+    }
+    .footer-info .worksday {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .main-nav {
+        top: 50px;
+    }
+    .header-info  {
+        font-size: 11px;
+    }
+    .header-info .main-logo {
+        font-size: 15px;
+    }
+    .header-info .med_logo {
+        background: url(../img/footermed_logo.png) no-repeat;
+        width: 193px;
+        height: 35px;
+    }
+    .header-info .worksday {
+        float: left;
+        margin-right: 25px;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 5px;
+        text-align: center;
+    }
+    .slick-dots li {
+        border-width: 1px;
+        width: 11px;
+        height: 10px;
+        margin: 0 2px;
+    }
+    .sort__nav,
+     select {
+        font-size: 13px;
+    }
+    .footer-logo p {
+        font-size: 18px;
+    }
+    .footer-title {
+        font-size: 22px;
+    }
+    .contact-row {
+        margin-top: 35px;
+    } 
+
+    .gallery-goods {
+        margin-top: 120px; 
+        padding: 10px 5px;
+    }
+    .goods-top__title {
+        position: absolute;
+        top: 0; left: 0;
+    }
+    .goods_title {
+        text-align: center;
+    }
+    .goods_warning {
+        text-align: center;
+    }
+    .goods_btn {
+        display: none;
+    }
+    .goods_another__title {
+        text-align: center;
+        font-size: 16px;
+    }
+    .goods_bottom {
+        padding: 0; 
+    }
+    .news_text p {
+        text-align: center;
+    }
+    .sort__nav {
+        text-align: left;
+        margin-left: 0;
+    }
+    form {
+        flex-grow: 1;
+    }
+    .form__select select {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    .category-title {
+        padding: 12px 30px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
