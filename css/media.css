@@ -1,0 +1,46 @@
+@media only screen and (max-width:1200px){.skillbar{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}}
+@media only screen and (max-width:992px){}
+@media only screen and (max-width:768px){.main-menu{height:100vh;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
+.main-menu__item{height:25vh;width:100%;}
+.main-menu__item:nth-child(1){background-position:center top;}
+.gallery__img img{opacity:.7;}
+.gallery__content{border:1px solid #fff;}
+.gallery__content::before,
+.gallery__content::after{display:none;}
+.arrow-btn{opacity: 1;}
+.hover-btn{border:1px solid #222;}
+.hover-btn::before,
+.hover-btn::after{display:none;}
+.ul_contacts{text-align:center;}
+.callback{max-width:100%;}
+.about-wrap{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
+.about-content{height:auto;width:100%;}
+.about__photo{height:350px;width:100%;}
+.about__photo-text{bottom:10px;}
+.about__btn{padding:15px 12px;}
+.about__nav{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
+}
+@media only screen and (max-width:600px){.home{position:absolute;}
+.portfolio-nav{display:none;}
+.portfolio-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin:0;padding:0;}
+.mobile__title{margin:70px auto 30px;}
+.portfolio__title{text-align:center;font-size:2.625rem;text-transform:uppercase;padding:0px 10px 2rem;position:relative;}
+.portfolio__title::before{content:'';position:absolute;bottom:0;left:50%;-webkit-transform:translate(-50%);-ms-transform:translate(-50%);transform:translate(-50%);width:65px;height:10px;background-color:#F2F28E;}
+.portfolio__desc{display:none;}
+.portfolio-gallery{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0;padding:0;}
+.gallery__item{margin:10px;}
+}
+@media only screen and (max-width:480px){html{font-size:14px;}
+}
+@media only screen and (max-width:320px){}
+@media only screen and (min-width:320px){}
+@media only screen and (min-width:480px){}
+@media only screen and (min-width:768px){.cd-modal-content{padding:3em 10% 4em;}
+.modal__title{text-align:left;}
+}
+@media only screen and (min-width:1900px){html{font-size:18px;}}
+@media only screen and (min-height : 738px) {
+    .about__photo {
+        height: 100vh;
+    }
+}
