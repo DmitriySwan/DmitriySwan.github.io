@@ -125,8 +125,8 @@ span{font-size:20px;}
 .ul_contacts a {
     text-decoration: underline;
 }
-.ul_contacts .skype {
-    background: url(../img/skype-logo.svg) no-repeat;
+.ul_contacts .freelance {
+    background: url(../img/freelance.svg) no-repeat;
     background-size: 23px 23px;
     background-position: 5px 1px;
 }
@@ -160,5 +160,6 @@ span{font-size:20px;}
 .skillbar{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:20px auto;}
 .skillbar-item{margin:15px;-ms-flex-preferred-size:250px;flex-basis:250px;}
 .skillbar-bar{margin:10px 0 10px;width:0;height:5px;background-color:#00a8ff;}
+.modal__text {font-size: 15px;padding-top: 10px;line-height: 1.5;}
 .modal__text {font-size: 15px;padding-top: 10px;line-height: 1.5;}
 .modal__text a {text-decoration: underline;}
