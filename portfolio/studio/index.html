@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>start</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <link rel="stylesheet" href="libs/animate.css">
+        <link rel="stylesheet" href="libs/fullpage.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!--[if IE]>
+<script type="text/javascript">
+var console = { log: function() {} };
+</script>
+<![endif]-->
+
+    </head>
+
+    <body>
+       
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header_wrap">
+                        <div class="header_left">
+                            <a href="#" class="header_logo"><img src="img/sona_logo.png" alt="alt"></a>
+                            <div class="btn_mnu">
+                                <div class="btn_row"></div>
+                                <div class="btn_row"></div>
+                                <div class="btn_row"></div>
+                            </div>
+                            <nav class="header_nav f500" id="menu">
+                                <a href="#" class="header_nav--item mactive">
+                                    main
+                                </a>
+                                <a href="#" class="header_nav--item">
+                                    works
+                                </a>
+                                <a href="#" class="header_nav--item">
+                                    services
+                                </a>
+                                <a href="#" class="header_nav--item">
+                                    let's talk
+                                </a>
+                            </nav>
+                        </div>
+                        <a href="malito:hello@sona.agency" target="_blank" class="header_mail f500">hello@sona.agency</a>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main" id="fullpage">
+
+                <section class="first section" id="section0">
+                    <div class="container">
+                        <div class="first_blue is-animated__single">
+                            <span class="f500">WE ARE SONA AGENCY</span>
+                        </div>
+                        <h1 class="first_h1 is-animated">Websites, Apps, Branding</h1>
+                        <p class="first_descr is-animated">We are team of app developers, graphic designers with many years of 
+                            experience, well-founded technical knowledge and feeling of style!</p>
+                        <a href="#" class="first_btn f500 is-animated">ESTimate project</a>
+                    </div>
+                </section>
+
+                <section class="second section" id="section1">
+                    <div class="container">
+                        <div class="second_blue is-animated__single">
+                            <span class="f500">WE ARE SONA AGENCY</span>
+                        </div>
+                        <div class="second_wrap">
+                            <div class="second_item is-animated">
+                                <img src="img/1.png" alt="alt" class="second_item--img">
+                                <h3 class="second_item--h3">Product design</h3>
+                                <p class="second_item--p">
+                                    Designing a full cycle and modern 
+                                    design allow us to create working 
+                                    business tools
+                                </p>
+                            </div>
+                            <div class="second_item is-animated">
+                                <img src="img/2.png" alt="alt" class="second_item--img">
+                                <h3 class="second_item--h3">Mobile development</h3>
+                                <p class="second_item--p">
+                                    We truly understand the native apps 
+                                    development requirements and care 
+                                    about every small detail
+                                </p>
+                            </div>
+                            <div class="second_item is-animated">
+                                <img src="img/3.png" alt="alt" class="second_item--img">
+                                <h3 class="second_item--h3">
+                                    Back-end
+                                </h3>
+                                <p class="second_item--p">
+                                    Both mobile applications need a
+                                    reliable back-end, the server side.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="third section" id="section2">
+                    <div class="container">
+                        <h2 class="third_title is-animated">Let’s talk about your project</h2>
+                        <form action="mail.php" method="POST"  class="third_form is-animated" id="form">
+                            <input placeholder="Your Name" type="text" class="third_input" name="name" required>
+                            <input placeholder="Your E-mail" type="email" name="email" class="third_input" required>
+                            <textarea placeholder="About your project" class="third_textarea" name="text"></textarea>
+                            <button type="submit" class="third_btn f500">send request</button>
+                        </form>
+                    </div>
+                </section>
+
+            </main>
+
+            <footer class="footer">
+                <div class="container">
+                    <a href="https://www.instagram.com/" class="footer_inst footer_social f500" target="_blank">
+                        Instagram
+                    </a>
+                    <a href="https://dribbble.com/" class="footer_drib footer_social f500" target="_blank">
+                        Dribbble
+                    </a>
+                </div>
+            </footer>      
+        </div>
+        
+        <div class="loader">
+        </div>
+        
+        <script src="libs/jquery-3.2.1.min.js"></script>
+        <script src="libs/fullpage.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $("#form").submit(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "mail.php",
+                        data: $(this).serialize()
+                    }).done(function() {
+                        $(this).find("input").val("");
+                        alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+                        $("#form").trigger("reset");
+                    });
+                    return false;
+                });
+
+            });
+        </script>
+    </body>
+
+</html>
