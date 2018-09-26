@@ -4477,7 +4477,8 @@ input[type='radio']:checked + i::before {
 
 @media screen and (max-width: 768px) {
     .popup {
-       width: 100%;
+        padding: 15px 25px;
+        width: 100%;
         height: auto;
         font-size: 15px;
         top: 50%;
@@ -4485,6 +4486,7 @@ input[type='radio']:checked + i::before {
     }
 
     .popup__text {
+        margin-top: 15px;
         font-size: 12px;
     }
     .popup .top_1 {
@@ -4503,3 +4505,4 @@ input[type='radio']:checked + i::before {
         font-size: 16px;
     }
 }
+
