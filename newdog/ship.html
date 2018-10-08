@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>MyDogs</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" href="img/logo.png">
+        
+    </head>
+
+    <body>
+        <header class="header">
+           <div class="container">
+               <div class="header_wrap">
+                      <a href="index.html" class="header_logo">
+                      <img src="img/logo.png" alt="alt">
+                       <h1 class="header_h1">
+                           Интернет-магазин
+                           товаров для животных
+                       </h1>
+                       </a>
+                       
+                           <ul class="header_nav">
+                               <li class="header_nav--item">
+                                   <span href="#">каталог
+                                   </span>
+                                   <ul class="sub mobile">
+                                       <li class="sub_item"><a href="dom.html">Домики</a></li>
+                                       <li class="sub_item"><a href="domiki.html">Лежанки</a></li>
+                                       <li class="sub_item"><a href="kog.html">Когтеточки</a></li>
+                                       <li class="sub_item"><a href="sumki.html">Сумки</a></li>
+                                       <li class="sub_item"><a href="od.html">Одежда</a></li>
+                                       <li class="sub_item"><a href="lot.html">Лотки/Миски</a></li>
+                                       <li class="sub_item"><a href="obuv.html">Обувь</a></li>  
+                                   </ul>
+                               </li>
+                               <li class="header_nav--item">
+                                   <a href="about.html" >о нас</a>
+                               </li>
+                               <li class="header_nav--item">
+                                   <a href="ship.html" >доставка / оплата</a>
+                               </li>
+                               <li class="header_nav--item">
+                                   <a href="size.html">размеры одежды и обуви</a>
+                               </li>
+                               <li class="header_nav--item">
+                                   <a href="contacts.html">контакты</a>
+                               </li>
+                           </ul>
+                      
+                   <div class="header_tel">
+                       <div class="header_tel--basket"></div>
+                   <a href="tel:+79853408711" class="header_tel--number semi">+7 (985) 340-87-11</a>
+                       <a href="javascript:void(0);" class="header_tel--order js-button-campaign">Заказать звонок</a>
+                   </div>
+                </div>
+               <div class="btn_mnu">
+                   <div class="btn_row"></div>
+                   <div class="btn_row"></div>
+                   <div class="btn_row"></div>
+               </div>
+           </div>
+       </header>
+        <main>
+          
+          <section class="ship_content">
+              <div class="container">
+                  <div class="ship_wrap">
+                      <div class="ship_left">
+                          <h3 class="ship__title">Доставка</h3>
+                          <h4 class="ship__subtitle">МОСКВА, МОСКОВСКАЯ ОБЛАСТЬ</h4>
+                          <p class="ship__p decor">Доставка по Москве до 4500 руб — 400р</p>
+                          <p class="ship__p decor">Доставка по Москве от 4500 руб — БЕСПЛАТНО</p>
+                          <p class="ship__p decor">Доставка по М.О (до 30км), сумма которых <br>
+                              до 7000 руб — 650р</p>
+                          <p class="ship__p decor">Доставка по М.О (до 30км), сумма которых <br>
+                              от 7 000руб — БЕСПЛАТНО</p>
+                          <p class="ship__p decor">
+                              Доставка по М.О (от 30км до 80км), сумма 
+                              <br>
+                              которых от 7 000руб — 25 РУБ ЗА КАЖДЫЙ КМ
+                          </p>
+                          <h4 class="ship__subtitle left-two">РЕГИОНЫ РОССИИ, КРОМЕ МОСКВЫ</h4>
+                          <p class="ship__p">Отправка осуществляется в течение 1-2 рабочих дней с момента оформления заказа. <br>
+                              Доставка до филиала транспортной компании в Москве - бесплатная. Услуги транспортной компании оплачиваются покупателем. Возможна доставка до двери Вашего склада, магазина, офиса. <br>
+                              Мы работаем с транспортными компаниями: ПЭК, КИТ, ДЕЛОВЫЕ ЛИНИИ, БАЙКАЛ СЕРВИС, РАТЭК, СЛУЖБА ДОСТАВКИ, ЭНЕРГИЯ<br>
+                              Если Вы работаете с какой либо другой транспортной компанией на определенных условиях, то сообщите нам об этом и мы сделаем все возможное, чтобы Вы получили груз. <br>
+                              Более подробную информацию о тарифах на отправления Вы можете получить на официальных сайтах компаний.</p>
+                      </div>
+                      <div class="ship_right">
+                          <h3 class="ship__title">Оплата</h3>
+                          <h4 class="ship__subtitle">ОПЛАТА КУРЬЕРУ ПО ФАКТУ ДОСТАВКИ</h4>
+                          <p class="ship__p">Вы можете оплатить стоимость товара + доставку лично
+                              в руки курьеру.</p>
+                          <h4 class="ship__subtitle right-two">ОПЛАТА ПО РЕКВЕЗИТАМ НА БАНКОВСКУЮ КАРТУ</h4>
+                          <p class="ship__p">После оформления покупки в корзине, вы получаете на 
+                              электронную почту реквезиты банковской карты для оплаты онлайн способом </p>
+                          <form class="ship_form mailer" action="mailer.php" method="POST">
+                              <h4 class="ship_form__title semi">Задать вопрос по доставке и оплате</h4>
+                              <label class="ship_form__label">Ваше Имя</label>
+                              <input type="text" class="ship_form__input" placeholder="Иван" required name="name">
+                              <label class="ship_form__label">Ваш e-mail</label>
+                              <input type="email" class="ship_form__input" placeholder="ivan1997@mail.ru" required name="mail">
+                              <label class="ship_form__label">Ваш вопрос</label>
+                              <textarea rows="3" class="ship_form__textarea" placeholder="За сколько мне доставят товар в Нижний Новгород?" required name="text"></textarea>
+                            
+                              <button type="submit" class="ship_form__btn">Задать вопрос</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </section>
+           
+           
+        </main>
+
+        <footer class="footer">
+           <div class="container">
+               <div class="footer_wrap">
+                   <div href="index.html" class="footer_logo">
+                       <a href="index.html">
+                          <img src="img/footer_logo.png" alt="alt" class="footer_logo--img">
+                           <p class="footer_logo--descr">
+                               Интернет-магазин
+                               товаров для животных
+                           </p>
+                        </a>
+                       <a href="#" class="footer_logo--vk"></a>
+                       <a href="#" class="footer_logo--inst"></a>
+                   </div>
+                   <div class="footer_catalog">
+                       <span class="footer_catalog--title">каталог</span>
+                       <ul class="footer_catalog--ul">
+                           <li class="footer_catalog--item semi">
+                               <a href="dom.html">Домики</a>
+                           </li>
+                           <li class="footer_catalog--item semi">
+                               <a href="domiki.html">Лежанки</a>
+                           </li>
+                           <li class="footer_catalog--item semi">
+                               <a href="kog.html">Когтеточки</a>
+                           </li>
+                           <li class="footer_catalog--item semi">
+                               <a href="sumki.html">Сумки</a>
+                           </li>
+                       </ul>
+                       <ul class="footer_catalog--ul">
+                           <li class="footer_catalog--item semi">
+                               <a href="od.html">Одежда</a>
+                           </li>
+                           <li class="footer_catalog--item semi">
+                               <a href="lot.html">Лотки/Миски</a>
+                           </li>
+                           <li class="footer_catalog--item semi">
+                               <a href="obuv.html"> Обувь</a>
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="footer_info">
+                       <span class="footer_info--title">ИНФОРМАЦИЯ</span>
+                       <ul class="footer_info--ul">
+                           <li class="footer_info--item semi">
+                               <a href="about.html"> О нас  </a>
+                           </li>
+                           <li class="footer_info--item semi">
+                               <a href="ship.html">Доставка / Оплата </a>
+                           </li>
+                           <li class="footer_info--item semi">
+                               <a href="size.html">
+                                   Размеры одежды и обуви</a>
+                           </li>
+                           <li class="footer_info--item semi">
+                               <a href="contacts.html">Контакты</a>
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="footer_inst">
+                       <span class="footer_info--title">instagram</span>
+                       <ul class="footer_inst--ul">
+                           <li class="footer_inst--item">
+                               <a href="#"></a>
+                           </li>
+                           <li class="footer_inst--item">
+                               <a href="#"></a>
+                           </li>
+                           <li class="footer_inst--item">
+                               <a href="#">
+                                   </a>
+                           </li>
+                           <div></div>
+                           <li class="footer_inst--item">
+                               <a href="#"> </a>
+                           </li>
+                           <li class="footer_inst--item">
+                               <a href="#">
+                               </a>
+                           </li>
+                           <li class="footer_inst--item">
+                               <a href="#"> </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </footer>
+       
+        <div class="overlay js-overlay-campaign">
+            <div class="popup js-popup-campaign">
+                <div class="popup_wrap">
+                    <img src="img/popup-min.png" alt="alt" class="popup_img">
+                    <form action="mailer.php" method="POST" class="popup_form mailer">
+                        <h4 class="popup_form--title">Оформление заказа</h4>
+                        <p class="popup_form--descr">Мы свяжемся с Вами в течении 10-ти минут</p>
+                        <input type="text" class="popup_form--input" name="name" placeholder="Ваше Имя" required>
+                        <input type="tel" class="popup_form--input" name="tel" placeholder="Ваш номер телефона" required>
+                        <button class="popup_form--btn">
+                            Оформить заказ
+                        </button>
+                        <div class="success"><span>Ваша заявка принята!</span></div>
+                    </form>
+                </div>
+                <div class="close-popup js-close-campaign"></div>
+            </div>
+        </div>
+        <script src="libs/jquery-3.2.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
