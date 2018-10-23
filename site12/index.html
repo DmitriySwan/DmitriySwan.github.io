@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>start</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="libs/slick-theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header_wrap">
+            <div class="header_left">
+                <div class="header_left__item">
+                    <a href="#" class="desk">
+                        <img src="img/star.png" alt="alt">
+                        <p class="header_left__share">
+                            Рассказать
+                            <br>
+                            друзьям
+                        </p>
+                    </a>
+                    <a href="#" class="tab">
+                        <img src="img/star-tab.png" alt="alt">
+                    </a>
+                </div>
+                <div class="header_left__item">
+                    <a href="#" class="header_left__figure">
+                        <img src="img/basket.png" alt="alt">
+                        <div class="header_left__number"><span>1</span>
+                        </div>
+                        <p class="header_left__basket">
+                            Корзина
+                        </p>
+                    </a>
+                    <a href="#" class="tab">
+                        <img src="img/basket-tab.png" alt="alt">
+                        <div class="header_left__number"><span>1</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="btn_mnu">
+                <div class="btn_row"></div>
+                <div class="btn_row"></div>
+                <div class="btn_row"></div>
+            </div>
+            <nav class="header_nav">
+                <div class="header_nav__left">
+                    <li class="header_nav__li">
+                        <a href="#" class="header_nav__a">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="header_nav__li">
+                        <a href="#" class="header_nav__a">
+                            Контакты
+                        </a>
+                    </li>
+                </div>
+                <div class="header_nav__right">
+                    <li class="header_nav__li">
+                        <a href="#" class="header_nav__a">
+                            Доставка и оплата
+                        </a>
+                    </li>
+                    <li class="header_nav__li">
+                        <a href="#" class="header_nav__a">
+                            Заказать
+                        </a>
+                    </li>
+                </div>
+                <img src="img/logo1.png" alt="alt" class="header_nav__logo">
+            </nav>
+            <div class="header_right">
+                <p class="header_right__desc">Горячая линия по России </p>
+                <a href="tel:88005553535" class="header_right__tel">8 800 555 35 35</a>
+                <a href="javascript:void(0);" class="header_right__callback callback">Перезвонить вам?</a>
+
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="intro">
+                <div class="intro__store">
+                    <span class="intro__store--title">
+                        Наши
+                        магазины <span>по всей России:</span>
+                    </span>
+                    <div class="intro__store--wrap">
+                        <span class="intro__store--item" id="click">
+                            г. Москва
+                        </span>
+                        <a href="#" class="intro__store--item hide">
+                            г. Санкт-Петербург
+                        </a>
+                        <a href="#" class="intro__store--item hide">
+                            г. Нижний–Новгород
+                        </a>
+                        <a href="#" class="intro__store--item hide">
+                            г. Тула
+                        </a>
+                        <a href="#" class="intro__store--item hide">
+                            г. Волгоград
+                        </a>
+                        <a href="#" class="intro__store--item hide">
+                            г. Воронеж
+                        </a>
+                        <a href="#" class="intro__store--item hide">
+                            г. Краснодар
+                        </a>
+                        <a href="#" class="intro__store--item hide">
+                            г. Сочи
+                        </a>
+                    </div>
+                    <img src="img/logo1.png" alt="alt" class="intro__store--img">
+                </div>
+                <div class="intro__content">
+                    <div class="intro__title">
+                        <h1 class="intro__title--h1">
+                            Легендарная Посуда <br> <span>ZILLINGER</span> <span>17</span> <span>предметов</span>
+                        </h1>
+                        <p class="intro__title--desc">
+                            от официального магазина со скидкой
+                            <span>
+                                50%
+                            </span>
+                        </p>
+                    </div>
+                    <div class="intro__items">
+                        <img src="img/intro-item1.png" alt="alt" class="intro__item">
+                        <img src="img/intro-item2.png" alt="alt" class="intro__item">
+                        <img src="img/intro-item3.png" alt="alt" class="intro__item intro__item--none">
+                        <img src="img/intro-item4.png" alt="alt" class="intro__item intro__item--for">
+                        <img src="img/new-item.png" alt="alt" class="intro__item">
+                    </div>
+                    <div class="intro__form">
+                        <p class="intro__form--top">Время акции:</p>
+                        <div class="intro__form--time">
+                            <div id="clockdiv">
+                                <div class="clockitem">
+                                    <span class="days number"></span>
+                                    <div class="smalltext">Days</div>
+                                </div>
+                                <div class="clockitem">
+                                    <span class="hours number"></span>
+                                    <div class="smalltext">Hours</div>
+                                </div>
+                                <div class="clockitem">
+                                    <span class="minutes number"></span>
+                                    <div class="smalltext">Minutes</div>
+                                </div>
+                                <div class="clockitem">
+                                    <span class="seconds number"></span>
+                                    <div class="smalltext">Seconds</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intro__form--trust intro__form--trust1">
+                            <p>
+                                <span>Доставка</span>
+                                <br>
+                                1 день курьером
+                            </p>
+                        </div>
+                        <div class="intro__form--trust intro__form--trust2">
+                            <p>
+                                Победитель 2017
+                                <br>
+                                “Посуда Долголетия”
+                            </p>
+                        </div>
+                        <div class="intro__form--oldprice">
+                            <p class="small">
+                                Старая цена
+                                <br>
+                                <s>10500р.</s>
+                            </p>
+                            <p class="price">5990р.</p>
+                            <span>
+                                50%
+                            </span>
+                        </div>
+                        <a href="javascript:void(0);" class="intro__form--btn callback">
+                            Хочу заказать набор
+                         
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="set">
+                <h2 class="set_title">
+                    Состав набора Zillinger
+                </h2>
+                <div class="set_wrap">
+                    <div class="set_left">
+                        <div class="set_item">
+                            <figure class="set_item--img">
+                                <img src="img/set1.png" alt="alt">
+                            </figure>
+                            <h4 class="set_item--title">
+                                Кастрюля с антипригарным гранитным покрытием с крышкой из нержавеющей стали с термодатчиком
+                            </h4>
+                            <p class="set_item--desc">
+                                диаметр - 24 см, 6,5 л
+                            </p>
+                        </div>
+                        <div class="set_item">
+                            <figure class="set_item--img">
+                                <img src="img/set2.png" alt="alt">
+                            </figure>
+                            <h4 class="set_item--title">
+                                Кастрюля с антипригарным гранитным покрытием с крышкой из нержавеющей стали с термодатчиком
+                            </h4>
+                            <p class="set_item--desc">
+                                диаметр - 20 см, 3,7 л
+                            </p>
+                        </div>
+                        <div class="set_item">
+                            <figure class="set_item--img">
+                                <img src="img/set3.png" alt="alt">
+                            </figure>
+                            <h4 class="set_item--title">
+                                Кастрюля с антипригарным гранитным покрытием с крышкой из нержавеющей стали с термодатчиком
+                            </h4>
+                            <p class="set_item--desc">
+                                диаметр - 16 см, 1,6 л
+                            </p>
+                        </div>
+                        <div class="set_item">
+                            <figure class="set_item--img">
+                                <img src="img/set4.png" alt="alt">
+                            </figure>
+                            <h4 class="set_item--title">Пароварка
+                            </h4>
+                            <p class="set_item--desc">диаметр 20 см</p>
+                        </div>
+                        <div class="set_item">
+                            <figure class="set_item--img">
+                                <img src="img/set5.png" alt="alt">
+                            </figure>
+                            <h4 class="set_item--title">Сковорода с антипригарным гранитным покрытием с крышкой из нержавеющей стали с термодатчиком</h4>
+                            <p class="set_item--desc">диаметр - 24 см, 2,7 л </p>
+                        </div>
+                        <div class="set_item">
+                            <figure class="set_item--img">
+                                <img src="img/set6.png" class="special" alt="alt">
+                            </figure>
+                            <h4 class="set_item--title">Ковш с антипригарным гранитным покрытием с крышкой из нержавеющей стали с термодатчиком
+                            </h4>
+                            <p class="set_item--desc"> диаметр - 16 см, 1,6 л</p>
+                        </div>
+                        <div class="set_item">
+                            <figure class="set_item--img">
+                                <img src="img/set7.png" alt="alt">
+                            </figure>
+                            <h4 class="set_item--title">Салатник с пластиковой крышкой и ручкой-присоской
+                            </h4>
+                            <p class="set_item--desc">диаметр 20 см</p>
+                        </div>
+                        <div class="set_item">
+                            <figure class="set_item--img">
+                                <img src="img/set8.png" alt="alt">
+                            </figure>
+                            <h4 class="set_item--title">Подставка бакелитовая
+                                и кулинарная книга
+                            </h4>
+                            <p class="set_item--desc">
+                                3 штуки / 1 штука
+                            </p>
+                        </div>
+                    </div>
+                    <div class="set_right">
+                        <div class="set_right">
+                            <img src="img/set_right.png" alt="alt" class="set_right--img">
+                            <p class="set_right--p">
+                                Небольшой кроссовер от Jaguar с красивым представителем семейства кошачьих не только на радиаторной решетке, но и везде, где только еще возможно, - новичок линейки популярных британских авто.
+                            </p>
+                            <a href="javascript:void(0);" class="set_right--btn callback">
+                                Хочу заказать набор
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="about_content">
+                    <div class="about_wrap">
+                        <div class="about_left">
+                            <div class="about_left--top">
+                                <img src="img/about-item1.png" alt="alt" class="about_left__item">
+                                <img src="img/about-item2.png" alt="alt" class="about_left__item">
+                                <img src="img/about-item3.png" alt="alt" class="about_left__item">
+                                <img src="img/about-item4.png" alt="alt" class="about_left__item">
+                                <img src="img/about-item5.png" alt="alt" class="about_left__item">
+                            </div>
+                            <div class="about_left--bottom">
+                                <img src="img/about_fon--desk.png" alt="alt" class="desk">
+                                <img src="img/about_fon--tab.png" alt="alt" class="tab">
+                                <h3 class="about_left__title">
+                                    <span>
+                                        9 слоев
+                                    </span>
+                                    <br>
+                                    высококачественной стали
+                                </h3>
+                                <ul class="about_left__ul">
+                                    <li class="about_left__li">
+                                        <p>Нержавеющая сталь </p>
+                                    </li>
+                                    <li class="about_left__li">
+                                        <p>Карбон</p>
+                                    </li>
+                                    <li class="about_left__li">
+                                        <p> Нержавеющая сталь</p>
+                                    </li>
+                                    <li class="about_left__li">
+                                        <p>Углеродистая сталь</p>
+                                    </li>
+                                    <li class="about_left__li">
+                                        <p>Нержавеющая сталь</p>
+                                    </li>
+                                    <li class="about_left__li">
+                                        <p>Литой аллюминий</p>
+                                    </li>
+                                    <li class="about_left__li">
+                                        <p>Штампованный аллюминий</p>
+                                    </li>
+                                    <li class="about_left__li">
+                                        <p>Медь</p>
+                                    </li>
+                                    <li class="about_left__li">
+                                        <p>Нержавеющая сталь</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="about_center">
+                            <img src="img/about_center.png" alt="alt">
+                        </figure>
+                        <div class="about_right">
+                            <figure class="about_right__item"><img src="img/about1.png" alt="alt">
+                                <p class="about_right--title">Кастрюля</p>
+                                <p class="about_right--text">
+                                    16&times;18 см
+                                    1.6 л.
+                                </p>
+                            </figure>
+                            <figure class="about_right__item"><img src="img/about2.png" alt="alt">
+                                <p class="about_right--title">Пароварка</p>
+                                <p class="about_right--text">
+                                    20&times;10 см
+                                    3.0 л.
+                                </p>
+                            </figure>
+                            <figure class="about_right__item"><img src="img/about3.png" alt="alt">
+                                <p class="about_right--title">Кастрюля</p>
+                                <p class="about_right--text">
+                                    20&times;12 см
+                                    3.7 л.
+                                </p>
+                            </figure>
+                            <figure class="about_right__item"><img src="img/about4.png" alt="alt">
+                                <p class="about_right--title">Кастрюля</p>
+                                <p class="about_right--text">
+                                    24&times;14 см
+                                    6.8 л.
+                                </p>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="gray">
+                        <div class="gray_wrap">
+                            <div class="gray_left">
+                                <p class="gray_left--text">
+                                    <img src="img/gray1.png" class="gray_center--desk" alt="alt">
+                                    Наборы ножей Zillinger представлены в нашем каталоге более чем в 60 вариантах, и мы предлагаем их по самым приятным ценам в Москве. Они – настоящее воплощение немецкого качества: острые, прочные, долговечные. И эти качества сохраняются надолго без необходимости дополнительной заточки. Мы предлагаем комплекты, состоящие исключительно из ножей, и наборы, в которые входят дополнительные приспособления: штопор, топорик, овощечистка, заточка, ножницы. В наличии – варианты, выполненные в металлическом цвете и наборы ярких расцветок. Купить оригинальные наборы ножей Zillinger в нашем интернет-магазине можно с доставкой по Москве, области и другим регионам России.
+                                </p>
+                            </div>
+                            <img src="img/gray.png" alt="alt" class="gray_center--tab">
+                            <div class="gray_right">
+                                <h3 class="gray_right--title">9 слоев качества</h3>
+                                <div class="gray_right--block">
+                                    <h5 class="gray_right--subt">Высокачественная нержавеющая сталь</h5>
+                                    <p class="gray_right--desc">Посуда производства Zillinger предназначена для легкого и быстрого приготовления пищи. </p>
+                                </div>
+                                <div class="gray_right--block">
+                                    <h5 class="gray_right--subt gray_right--subt2">Алюминий</h5>
+                                    <p class="gray_right--desc">Она обеспечивает необычайные кулинарные результаты, лего и быстро моется.
+                                        <br>
+                                        На проятжении многих лет Zillinger известен как надежный производитель </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="already">
+                <h3 class="already_title">
+                    <span>3041</span>
+                    человек уже купили посуду у нас
+                </h3>
+                <a href="javascript:void(0);" class="already_btn callback">Хочу заказать набор</a>
+            </section>
+            <section class="gallery">
+                <h2 class="gallery_title">Фотогалерея набора</h2>
+                <div class="gallery_wrap">
+                    <div class="gallery_item"><img src="img/gallery1.png" alt="alt"></div>
+                    <div class="gallery_item"><img src="img/gallery2.png" alt="alt"></div>
+                    <div class="gallery_item"><img src="img/gallery3.png" alt="alt"></div>
+                    <div class="gallery_item"><img src="img/gallery4.png" alt="alt"></div>
+                    <div class="gallery_item"><img src="img/gallery5.png" alt="alt"></div>
+                </div>
+            </section>
+        </div>
+        <section class="trust">
+            <div class="container">
+                <h2 class="trust_title">
+                    Zillinger посуда долголетия
+                </h2>
+                <div class="trust_wrap">
+                    <div class="trust_item"><img src="img/trust1.png" alt="alt"><span class="trust_text">Доставка курьером 1 день</span></div>
+                    <div class="trust_item"><img src="img/trust2.png" alt="alt"><span class="trust_text">Гарантия качества 20 лет</span></div>
+                    <div class="trust_item"><img src="img/trust3.png" alt="alt"><span class="trust_text">Высшее качество стали </span></div>
+                    <div class="trust_item"><img src="img/trust4.png" alt="alt"><span class="trust_text">Победитель <br class="min"> конкурса 2017
+                            <br>
+                            « Посуда Долголетия»</span></div>
+                    <div class="trust_item"><img src="img/trust5.png" alt="alt"><span class="trust_text">Сделано в Германии</span></div>
+                    <div class="trust_item"><img src="img/trust6.png" alt="alt"><span class="trust_text">Официальный сайт</span></div>
+                    <div class="trust_item"><img src="img/trust7.png" alt="alt"><span class="trust_text">Бесплатная доставка </span></div>
+                </div>
+            </div>
+        </section>
+        <section class="people">
+            <div class="container">
+                <div class="people_content">
+                    <ul class="people_ul">
+                        <li class="people_li">
+                            <p>Посуда Zillinger – Технологии, стиль и успех вашего
+                                кулинарного исскуства.</p>
+                        </li>
+                        <li class="people_li">
+                            <p>Профессионалы выбирают Zillinger, рекомендуют Zillinger
+                                и готовят в Zillinger.</p>
+                        </li>
+                        <li class="people_li">
+                            <p>Zilinger безопасные материалы, передовые технологии, гарантия качества проверенное временем.</p>
+                        </li>
+                        <li class="people_li">
+                            <p> Zillinger- забота о здоровье наших покупателей, производство посуды из экологически-чистых материалов.</p>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0);" class="people_btn callback">Хочу заказать набор</a>
+                </div>
+            </div>
+        </section>
+        <section class="know">
+            <div class="container">
+                <h2 class="know_title">Важно знать</h2>
+                <div class="know_content">
+                    <div class="know_left">
+                        <div class="know_left__top">
+                            <ul class="know_left--ul">
+                                <li class="know_left--li">
+                                    <p>Дешевая китайская посуда выполнена из аллюминия и переработанной пластмассы.
+                                        Опасна для здоровья в эксплуатации. </p>
+                                </li>
+                                <li class="know_left--li">
+                                    <p>
+                                        Выбирайте Ziilinger, покупайте посуды на официальном сайте.
+                                        <br>
+                                        МЫ гарантируем качество нашей посуды
+                                        <br>
+                                        Вся посуда сертифицирована
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="know_left__bottom">
+                            <img src="img/know1.png" alt="alt">
+                            <img src="img/know2.png" alt="alt">
+                            <img src="img/know3.png" alt="alt">
+                            <img src="img/know4.png" alt="alt">
+                        </div>
+                    </div>
+                    <figure class="know_right">
+                        <img src="img/know21.png" alt="alt">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="why">
+                <div class="why_content">
+                    <h2 class="why_title">Почему выбирают посуду Zilinger</h2>
+                    <div class="why_wrap">
+                        <div class="why_item">
+                            <img src="img/why1.png" alt="alt" class="why_item--img">
+                            <h5 class="why_item--h5">Высококачественная нержавеющая сталь 18/10 </h5>
+                        </div>
+                        <div class="why_item">
+                            <img src="img/why2.png" alt="alt" class="why_item--img">
+                            <h5 class="why_item--h5">9 слойное дно </h5>
+                        </div>
+                        <div class="why_item">
+                            <img src="img/why3.png" alt="alt" class="why_item--img">
+                            <h5 class="why_item--h5">Ручки с прорезиненным защитным покрытием</h5>
+                        </div>
+                        <div class="why_item">
+                            <img src="img/why4.png" alt="alt" class="why_item--img">
+                            <h5 class="why_item--h5">Крышки со встроенными термодатчиками</h5>
+                        </div>
+                        <div class="why_item">
+                            <img src="img/why5.png" alt="alt" class="why_item--img">
+                            <h5 class="why_item--h5">Состав посуды не имеет примесей, выполнен из чистой стали</h5>
+                        </div>
+                        <div class="why_item">
+                            <img src="img/why6.png" alt="alt" class="why_item--img">
+                            <h5 class="why_item--h5">Для всех типов плит, включая индукцию</h5>
+                        </div>
+                        <div class="why_item">
+                            <img src="img/why7.png" alt="alt" class="why_item--img">
+                            <h5 class="why_item--h5">Можно мыть в посудомойке</h5>
+                        </div>
+                        <div class="why_item">
+                            <img src="img/why8.png" alt="alt" class="why_item--img">
+                            <h5 class="why_item--h5">Уникальный дизайн</h5>
+                        </div>
+                        <div class="why_item">
+                            <img src="img/why9.png" alt="alt" class="why_item--img">
+                            <h5 class="why_item--h5">Подарочная Большая фирменная коробка</h5>
+                        </div>
+                        <div class="why_item">
+                            <img src="img/why10.png" alt="alt" class="why_item--img">
+                            <h5 class="why_item--h5">Книга Zillinger
+                                в подарок </h5>
+                        </div>
+                        <div class="why_item">
+                            <img src="img/why11.png" alt="alt" class="why_item--img">
+                            <h5 class="why_item--h5">Фирменная дисконтная карта</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="map">
+            <div class="container">
+                <h2 class="map_title">
+                    У нас 8 магазинов по России
+                </h2>
+            </div>
+            <div class="map_content">
+                <div class="container">
+                    <div class="map__store--wrap">
+                        <span class="map__store--item" id="click2">
+                            г. Москва
+                        </span>
+                        <a class="map__store--item hide2">
+                            г. Санкт-Петербург
+                        </a>
+                        <a class="map__store--item hide2">
+                            г. Нижний–Новгород
+                        </a>
+                        <a class="map__store--item hide2">
+                            г. Тула
+                        </a>
+                        <a class="map__store--item hide2">
+                            г. Волгоград
+                        </a>
+                        <a class="map__store--item hide2">
+                            г. Воронеж
+                        </a>
+                        <a class="map__store--item hide2">
+                            г. Краснодар
+                        </a>
+                        <a class="map__store--item hide2">
+                            г. Сочи
+                        </a>
+                    </div>
+                    <div class="map_wrap">
+                        <div class="map_item">
+                            <h5 class="map_item--title">
+                                <span>
+                                    г. Москва
+                                </span>
+                                <br>
+                                Кутузовский проспект д. 34
+                            </h5>
+                            <div class="map_item--circle">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                        <div class="map_item map2">
+                            <h5 class="map_item--title">
+                                <span>
+                                    г. Санкт-Петербург
+
+                                </span>
+                                <br>
+                                Энергетиков пр-кт, д. 64
+                            </h5>
+                            <div class="map_item--circle">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                        <div class="map_item">
+                            <h5 class="map_item--title">
+                                <span>
+                                    г. Нижний-Новгород
+
+                                </span>
+                                <br>
+                                Лескова ул, д. 4
+                            </h5>
+                            <div class="map_item--circle">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                        <div class="map_item">
+                            <h5 class="map_item--title">
+                                <span>
+                                    г. Тула
+
+                                </span>
+                                <br>
+                                Кирова ул, д. 151А
+                            </h5>
+                            <div class="map_item--circle">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                        <div class="map_item">
+                            <h5 class="map_item--title">
+                                <span>
+                                    г. Волгоград
+                                </span>
+                                <br>
+                                50 лет Октября ул, д. 4
+                            </h5>
+                            <div class="map_item--circle">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                        <div class="map_item">
+                            <h5 class="map_item--title">
+                                <span>
+                                    г. Воронеж
+
+                                </span>
+                                <br>
+                                Театральная ул, д.32
+                            </h5>
+                            <div class="map_item--circle">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                        <div class="map_item">
+                            <h5 class="map_item--title">
+                                <span>
+                                    г. Краснодар
+
+                                </span>
+                                <br>
+                                им Тургенева ул. д. 124
+                            </h5>
+                            <div class="map_item--circle">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                        <div class="map_item">
+                            <h5 class="map_item--title">
+                                <span>
+                                    г. Сочи
+
+                                </span>
+                                <br>
+                                Ленина ул, д. 45
+                            </h5>
+                            <div class="map_item--circle">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <h2 class="footer_title">
+                    <span><i>Закажите</i> Легендарный <span>набор</span> <span class="zil">Zillinger</span></span>
+                    <br>
+                    и порадуйте ваших родных и близких
+                </h2>
+                <div class="intro__form footer__form">
+                    <p class="intro__form--top">Время акции:</p>
+                    <div class="intro__form--time">
+                        <div id="clockdiv1">
+                            <div class="clockitem">
+                                <span class="days1 number"></span>
+                                <div class="smalltext">Days</div>
+                            </div>
+                            <div class="clockitem">
+                                <span class="hours1 number"></span>
+                                <div class="smalltext">Hours</div>
+                            </div>
+                            <div class="clockitem">
+                                <span class="minutes1 number"></span>
+                                <div class="smalltext">Minutes</div>
+                            </div>
+                            <div class="clockitem">
+                                <span class="seconds1 number"></span>
+                                <div class="smalltext">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro__form--trust intro__form--trust1">
+                        <p>
+                            <span>Доставка</span>
+                            <br>
+                            1 день курьером
+                        </p>
+                    </div>
+                    <div class="intro__form--trust intro__form--trust2">
+                        <p>
+                            Победитель 2017
+                            <br>
+                            “Посуда Долголетия”
+                        </p>
+                    </div>
+                    <div class="intro__form--oldprice">
+                        <p class="small">
+                            Старая цена
+                            <br>
+                            <s>10500р.</s>
+                        </p>
+                        <p class="price">5990р.</p>
+                        <span>
+                            50%
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="callback intro__form--btn">
+                        Хочу заказать набор
+                        
+                    </a>
+                </div>
+                <div class="footer_bottom">
+                    <img src="img/logo-footer.png" alt="alt" class="footer_bottom--logo desk">
+                    <img src="img/logo-footer_min.png" alt="alt" class="footer_bottom--logo mob">
+                    <div class="footer_bottom__left">
+                        <nav class="footer_bottom__nav">
+                            <div class="div">
+                                <a href="" class="footer_bottom__a"> О компании</a>
+                                <a href="" class="footer_bottom__a">Доставка и оплата</a>
+                                <a href="" class="footer_bottom__a">Отзывы</a>
+                                <a href="" class="footer_bottom__a"> Гарантия</a>
+                            </div>
+                            <div class="div">
+                                <a href="" class="footer_bottom__a">Контакты</a>
+                                <a href="" class="footer_bottom__a">Гарантия</a>
+                                <a href="" class="footer_bottom__a">Заказать</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="footer_bottom__center">
+                        <p>
+                            2018 © Zillinger Все права защищены
+                        </p>
+                    </div>
+                    <div class="footer_bottom__right">
+                        <div class="visa">
+                            <p>Принимаем оплату:</p>
+                            <img src="img/visa.png" alt="alt" class="visa_img">
+                        </div>
+                        <div class="footer_bottom--double">
+                            <div>
+                                <p class="double__desc">Горячая линия по России </p>
+                                <a href="tel:88005553535" class="double__tel">8 800 555 35 35</a>
+                            </div>
+                            <a href="javascript:void(0);" class="double__callback callback">Перезвонить вам?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <div class="overlay js-overlay-campaign">
+        <div class="popup js-popup-campaign">
+            <h2 class="popup_title">Заказать звонок</h2>
+            <form class="popup_form">
+                <input type="text" class="popup_input" placeholder="Как Вас зовут?" required>
+                <input type="tel" class="popup_input" placeholder="Ваш номер телефона" id="phone" required>
+                <button class="popup_btn" type="submit">
+                    Отправить заявку
+                </button>
+            </form>
+            <div class="close-popup js-close-campaign"></div>
+        </div>
+    </div>
+
+
+    <script src="libs/jquery-3.2.1.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    <script src="libs/slick.min.js"></script>
+    <script src="libs/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function getTimeRemaining(endtime) {
+            var t = Date.parse(endtime) - Date.parse(new Date());
+            var seconds = Math.floor((t / 1000) % 60);
+            var minutes = Math.floor((t / 1000 / 60) % 60);
+            var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            return {
+                'total': t,
+                'days': days,
+                'hours': hours,
+                'minutes': minutes,
+                'seconds': seconds
+            };
+        }
+
+        function initializeClock(id, endtime) {
+            var clock = document.getElementById(id);
+            var daysSpan = clock.querySelector('.days');
+            var hoursSpan = clock.querySelector('.hours');
+            var minutesSpan = clock.querySelector('.minutes');
+            var secondsSpan = clock.querySelector('.seconds');
+
+            function updateClock() {
+                var t = getTimeRemaining(endtime);
+
+                daysSpan.innerHTML = t.days;
+                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+                if (t.total <= 0) {
+                    clearInterval(timeinterval);
+                }
+            }
+
+            updateClock();
+            var timeinterval = setInterval(updateClock, 1000);
+        }
+        var deadline = "January 01 2018 00:00:00 GMT+0300"; //for Ukraine
+        var deadline = new Date(Date.parse(new Date()) + 45 * 1 * 56 * 42 * 1000); // for endless timer
+        initializeClock('clockdiv', deadline);
+
+    </script>
+    <script>
+        function getTimeRemaining(endtime) {
+            var t = Date.parse(endtime) - Date.parse(new Date());
+            var seconds = Math.floor((t / 1000) % 60);
+            var minutes = Math.floor((t / 1000 / 60) % 60);
+            var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            return {
+                'total': t,
+                'days': days,
+                'hours': hours,
+                'minutes': minutes,
+                'seconds': seconds
+            };
+        }
+
+        function initializeClock(id, endtime) {
+            var clock = document.getElementById(id);
+            var daysSpan = clock.querySelector('.days1');
+            var hoursSpan = clock.querySelector('.hours1');
+            var minutesSpan = clock.querySelector('.minutes1');
+            var secondsSpan = clock.querySelector('.seconds1');
+
+            function updateClock() {
+                var t = getTimeRemaining(endtime);
+
+                daysSpan.innerHTML = t.days;
+                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+                if (t.total <= 0) {
+                    clearInterval(timeinterval);
+                }
+            }
+
+            updateClock();
+            var timeinterval = setInterval(updateClock, 1000);
+        }
+        var deadline = "January 01 2018 00:00:00 GMT+0300"; //for Ukraine
+        var deadline = new Date(Date.parse(new Date()) + 45 * 1 * 56 * 42 * 1000); // for endless timer
+        initializeClock('clockdiv1', deadline);
+
+    </script>
+</body>
+<script src="js/main.js"></script>
+
+</html>
