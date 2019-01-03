@@ -4,6 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Детский спортивный центр | г.Геленджик </title>
+        <meta content="" name="description" />
+        
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="img/favicon/apple-touch-icon.png">
+        <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -14,6 +21,7 @@
         <link rel="stylesheet" href="libs/slick.css">
         <link rel="stylesheet" href="libs/slick.css">
         <link rel="stylesheet" href="css/styles.css">
+        
     </head>
 
     <body>
@@ -56,7 +64,7 @@
                                 </h3>
                                 <img src="img/logo1.png" alt="alt" width="163" height="184" class="move_item--img">
                                 <br>
-                                <a href="#" class="move_item--btn form_btn">Запись on-line</a>
+                                <a href="javascript:void(0)" class="move_item--btn form_btn">Запись on-line</a>
                             </div>
                             <div class="move_item__right">
                                 <p class="move_item--text"><span class="subtitle">
@@ -217,7 +225,7 @@
                                 </h3>
                                 <img src="img/logo2.png" alt="alt" width="180" height="120" class="move_item--img">
                                 <br>
-                                <a href="#" class="move_item--btn form_btn">Запись on-line</a>
+                                <a href="javascript:void(0)" class="move_item--btn form_btn">Запись on-line</a>
                             </div>   
                         </div>
 
@@ -229,7 +237,7 @@
                                 </h3>
                                 <img src="img/logo3.png" alt="alt" width="150" height="150" class="move_item--img">
                                 <br>
-                                <a href="#" class="move_item--btn form_btn">Запись on-line</a>
+                                <a href="javascript:void(0)" class="move_item--btn form_btn">Запись on-line</a>
                             </div>
                             <div class="move_item__right">
                                 <p class="move_item--text"><span class="subtitle">
@@ -314,7 +322,7 @@
             
             <section class="spons">
                 <div class="container">
-                    <h2 class="spons_title h2-title">Партнеры проекта</h2>
+                    <h2 class="spons_title h2-title">Наши партнеры</h2>
                     <div class="spons_wrap">
                         <div><img src="img/spons1.png" alt="alt" class="spons_item"></div>
                         <div><img src="img/spons2.jpg" alt="alt" class="spons_item"></div>
@@ -360,13 +368,42 @@
                     <a href="malito:info@centergel.ru" class="header_mail header_item">
                         info@centergel.ru
                     </a>
-                    <a href="#" class="header_btn form_btn header_item">
+                    <a href="javascript:void(0)" class="header_btn form_btn header_item">
                         Запись on-line
                     </a>
                 </div>
             </div>
         </footer>
-       
+        
+        <div class="overlay js-overlay-campaign">
+            <div class="popup js-popup-campaign">
+                <span class="popup_title">Запись on-line</span>
+                <p class="popup_descr">Мы свяжемся с Вами в ближайшее время</p>
+                <form action="mailer.php" method="POST" class="popup_form mailer">
+                    <input type="text" class="popup_input" placeholder="Ваше имя *" name="user_name" required>
+                    <input type="tel" class="popup_input" placeholder="Ваш телефон *" name="user_tel" required>
+                    <input type="email" class="popup_input" placeholder="Ваша почта" name="user_mail">
+                    <p class="popup_inner">Выберите направление</p>
+                    <div class="popup_select">
+                        <select name="user_select" class="select">
+                            <option value="водномоторный спорт">
+                                водномоторный спорт
+                            </option>
+                            <option value="парусный спорт">
+                                парусный спорт
+                            </option>
+                            <option value="планерный спорт">
+                                планерный спорт
+                            </option>
+                        </select>
+                    </div>
+                    <button type="submit" class="popup_btn">Отправить</button>
+                    <div class="success"><span>Ваша заявка принята!</span></div>
+                </form>
+                <div class="close-popup js-close-campaign"></div>
+            </div>
+        </div>
+        
         <script>
             function showText (el) {
                 if(el.previousElementSibling.clientHeight === 10) {

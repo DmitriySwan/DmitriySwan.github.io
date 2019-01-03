@@ -1,6 +1,47 @@
 
 $(function(){
     
+    
+    // Модальное окно
+
+    // открыть по кнопке
+    $('.form_btn').click(function() { 
+
+        $('.js-overlay-campaign').fadeIn();
+        $('.js-overlay-campaign').addClass('disabled');
+    });
+
+    // закрыть на крестик
+    $('.js-close-campaign').click(function() { 
+        $('.js-overlay-campaign').fadeOut();
+
+    });
+
+    // закрыть по клику вне окна
+    $(document).mouseup(function (e) { 
+        var popup = $('.js-popup-campaign');
+        if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+            $('.js-overlay-campaign').fadeOut();
+
+        }
+    });
+    
+    
+    $('.mailer').submit(function(event) {
+        event.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('.success').css('display','inline-block');
+            $(".mailer").trigger("reset");
+        });
+        return false;
+    });
+
+    
     $('.spons_wrap').slick({
         infinite: true,
         slidesToShow: 4,
@@ -19,13 +60,6 @@ $(function(){
             },
             {
                 breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 360,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
