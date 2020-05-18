@@ -16,12 +16,26 @@ $(function(){
         variableWidth: true
     });
     
+    $('.arrow1').on('click', function() {
+        $('.photo_slider').slick('slickNext');
+    });
+    $('.arrow2').on('click', function() {
+        $('.photo_slider').slick('slickPrev');
+    });
+    
     $('.doc_slider').slick({
         arrows: true,
         slidesToShow: 3,
         dots:false,
         centerMode: true,
         variableWidth: true
+    });
+    
+    $('.arrow4').on('click', function() {
+        $('.doc_slider').slick('slickNext');
+    });
+    $('.arrow3').on('click', function() {
+        $('.doc_slider').slick('slickPrev');
     });
 });
 

@@ -1,6 +1,6 @@
 .header {
     &_row {
-        margin-top: 25px;
+        margin-top: 28px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -15,7 +15,7 @@
     }
     &_text {
         .m();
-        margin-left: 20px;
+        margin-left: 25px;
         color: #363F47;
         font-size: 15px;
         span {
@@ -32,16 +32,17 @@
             }
             p {
                 .m();
-                margin-left: 10px;
+                margin-left: 15px;
                 font-size: 15px;
                 color: #2D343B;
+                letter-spacing: .3px;
             }
         }
     }
     &_social {
         display: flex;
         position: relative;
-        top: 8px;
+        top: 8px; left: -10px;
         &--item {
             display: flex;
             justify-content: center;
@@ -50,20 +51,8 @@
             height: 34px;
             border-radius: 100%;
             background-color: #EFEFEF;
-            &:nth-child(1) {
-                img {
-                    position: relative;
-                    left: -2px;
-                    top: -2px;
-                }
-            }
             &:nth-child(2) {
                 margin: 0 20px;
-                img {
-                    position: relative;
-                    left: 1px;
-                    top: 1px;
-                }
             }
         }
     }
@@ -86,6 +75,7 @@
             .b();
             font-size: 20px;
             color: #2D343B;
+            letter-spacing: .5px;
         }
         &--p2 {
             color: #0243E8;
@@ -105,7 +95,8 @@
         }
     }
     &_line {
-        margin-top: 30px;
+        margin-top: 27px;
+        margin-left: 14px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -115,10 +106,10 @@
         font-size: 14px;
         color: #363F47;
         &--a {
-            margin: 0 15px;
+            margin: 0 14px;
             color: #1B2840;
             font-size: 14px;
-            letter-spacing: .5px;
+            letter-spacing: .4px;
             .b();
             &:first-child {
                 margin-left: 0;
@@ -130,13 +121,13 @@
     }
     &_search {
         position: relative;
-        margin-left: 30px;
+        left: 5px;
         &::after {
             content: '';
             position: absolute;
             top: 12px; left: 6px;
-            background: url(../img/search.png);
-            width: 22px;
+            background: url(../img/search.svg);
+            width: 18px;
             height: 18px;
         }
         &--input {
