@@ -1,5 +1,5 @@
 .intro {
-    background: url(../img/main-intro.jpg) top left/cover no-repeat;
+    background: url(../img/main-intro.jpg) 0px -10px/cover no-repeat;
     min-height: 503px;
     padding-top: 73px;
     margin-top: 6px;
@@ -55,7 +55,7 @@
         display: flex;
         height: 89px;
         position: relative;
-        top: 60px;
+        top: 35px;
         &--item {
             background-color: #C9D9FF;
             display: flex;
@@ -97,10 +97,10 @@
 }
 
 .trig {
-    background: url(../img/main2.jpg) -100px -45px/cover no-repeat;
-    min-height: 671px;
+    background: url(../img/main2.jpg) -70px -45px/cover no-repeat;
+    min-height: 671px;      
     &_h2 {
-        margin-top: 142px;
+        margin-top: 120px;
         font-size: 35px;
         color: #303840;
         letter-spacing: .7px;
@@ -233,6 +233,7 @@
         z-index: 10;
         height: 534px;
         overflow-y: hidden;
+        cursor: grab;
         .slick-next {
             display: none !important;
         }
@@ -443,6 +444,7 @@
         background-color: rgba(0, 96, 232, .45);
     }
     &_slider {
+        cursor: grab;
         max-width: 838px;
         .slick-next {
            display: none !important;
@@ -586,7 +588,7 @@
 }
 
 .cont {
-    margin-top: 88px;
+    margin-top: 75px;
     &_row {
         display: flex;
         justify-content: space-between;
@@ -793,4 +795,21 @@
     display: flex;
     align-items: center;
     margin-top: 40px;
+}
+
+@media (min-width:1400px) {
+    .trig {
+        background: url(../img/main2.jpg) 0px -45px/cover no-repeat;
+    } 
+    .doc_bg {
+        width: 891px;
+    }
+}
+@media (min-width:1600px) {
+    .trig {
+        background: url(../img/main2.jpg) 70px -45px/cover no-repeat;   
+    } 
+    .doc_bg {
+        width: 1011px;
+    }
 }

@@ -13,7 +13,8 @@ $(function(){
         slidesToShow: 1,
         dots:false,
         centerMode: true,
-        variableWidth: true
+        variableWidth: true,
+        swipe: true
     });
     
     $('.arrow1').on('click', function() {
@@ -28,6 +29,7 @@ $(function(){
         slidesToShow: 3,
         dots:false,
         centerMode: true,
+        swipe: true,
         variableWidth: true
     });
     

@@ -101,4 +101,48 @@
         font-size: 15px;
         .m();
     }
+    &_bottom {
+        background-color: #fff;
+        height: 86px;
+        padding-top: 33px;
+        &--border {
+            display: flex;
+            justify-content: space-between;
+            height: 86px;
+            position: absolute;
+            top: -33px;
+            left: 0;
+            width: 100%;
+            padding: 0 20px;
+        }
+        &--a {
+            color: #596775;
+            font-size: 14px;
+        }
+        &--p {
+            color: #596775;
+            font-size: 14px;
+            .m();
+        }
+        &--made {
+            display: flex;
+            align-items: center;
+            top: -5px; 
+            position: relative;
+        }
+        &--circles {
+            display: flex;
+            align-items: center;
+            margin-left: 25px;
+        }
+        &--circle {
+            width: 30px;
+            height: 30px;
+            background: #596775;
+            border-radius: 100%;
+            &:last-child {
+                margin-left: 20px;
+            }
+        }
+    }
 }
