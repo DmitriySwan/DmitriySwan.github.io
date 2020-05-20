@@ -12,7 +12,6 @@ $(function(){
         arrows: true,
         slidesToShow: 1,
         dots:false,
-        centerMode: true,
         variableWidth: true,
         swipe: true
     });
@@ -26,9 +25,8 @@ $(function(){
     
     $('.doc_slider').slick({
         arrows: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         dots:false,
-        centerMode: true,
         swipe: true,
         variableWidth: true
     });

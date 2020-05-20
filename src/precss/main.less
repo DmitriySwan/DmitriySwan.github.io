@@ -155,7 +155,8 @@
                 a {
                     display: block;
                     margin-top: 17px;
-                    text-decoration: underline;   
+                    text-decoration: underline;  
+                    .m();
                     &:hover {
                         text-decoration:none;
                     }
@@ -228,21 +229,29 @@
     margin-top: -30px;
     padding: 40px 0;
     background: url(../img/bg-doc.jpg) center/cover no-repeat;
+    overflow: hidden;
     &_slider {
-        max-width: 892px;
         z-index: 10;
         height: 534px;
-        overflow-y: hidden;
+        overflow: hidden;
         cursor: grab;
+        position: relative;
+        left: 240px;
         .slick-next {
             display: none !important;
         }
         .slick-prev {
             display: none !important;
         } 
+        .slick-slide {
+            margin-left: 30px;
+        }
+        .slick-current {
+            margin-left: 0;
+        }
     }
     &_container {
-        position: relative;
+        position: relative;  
     }
     &_border {
         &--row {
@@ -280,21 +289,25 @@
         }
     }
     &_h2 {
-        line-height: 1.4;
+        line-height: 1;
         &--span1 {
             display: block;
             color: #282B33;
             background-color: #fff;
             .ex();
-            padding: 0px 5px;
             font-size: 35px;
+            padding: 2px;
         }
         &--span2 {
             font-size: 35px;
             color: #fff;
             background-color: #2E65E6;
-            padding: 0px 5px;
+            line-height: 1;
             .ex();
+            display: block;
+            width: 265px;
+            height: 38px;
+            padding-left: 2px;
         }
     }
     &_h3 {
@@ -427,15 +440,16 @@
 
 .doc {
     margin-top: 25px;
-    padding: 40px 0;
+    padding: 40px 0 60px;
     position: relative;
-    background: url(../img/smajrw.png) 100px 0px/contain no-repeat;
+    background: url(../img/smajrw.png) 220px -180px/contain no-repeat;
+    overflow: hidden;
     &_bg {
-        width: 761px;
-        height: 469px;
+        width: 875px;
+        height: 470px;
         background: url(../img/doc.jpg) center/cover no-repeat;
         position: absolute;
-        top: 110px; right: 0;
+        top: 100px; right: 0;
     }
     &_grad {
         position: absolute;
@@ -444,14 +458,26 @@
         background-color: rgba(0, 96, 232, .45);
     }
     &_slider {
+        overflow-x: hidden;
+        position: relative;
+        left: 270px;
         cursor: grab;
-        max-width: 838px;
         .slick-next {
            display: none !important;
         }
         .slick-prev {
             display: none !important;
         }
+        .slick-slide {
+            margin-left: 0px;
+        }
+        .slick-current {
+            margin-left: 0;
+        }
+        
+    }
+    &_img {
+        height: 349px;
     }
     &_item {
         margin: 0 17px;
@@ -554,6 +580,7 @@
         top: 0; left: 0px;
         width: 100%; height: 100%;
         background: linear-gradient(to right,rgba(1,68,231,0.88) ,rgba(1,68,231,0.16) 86%);
+        opacity: .7;
     }
     &_h2 {
         color: #fff;
