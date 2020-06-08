@@ -1,0 +1,36 @@
+.header {
+    height: 136px;
+    background-image: url(../img/h-after.png);
+    position: relative;
+    z-index: 10;
+    &_row {
+        height: 135px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: -10px;
+    }
+    &_item {
+        display: flex;
+        align-items: flex-start;
+        &--img {
+            position: relative;
+            top: 5px;
+        }
+        &--text {
+            margin-left: 9px;
+        }
+        &--tel {
+            color: #343132;
+            font-size: 18px;
+            .msm();
+            span {
+                color: @red;
+            }
+        }
+        &--p {
+            margin-top: 5px;
+        }
+    }
+}
