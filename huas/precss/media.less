@@ -683,14 +683,21 @@
             line-height: 37px;
             text-align: center;
             top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 298px;
+            width: 100%;
         }
         &_made {
             background: none;
             left: auto;
             top: 154px;
             right: 0px;
+            
         }
         &_12 {
+            left: 50%;
+            transform: translateX(-50%);
             top: 105px;
         }
         &_amount {
@@ -707,7 +714,7 @@
             transform: translate(-50%);
         }
         &_trigs {
-            bottom: -256px;
+            bottom: -288px;
             flex-direction: column;
         }
     }
@@ -780,6 +787,7 @@
         &_h2 {
             line-height: 32px;
             max-width: 314px;
+            margin: auto;
         }
         &_btn {
             width: 100%;
@@ -845,12 +853,13 @@
     .order {
         background: url(../img/family-mob.png) center/cover no-repeat;
         min-height: 841px;
+        padding-top: 30px;
         &_top {
             align-items: center;
             flex-direction: column;
         }
         &_li2 {
-            margin-left: 0;
+            margin-left: 45px;
         }
         &_flex {
             flex-direction: column;
@@ -870,6 +879,10 @@
             &--gray {
                 margin-left: 20px;
             }
+        }
+        &_count {
+            margin-left: 45px;
+            margin-top: 15px;
         }
         &_p {
             margin-top: 20px;
