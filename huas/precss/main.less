@@ -246,6 +246,15 @@
         bottom: 0; left: -350px;
         width: 1198px; height: 743px;
         background-image: url(../img/intro-tableware.png);
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 58px;
+            right: 207px;
+            background: url(../img/intro-after.png);
+            width: 233px;
+            height: 146px;
+        }
     }
 }
 
@@ -522,6 +531,7 @@
     &_figure {
         position: absolute;
         top: 45px; left: -18px;
+        z-index: 12;
     }
     &_content {
         display: flex;
@@ -694,6 +704,9 @@
 }
 
 .wave {
+    display: none;
+}
+.wave-trust {
     background: #fff;
     height: 65px;
     position: relative;  
@@ -784,6 +797,101 @@
             radial-gradient(circle at 10px 26px, #7a8189 20px, transparent 21px);
     }
 }
+.wave-in {
+    display: none;
+    background-color: #edefee;
+    height: 65px;
+    position: relative;
+    top: -87px;
+    &:before, &::after {
+        border-bottom: 5px solid #fff;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 10px;
+        background-size: 20px 40px;
+        background-image:
+            radial-gradient(circle at 10px -15px, transparent 20px, #fff 21px);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 15px;
+        background-size: 40px 40px;
+        background-image:
+            radial-gradient(circle at 10px 26px, #fff 20px, transparent 21px);
+    }
+}
+.wave-box {
+    background: #fff;
+    height: 25px;
+    position: relative;  
+    display: none;
+    &:before, &::after {
+        border-bottom: 5px solid #e1e4e0;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 10px;
+        background-size: 20px 40px;
+        background-image:
+            radial-gradient(circle at 10px -15px, transparent 20px, #e1e4e0 21px);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 15px;
+        background-size: 40px 40px;
+        background-image:
+            radial-gradient(circle at 10px 26px, #e1e4e0 20px, transparent 21px);
+    }
+}
+.wave-video {
+    background: #f6f6f6;
+    height: 25px;
+    position: relative;  
+    display: none;
+    &:before, &::after {
+        border-bottom: 5px solid #eee;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 10px;
+        background-size: 20px 40px;
+        background-image:
+            radial-gradient(circle at 10px -15px, transparent 20px, #eee 21px);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 15px;
+        background-size: 40px 40px;
+        background-image:
+            radial-gradient(circle at 10px 26px, #eee 20px, transparent 21px);
+    }
+}
+
 
 .trust {
     min-height: 570px;
@@ -848,6 +956,16 @@
         align-items: flex-start;
         overflow-y: scroll;
         padding-top: 35px;
+        padding-right: 25px;
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #e6e6e6;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #e04855;
+        }
         &--content {
             margin-left: 25px;
         }
@@ -945,10 +1063,11 @@
 
 .video {
     min-height: 890px;
-    background: url(../img/video1.png) center/cover no-repeat;
+    background: url(../img/videoo.png) center/cover no-repeat;
     padding-top: 50px;
     position: relative;
     overflow: hidden;
+    top: -9px;
     &_h2 {
         text-align: center;
         font-family: 'Montserrat';
@@ -990,7 +1109,7 @@
     min-height: 785px;
     position: relative;
     z-index: 1;
-    top: -10px;
+    top: -19px;
     padding-top: 50px;
     &_row {
         display: flex;
@@ -1161,6 +1280,10 @@
                 font-size: 17px;
             }
         }
+    }
+    &_flex {
+        display: flex;
+        align-items: center;
     }
     &_basket {
         width: 320px;
@@ -1428,6 +1551,9 @@
         &1 {
            max-width: 775px; 
             margin-top: 12px;
+            br {
+                display: none;
+            }
         }
     }
 }

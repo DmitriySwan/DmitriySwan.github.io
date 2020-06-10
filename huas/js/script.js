@@ -9,12 +9,41 @@ $(function(){
         swipe: true,
         responsive: [
             {
-                breakpoint: 1025,
+                breakpoint: 1150,
                 settings: {
-                    variableWidth: false
+                    slidesToShow: 1
                 }
             }
         ]
+    });
+    
+    $('.btn_mnu').click(function() { 
+
+        $('.menu_overlay').fadeIn();
+    });
+    
+    $('.menu_close').click(function() { 
+        $('.menu_overlay').fadeOut();
+
+    });
+    
+    $('.header_tablet').click(function() { 
+
+        $('.phone_overlay').fadeIn();
+    });
+
+    $('.phone_close').click(function() { 
+        $('.phone_overlay').fadeOut();
+
+    });
+
+    
+    $('.in_more').click(function() {
+        $(this).prev('.in_desc').toggleClass('active');
+    });
+    
+    $('.q_more').click(function() {
+        $(this).prev('.quality_p2').toggleClass('active');
     });
 
     $('.trust_arrl').on('click', function() {
