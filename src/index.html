@@ -28,6 +28,13 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+        
+        <script src="libs/jquery.maskedinput.min.js"></script>
+        
+        <script src="js/script.js"></script>
+        
         <style>
             .fancybox-slide {
                 padding: 0;
@@ -262,7 +269,7 @@
                 <form class="popup1_form">
                     <h3 class="popup1_h3">Заказать изготовление индивидуальной композиции</h3>
                     <input type="text" class="popup1_input" placeholder="ФИО" required>
-                    <input type="tel" class="popup1_input" placeholder="+7(999)999-99-99" required>
+                    <input type="tel" class="popup1_input phone_ru" placeholder="+7(999)999-99-99" required>
                     <input type="email" class="popup1_input" placeholder="E-mail" required>
                     <textarea class="popup1_input popup1_area" placeholder="Ваш комментарий"></textarea>
                     <button class="popup1_btn">Заказать</button>
@@ -276,12 +283,11 @@
                 <div class="container">
                     <div class="detals_block">
                        <div class="detals_photo">
-                           <div class="flexslider">
-                               <ul class="slides">
-                                   <li class="slides_small" data-thumb="img/detals1.jpg">
-                                       <img src="img/detals1.jpg" alt="alt" />
-                                   </li>
-                               </ul>
+                           <div class="fotorama"
+                                data-minwidth="560"
+                                data-maxwidth="560"
+                               data-nav="thumbs">
+                               <a href="img/detals1.jpg"><img src="img/detals1.jpg"></a>
                            </div>
                        </div>
                        <div class="detals_text">
@@ -307,7 +313,7 @@
                                        </option>
                                    </select>
                                </label>
-                               <a href="#basket" class="detals_btn">
+                               <a href="#order" class="detals_btn">
                                    Заказать
                                </a>
                             </form>
@@ -367,18 +373,13 @@
                 <div class="container">
                     <div class="detals_block">
                         <div class="detals_photo">
-                            <div class="flexslider">
-                                <ul class="slides">
-                                    <li class="slides_small" data-thumb="img/detals2.jpg">
-                                        <img src="img/detals2.jpg" alt="alt" />
-                                    </li>
-                                    <li class="slides_small" data-thumb="img/detals3.jpg">
-                                        <img src="img/detals3.jpg" alt="alt" />
-                                    </li>
-                                    <li class="slides_small" data-thumb="img/detals4.jpg">
-                                        <img src="img/detals4.jpg" alt="alt" />
-                                    </li>
-                                </ul>
+                            <div class="fotorama"
+                                 data-nav="thumbs"
+                                 data-minwidth="560"
+                                 data-maxwidth="560">
+                                <a href="img/detals2.jpg"><img src="img/detals2.jpg"></a>
+                                <a href="img/detals3.jpg"><img src="img/detals3.jpg"></a>
+                                <a href="img/detals4.jpg"><img src="img/detals4.jpg"></a>
                             </div>
                         </div>
                         <div class="detals_text">
@@ -404,7 +405,7 @@
                                         </option>
                                     </select>
                                 </label>
-                                <a href="#basket" class="detals_btn">
+                                <a href="#order" class="detals_btn">
                                     Заказать
                                 </a>
                             </form>
@@ -464,14 +465,14 @@
                 <div class="container">
                     <div class="detals_block">
                         <div class="detals_photo">
-                            <div class="flexslider">
-                                <ul class="slides">
-                                    <li class="slides_small" data-thumb="img/detals5.jpg">
-                                        <img src="img/detals2.jpg" alt="alt" />
-                                    </li>
-                                </ul>
+                            <div class="fotorama"
+                                 data-nav="thumbs"
+                                 data-minwidth="560"
+                                 data-maxwidth="560">
+                                <a href="img/detals5.jpg"><img src="img/detals5.jpg"></a>
                             </div>
                         </div>
+                        
                         <div class="detals_text">
                             <h3 class="detals_h3">Светящиеся качели «Луна»</h3>
                             <span class="detals_price">79 900р.</span>
@@ -495,7 +496,7 @@
                                         </option>
                                     </select>
                                 </label>
-                                <a href="#basket" class="detals_btn">
+                                <a href="#order" class="detals_btn">
                                     Заказать
                                 </a>
                             </form>
@@ -578,7 +579,7 @@
                 <form class="order_form">
                     <input type="text" class="order_input" placeholder="ФИО" required>
                     <input type="email" class="order_input" placeholder="E-mail" required>
-                    <input type="tel" class="order_input" placeholder="+7(999)999-99-99" required>
+                    <input type="tel" class="order_input phone_ru" placeholder="+7(999)999-99-99" required>
                     <button class="order_btn">Заказать</button>
                     <p class="order_p">Нажимая на кнопку «ЗАКАЗАТЬ» вы соглашаетесь с условиями <a href="#">политики конфиденциальности</a></p>
                 </form>
@@ -595,10 +596,27 @@
                 <a href="tel:+7(926)4050042" class="menu_nav--item">+7(926)405-00-42</a>
             </nav>
         </div>
-
-
-       <script src="libs/jquery.flexslider.js"></script>
-        <script src="js/script.js"></script>
+        
+        <div class="basket">
+            <img class="basket_icon" src="img/shopping-basket.svg" alt="alt">
+            <div class="basket_count">3</div>
+            <div class="basket_sum">=123 333 р.</div>
+        </div>
+        
+        <div class="wh">
+        <button class="wh_btn">Задать вопрос</button>
+        <a href="#" class="wh_img">
+            <img src="img/whatsapp.svg" alt="alt">
+        </a>
+        <div class="wh_form">
+            <form class="wh_form--action">
+                <textarea placeholder="Ваш комментарий" class="wh_form--area"></textarea>
+                <input type="tel" class="wh_form--input phone_ru" placeholder="+7(999)999-99-99">
+                <button class="wh_form--btn">Отправить</button>
+            </form>
+        </div>
+        </div>
+        
     </body>
 
 </html>
