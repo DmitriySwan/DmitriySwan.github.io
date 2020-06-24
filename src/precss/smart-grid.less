@@ -21,17 +21,11 @@
 @offset_xs_one_side: (@offset_xs / 2);
 @offset_xxs_one_side: (@offset_xxs / 2);
 
-@fields: 20px;
-@fields_xs: 12px; 
+@fields: 15px;
 
 .container-full(){
     padding-left: @fields;
     padding-right: @fields;
-
-    .xs-block({
-        padding-left: @fields_xs;
-        padding-right: @fields_xs;
-    });
 }
 
 .row-offsets(){
@@ -45,7 +39,7 @@
 }
 
 .container(){
-    max-width: 1170px;
+    max-width: 1230px;
     margin: 0 auto;
     .container-full();
 }
