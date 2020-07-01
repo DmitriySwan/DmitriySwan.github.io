@@ -13,6 +13,8 @@
        <link rel="stylesheet" href="libs/slick.css">
        <link rel="stylesheet" href="libs/slick-theme.css">
        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+       
        <link rel="stylesheet" href="css/styles.css">
     </head>
 
@@ -81,7 +83,7 @@
                   </div>
                   <div class="intro_bottom--action">
                       <img src="img/intro-arrow.svg" alt="alt" class="intro_bottom--arrow">
-                      <a href="#" class="intro_bottom--btn">Проконсультироваться</a>
+                      <a href="#form" class="intro_bottom--btn">Проконсультироваться</a>
                   </div>
               </div>
           </div>
@@ -121,7 +123,7 @@
             </div>
         </section>
         
-      <section class="consult">
+      <section class="consult" id="form">
            <img src="img/consult-man.png" alt="alt" class="consult_man">
            <div class="consult_block">
                <div class="consult_top"></div>
@@ -309,19 +311,29 @@
                              <div class="row">
                                  <div class="col-sm-4">
                                      <div class="work_slide1">
-                                         <img src="img/w1.jpg" alt="alt" class="work_img">
-                                         <img src="img/w2.jpg" alt="alt" class="work_img">
+                                         <a href="img/w1.jpg" data-fancybox="gallery" class="work_img">
+                                             <img src="img/w1.jpg" alt="alt">
+                                         </a>
+                                         <a href="img/w2.jpg" data-fancybox="gallery" class="work_img">
+                                             <img src="img/w2.jpg" alt="alt">
+                                         </a>
                                      </div>
                                  </div>
                                  <div class="col-sm-4">
                                      <div class="work_slide2">
-                                         <img src="img/w3.jpg" alt="alt" class="work_img">
+                                         <a href="img/w3.jpg" class="work_img" data-fancybox="gallery">
+                                             <img src="img/w3.jpg" alt="alt">
+                                         </a>
                                      </div>
                                  </div>
                                  <div class="col-sm-4">
                                      <div class="work_slide3">
-                                         <img src="img/w4.jpg" alt="alt" class="work_img">
-                                         <img src="img/w5.jpg" alt="alt" class="work_img">
+                                         <a href="img/w4.jpg" data-fancybox="gallery" class="work_img">
+                                             <img src="img/w4.jpg" alt="alt">
+                                         </a>
+                                         <a href="img/w5.jpg" data-fancybox="gallery" class="work_img">
+                                             <img src="img/w5.jpg" alt="alt">
+                                         </a>
                                      </div>
                                  </div>
                              </div>
@@ -330,19 +342,29 @@
                          <div class="row">
                              <div class="col-sm-4">
                                  <div class="work_slide1">
-                                     <img src="img/w1.jpg" alt="alt" class="work_img">
-                                     <img src="img/w2.jpg" alt="alt" class="work_img">
+                                     <a href="img/w1.jpg" data-fancybox="gallery" class="work_img">
+                                         <img src="img/w1.jpg" alt="alt">
+                                     </a>
+                                     <a href="img/w2.jpg" data-fancybox="gallery" class="work_img">
+                                         <img src="img/w2.jpg" alt="alt">
+                                     </a>
                                  </div>
                              </div>
                              <div class="col-sm-4">
                                  <div class="work_slide2">
-                                     <img src="img/w3.jpg" alt="alt" class="work_img">
+                                     <a href="img/w3.jpg" class="work_img" data-fancybox="gallery">
+                                         <img src="img/w3.jpg" alt="alt">
+                                     </a>
                                  </div>
                              </div>
                              <div class="col-sm-4">
                                  <div class="work_slide3">
-                                     <img src="img/w4.jpg" alt="alt" class="work_img">
-                                     <img src="img/w5.jpg" alt="alt" class="work_img">
+                                     <a href="img/w4.jpg" data-fancybox="gallery" class="work_img">
+                                         <img src="img/w4.jpg" alt="alt">
+                                     </a>
+                                     <a href="img/w5.jpg" data-fancybox="gallery" class="work_img">
+                                         <img src="img/w5.jpg" alt="alt">
+                                     </a>
                                  </div>
                              </div>
                          </div>
@@ -422,7 +444,7 @@
                                   <div class="review_slide">
                                       <div class="review_slide--top">
                                           <span class="review_slide--name">Евгений Арсенов</span>
-                                          <time class="review_slide--time">18.06.2020</time>
+                                          <p class="review_slide--time">18.06.2020</p>
                                       </div>
                                       <div class="review_slide--review">
                                           <div class="review_slide--video">
@@ -438,7 +460,7 @@
                                   <div class="review_slide review_slide1">
                                       <div class="review_slide--top">
                                           <span class="review_slide--name">Евгений Арсенов</span>
-                                          <time class="review_slide--time">18.06.2020</time>
+                                          <p class="review_slide--time">18.06.2020</p>
                                       </div>
                                       <div class="review_slide--review">
                                           <p class="review_slide--italic">
@@ -449,7 +471,7 @@
                                   <div class="review_slide review_slide2">
                                       <div class="review_slide--top">
                                           <span class="review_slide--name">Евгений Арсенов</span>
-                                          <time class="review_slide--time">18.06.2020</time>
+                                          <p class="review_slide--time">18.06.2020</p>
                                       </div>
                                       <div class="review_slide--review">
                                           <p class="review_slide--italic">
@@ -466,7 +488,7 @@
                                   <div class="review_slide">
                                       <div class="review_slide--top">
                                           <span class="review_slide--name">Евгений Арсенов</span>
-                                          <time class="review_slide--time">18.06.2020</time>
+                                          <p class="review_slide--time">18.06.2020</p>
                                       </div>
                                       <div class="review_slide--review">
                                           <div class="review_slide--video">
@@ -482,7 +504,7 @@
                                   <div class="review_slide review_slide1">
                                       <div class="review_slide--top">
                                           <span class="review_slide--name">Евгений Арсенов</span>
-                                          <time class="review_slide--time">18.06.2020</time>
+                                          <p class="review_slide--time">18.06.2020</p>
                                       </div>
                                       <div class="review_slide--review">
                                           <p class="review_slide--italic">
@@ -493,7 +515,7 @@
                                   <div class="review_slide review_slide2">
                                       <div class="review_slide--top">
                                           <span class="review_slide--name">Евгений Арсенов</span>
-                                          <time class="review_slide--time">18.06.2020</time>
+                                          <p class="review_slide--time">18.06.2020</p>
                                       </div>
                                       <div class="review_slide--review">
                                           <p class="review_slide--italic">
@@ -584,6 +606,7 @@
         </script>
         
         <script src="libs/jquery-3.2.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <script src="libs/jquery.maskedinput.min.js"></script>
         <script src="libs/slick.min.js"></script>
         <script src="js/script.js"></script>

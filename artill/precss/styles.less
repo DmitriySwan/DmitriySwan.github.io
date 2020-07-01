@@ -170,7 +170,7 @@
         &:hover {
             box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
             .example_h3 {
-                font-weight: bold;
+                color: @orange;
             }
         }
         &:hover::after {
@@ -205,6 +205,7 @@
     &_h3 {
         margin-top: 55px;
         font-size: 40px;
+        transition: .5s all;
     }
     &_btn {
         width: 274px;
@@ -559,12 +560,10 @@
             display: none !important;
         } 
     }
-    &_slide {
-        
-    }
     &_img {
         &:nth-child(2) {
-            margin-top: 27px;
+            margin-top: 30px;
+            display: block;
         }
     }
     &_arrow {
@@ -1415,7 +1414,12 @@
             display: none;
         }
         &_ml {
-            display: none;
+            margin-top: 15px;
+        }
+        &_row {
+            &--end {
+                flex-wrap: wrap;
+            }
         }
     }
 }
@@ -1646,6 +1650,10 @@
         }
         &_btn {
             width: 100%;
+            &:hover {
+                background: #171717;
+                color: #fff;
+            }
         }
         &_form {
             width: 100%;
@@ -1654,6 +1662,9 @@
     .stages {
         padding: 60px 0;
         margin-top: 60px;
+    }
+    .intro_bottom--btn {
+        margin-left: 0;
     }
 }
 

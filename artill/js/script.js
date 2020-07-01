@@ -67,6 +67,13 @@ $(function(){
             $('.btn-up').removeClass('active');
         }
     });
+    
+    $(".intro_bottom--btn").on("click", function(e) {
+        e.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top - 100;
+        $('body,html').animate({scrollTop: top}, 800);
+    });
 });
 
 
