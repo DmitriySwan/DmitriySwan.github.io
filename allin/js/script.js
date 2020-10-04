@@ -15,6 +15,12 @@ $(function(){
         swipe: true,
         infinity: true
     });
+    
+    $('.intro_slider').slick({
+        slidesToShow: 1,
+        swipe: true,
+        infinity: true
+    });
 
 
     $('.types_arrow1').on('click', function() {
