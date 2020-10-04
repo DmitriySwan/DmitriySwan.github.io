@@ -19,7 +19,9 @@ $(function(){
     $('.intro_slider').slick({
         slidesToShow: 1,
         swipe: true,
-        infinity: true
+        infinity: true,
+        dots:true,
+        dotsClass: 'intro_dots'
     });
 
 
@@ -64,6 +66,10 @@ $(function(){
     $(".btn_mnu").click(function() {
         $(this).toggleClass("active");
         $(".header_bottom--menu").toggleClass("active");
+    });
+    
+    $(".header_top--lang").click(function() {
+        $(".header_top--down").toggleClass("active");
     });
     
     $('.two_slider').slick({
