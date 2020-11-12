@@ -1,0 +1,106 @@
+.reset();
+.container {
+    .container();
+}
+* {
+	box-sizing: border-box;
+}
+body {
+    font-family: 'MullerRegular', 'Arial', sans-serif;
+}
+
+b {
+    .b();
+}
+
+@green: #66BF01;
+
+.btn_mnu {
+    width: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+}
+.btn_row {
+    height: 2px;
+    width: 100%;
+    margin: 2px 0;
+    background-color: #000;
+    position: relative;
+    transition: all .5s;
+}
+.btn_mnu.active .btn_row:first-child {
+    transform: rotate(-135deg);
+    top: 6px;
+}
+.btn_mnu.active .btn_row:last-child {
+    transform: rotate(-225deg);
+    top: -6px;
+}
+.btn_mnu.active .btn_row:nth-child(2) {
+    opacity: 0;
+}
+
+.blick() {
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.5em;
+        height: 100%;
+        background-color: rgba(255,255,255, 0.6);
+        transform: translateX(-4em) skewX(-45deg);
+    }
+    &:hover::before {
+        animation: move-light .7s;
+    }
+}
+
+@keyframes move-light {
+    from {
+        transform: translateX(-4em) skewX(-45deg);
+    }
+    to {
+        transform: translateX(11em) skewX(-45deg);
+    }
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.scroll {
+    position: relative;
+    height: 100%;
+}
+
+#basket .fancybox-button svg {
+    top: 9px;
+}
+
+#menu .fancybox-button {
+    right: 10px;
+    padding: 5px;
+    position: fixed;
+    top: 2px;
+}
+
+#menu .fancybox-button svg path{
+    fill: #fff;
+}
+
+.fancybox-can-swipe .fancybox-content {
+    cursor: default;
+}
+
+#basket .ps-scrollbar-y-rail {
+    right: 37px !imortant;
+}

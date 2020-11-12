@@ -1,0 +1,2407 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>start</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        
+        <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="libs/perfect-scrollbar.min.css">
+        <link rel="stylesheet" href="libs/slick.css">
+        <link rel="stylesheet" href="libs/slick-theme.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+      
+        <header class="header">
+        <div class="container">
+            <div class="header_row">
+                <div class="header_top">
+                    <div class="header_logo">
+                        <a href="index.html" class="header_logo--desk">
+                            <img src="img/h-logo.jpg" alt="alt">
+                        </a>
+                        <a href="index.html" class="header_logo--mob">
+                            <img src="img/h-logo--mob.jpg" alt="alt">
+                        </a>
+                        <div class="header_logo--text">
+                            <p>Консервация от производителя</p>
+                        </div>
+                    </div>
+                    <nav class="header_menu" id="menu1">
+                        <ul class="header_menu--ul">
+                            <li class="header_menu--li"><a href="#">О нас</a></li>
+                            <li class="header_menu--li"><a href="#">Отзывы</a></li>
+                            <li class="header_menu--li"><a href="#">Блог</a></li>
+                            <li class="header_menu--li"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header_contant">
+                        <div class="header_soc">
+                            <a href="#" class="header_soc--item"><img src="img/facebok_blac.svg" width="7" height="15" alt="alt"></a>
+                            <a href="#" class="header_soc--item"><img src="img/instagram_black.svg" height="16" width="16" alt="alt"></a>
+                            <a href="#" class="header_soc--message"><img src="img/telegram.png" alt="alt" class="telegram"></a>
+                            <a href="#" class="header_soc--message"><img src="img/viber.png" class="viber" alt="alt"></a>
+                        </div>
+                        <div class="header_tb">
+                            <div class="header_tel">
+                                <a href="tel:+38(000)1112222" class="header_tel--a">+38 (000) 111 22 22</a>
+                                <div class="header_tel--p">
+                                    <p>9.00 - 20.00 без выходных</p>
+                                </div>
+                            </div>
+                            <div class="header_basket">
+                                <a href="#basket" data-fancybox><img src="img/shopping.svg" alt="alt"></a>
+                                <span class="header_basket--count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_bottom">
+                    <nav class="header_nav" id="menu2">
+                        <div class="header_nav--mnu">
+                            <a href="#menu" data-fancybox class="btn_mnu">
+                                <div class="btn_row"></div>
+                                <div class="btn_row"></div>
+                                <div class="btn_row"></div>
+                            </a>
+                            <div class="header_nav--mob">
+                                <p>Меню</p>
+                            </div>
+                            <div class="header_nav--p">
+                                <p>Каталог</p>
+                            </div>
+                        </div>
+                        <ul class="header_nav--ul">
+                            <li class="header_nav--li"><a href="#">Мясные консервы</a></li>
+                            <li class="header_nav--li"><a href="#">Овощная консервация</a></li>
+                            <li class="header_nav--li"><a href="#">Грибы</a></li>
+                            <li class="header_nav--li"><a href="#">Варенье</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#feedback" data-fancybox class="header_callback">Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+    </header>
+          
+        <section class="intro" style="background-image: url(./img/intro-bg.jpg)">
+            <div class="container">
+                <div class="intro_row">
+                    <div class="intro_block">
+                        <div class="intro_h1">
+                            <h1>
+                                При покупке 2х мясных консерв - 
+                                <span class="big">
+                                    <span class="green">банка варенья</span> в подарок!
+                                </span>
+                            </h1>
+                        </div>
+                        <div class="intro_desc">
+                            <p>
+                                <b>Экологически чистая продукция</b>
+                                от отечественного производителя по закупочным ценам
+                            </p>
+                        </div>
+                        <a href="#catalog" class="intro_btn">
+                            <p>выбрать товар</p>
+                        </a>
+                        <div class="intro_trig">
+                            <div class="intro_trig--one">
+                                <img src="img/intro1.png" alt="alt">
+                                <div class="intro_trig--text">
+                                    <div class="intro_trig--title">
+                                        <p>Контроль качества</p>
+                                    </div>
+                                    <div class="intro_trig--desc">
+                                        <p>Внедрена система контроля качества НАССР на всех этапах производства</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="intro_trig--two">
+                                <img src="img/intro2.png" alt="alt">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about" style="background-image: url(./img/desc-bg.jpg)">
+            <div class="container">
+                <div class="about_row">
+                    <div class="about_text">
+                        <div class="about_text--h2">
+                            <h2>Естественный вкус и   
+                                <span class="green">натуральные инградиенты</span>
+                            </h2> 
+                        </div>
+                        <div class="about_text--p">
+                            <p>Мы делаем консервы 20 лет и за это время научились создавать вкусный и полезный продукт <b>вкусный и полезный продукт</b>. <span>Мы котролируем каждую партию сырья и гордимся качеством нашей консервации!</span></p>
+                        </div>
+                        <div class="about_trig">
+                            <div class="about_trig--row">
+                                <div class="about_item">
+                                   <div class="about_item--img">
+                                       <img src="img/about_trig1.svg" alt="alt" class="eco" width="39" height="39">
+                                   </div>
+                                    <div class="about_item--h3">
+                                        <h3>Экологически чистая продукция</h3>
+                                    </div>
+                                    <div class="about_item--p">
+                                        <p>Честный и натуральный продукт без консервантов, искусственных красителей красителей и эмульгаторов.</p>
+                                    </div>
+                                </div>
+                                <div class="about_item">
+                                    <div class="about_item--img">
+                                        <img src="img/about_trig2.svg" alt="alt" class="leaf">
+                                    </div>
+                                    <div class="about_item--h3">
+                                        <h3>Без добавок и усилителей вкуса</h3>
+                                    </div>
+                                    <div class="about_item--p">
+                                        <p>Только натуральное качественное мясо, специи и бульон, выделившийся из мяса в процессе готовки.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="about_trig--ul">
+                                <li class="about_trig--li">
+                                    <p>Без ГМО</p>
+                                </li>
+                                <li class="about_trig--li">
+                                    <p>Без ароматизаторов</p>
+                                </li>
+                                <li class="about_trig--li">
+                                    <p>Уникальная рецептура</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about_video">
+                        <a href="#video" data-fancybox class="about_video--play">        
+                            <img src="img/play.svg" alt="alt" class="play">
+                        </a>
+                        <div class="about_video--text">
+                            <div class="about_video--b">
+                                <p>
+                                    <b>Смотрите видео</b>
+                                </p>
+                            </div>
+                            <div class="about_video--r">
+                                <p>2 минуты о нас</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        
+        <section class="category">
+           <div class="container">
+               <img src="img/c-leaf1.png" alt="alt" class="leaf1">
+               <img src="img/c-leaf2.png" alt="alt" class="leaf2">
+               <img src="img/c-leaf3.png" alt="alt" class="leaf3">
+               <img src="img/pngwing.png" alt="alt" class="wing">
+               <div class="category_top">
+                   <div class="h2">Категории товаров</div>
+                   <div class="category_arrows">
+                       <div class="category_arrow category_arrow1">
+                           <img src="img/ct-arrow--left.svg" alt="alt">
+                       </div>
+                       <div class="category_arrow category_arrow2">
+                           <img src="img/ct-arrow--right.svg" alt="alt">
+                       </div>
+                   </div>
+               </div>
+               <div class="category_slider">
+                   <div>
+                       <div class="category_item">
+                           <img src="img/category-slide1.jpg" alt="alt" class="category_item--img">
+                           <div class="category_item--title">Мясная консервация</div>
+                           <div class="category_item--p">Мясная линейка</div>
+                       </div>
+                   </div>
+                   <div>
+                       <div class="category_item">
+                           <img src="img/category-slide2.jpg" alt="alt" class="category_item--img">
+                           <div class="category_item--title">Каши с мясом</div>
+                           <div class="category_item--p">Каши с мясом на любой вкус</div>
+                       </div>
+                   </div>
+                   <div>
+                       <div class="category_item">
+                           <img src="img/category-slide3.jpg" alt="alt" class="category_item--img">
+                           <div class="category_item--title">Овощная консервация</div>
+                           <div class="category_item--p">Горошек, перец, икра и тд.</div>
+                       </div>
+                   </div>
+                   <div>
+                       <div class="category_item">
+                           <img src="img/category-slide4.jpg" alt="alt" class="category_item--img">
+                           <div class="category_item--title">Варенье и джемы</div>
+                           <div class="category_item--p">Вишни, смородина, малина и тд.</div>
+                       </div>
+                   </div>
+                   <div>
+                       <div class="category_item">
+                           <img src="img/category-slide1.jpg" alt="alt" class="category_item--img">
+                           <div class="category_item--title">Мясная консервация</div>
+                           <div class="category_item--p">Мясная линейка</div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </section>
+        
+        <section class="catalog" id="catalog">
+            <div class="container">
+                <div class="h2">Каталог товаров</div>
+                <div class="catalog_click">
+                    Все товары
+                </div>
+                <div class="catalog_tabs">
+                    <span class="catalog_tab">Все товары</span>
+                    <span class="catalog_tab">Мясные консервы</span>
+                    <span class="catalog_tab">Каши с мясом</span>     <span class="catalog_tab">Овощные консервы</span>
+                    <span class="catalog_tab">Варенье и джемы</span>
+                    <span class="catalog_tab">Корм для животных</span>        
+                </div>
+                <div class="catalog_content">
+                    <div class="catalog_item">
+                        <div class="catalog_row">
+                            <div class="catalog_card">
+                                <div class="catalog_card--hit">
+                                    Хит продаж
+                                </div>
+                                <div class="catalog_card--img">
+                                    <img src="img/card1.png" alt="alt">
+                                </div>
+                                <div class="catalog_card--title">
+                                    Консервы мясные. 
+                                    Свинина тушенная 
+                                </div>
+                                <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                                <div class="catalog_card--flex catalog_card--flex1">
+                                    <div class="catalog_card--price">57 грн</div>
+                                    <div class="catalog_card--weight">480 г</div>
+                                </div>
+                                <div class="catalog_card--flex catalog_card--flex2">
+                                    <a href="#" class="catalog_card--info">Подробнее</a>
+                                    <a href="#basket" data-fancybox class="catalog_card--order">
+                                        <img src="img/basket.svg" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog_card">
+                                <div class="catalog_card--img">
+                                    <img src="img/card2.png" alt="alt">
+                                </div>
+                                <div class="catalog_card--title">
+                                    Мясо курицы в собственном соку
+                                </div>
+                                <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                                <div class="catalog_card--flex catalog_card--flex1">
+                                    <div class="catalog_card--price">37 грн</div>
+                                    <div class="catalog_card--weight">500 г</div>
+                                </div>
+                                <div class="catalog_card--flex catalog_card--flex2">
+                                    <a href="#" class="catalog_card--info">Подробнее</a>
+                                    <a href="#basket" data-fancybox class="catalog_card--order">
+                                        <img src="img/basket.svg" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog_card">
+                                <div class="catalog_card--hit">
+                                    Хит продаж
+                                </div>
+                                <div class="catalog_card--img">
+                                    <img src="img/card3.png" alt="alt">
+                                </div>
+                                <div class="catalog_card--title">
+                                    Консервы мясные.
+                                    Свинина тушенная
+                                </div>
+                                <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                                <div class="catalog_card--flex catalog_card--flex1">
+                                    <div class="catalog_card--price">47 грн</div>
+                                    <div class="catalog_card--weight">500 г</div>
+                                </div>
+                                <div class="catalog_card--flex catalog_card--flex2">
+                                    <a href="#" class="catalog_card--info">Подробнее</a>
+                                    <a href="#basket" data-fancybox class="catalog_card--order">
+                                        <img src="img/basket.svg" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog_card">
+                                <div class="catalog_card--hit">
+                                    Хит продаж
+                                </div>
+                                <div class="catalog_card--img">
+                                    <img src="img/card4.png" alt="alt">
+                                </div>
+                                <div class="catalog_card--title">
+                                    Мясо курицы в собственном соку
+                                </div>
+                                <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                                <div class="catalog_card--flex catalog_card--flex1">
+                                    <div class="catalog_card--price">34 грн</div>
+                                    <div class="catalog_card--weight">500 г</div>
+                                </div>
+                                <div class="catalog_card--flex catalog_card--flex2">
+                                    <a href="#" class="catalog_card--info">Подробнее</a>
+                                    <a href="#basket" data-fancybox class="catalog_card--order">
+                                        <img src="img/basket.svg" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog_card">
+                                <div class="catalog_card--hit">
+                                    Хит продаж
+                                </div>
+                                <div class="catalog_card--img">
+                                    <img src="img/card5.png" alt="alt">
+                                </div>
+                                <div class="catalog_card--title">
+                                    Консервированные грибы шампиньоны
+                                </div>
+                                <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                                <div class="catalog_card--flex catalog_card--flex1">
+                                    <div class="catalog_card--price">35 грн</div>
+                                    <div class="catalog_card--weight">500 г</div>
+                                </div>
+                                <div class="catalog_card--flex catalog_card--flex2">
+                                    <a href="#" class="catalog_card--info">Подробнее</a>
+                                    <a href="#basket" data-fancybox class="catalog_card--order">
+                                        <img src="img/basket.svg" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog_card">
+                                <div class="catalog_card--hit">
+                                    Хит продаж
+                                </div>
+                                <div class="catalog_card--img">
+                                    <img src="img/card6.png" alt="alt">
+                                </div>
+                                <div class="catalog_card--title">
+                                    Перец острый. Консервированный
+                                </div>
+                                <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                                <div class="catalog_card--flex catalog_card--flex1">
+                                    <div class="catalog_card--price">22 грн</div>
+                                    <div class="catalog_card--weight">280 г</div>
+                                </div>
+                                <div class="catalog_card--flex catalog_card--flex2">
+                                    <a href="#" class="catalog_card--info">Подробнее</a>
+                                    <a href="#basket" data-fancybox class="catalog_card--order">
+                                        <img src="img/basket.svg" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog_card">
+                                <div class="catalog_card--img">
+                                    <img src="img/card7.png" alt="alt">
+                                </div>
+                                <div class="catalog_card--title">
+                                    Икра из кабачков. Консервировання
+                                </div>
+                                <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                                <div class="catalog_card--flex catalog_card--flex1">
+                                    <div class="catalog_card--price">19 грн</div>
+                                    <div class="catalog_card--weight">510 г</div>
+                                </div>
+                                <div class="catalog_card--flex catalog_card--flex2">
+                                    <a href="#" class="catalog_card--info">Подробнее</a>
+                                    <a href="#basket" data-fancybox class="catalog_card--order">
+                                        <img src="img/basket.svg" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog_card">
+                                <div class="catalog_card--hit">
+                                    Хит продаж
+                                </div>
+                                <div class="catalog_card--img">
+                                    <img src="img/card8.png" alt="alt">
+                                </div>
+                                <div class="catalog_card--title">
+                                    Приправа 
+                                    «Аджика грузинская»
+                                </div>
+                                <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                                <div class="catalog_card--flex catalog_card--flex1">
+                                    <div class="catalog_card--price">54 грн</div>
+                                    <div class="catalog_card--weight">125 г</div>
+                                </div>
+                                <div class="catalog_card--flex catalog_card--flex2">
+                                    <a href="#" class="catalog_card--info">Подробнее</a>
+                                    <a href="#basket" data-fancybox class="catalog_card--order">
+                                        <img src="img/basket.svg" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog_card">
+                                <div class="catalog_card--img">
+                                    <img src="img/card9.png" alt="alt">
+                                </div>
+                                <div class="catalog_card--title">
+                                    Каша рисовая с говядиной
+                                </div>
+                                <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                                <div class="catalog_card--flex catalog_card--flex1">
+                                    <div class="catalog_card--price">38 грн</div>
+                                    <div class="catalog_card--weight">305 г</div>
+                                </div>
+                                <div class="catalog_card--flex catalog_card--flex2">
+                                    <a href="#" class="catalog_card--info">Подробнее</a>
+                                    <a href="#basket" data-fancybox class="catalog_card--order">
+                                        <img src="img/basket.svg" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog_card">
+                                <div class="catalog_card--img">
+                                    <img src="img/card10.png" alt="alt">
+                                </div>
+                                <div class="catalog_card--title">
+                                    Каша гречневая со свининой
+                                </div>
+                                <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                                <div class="catalog_card--flex catalog_card--flex1">
+                                    <div class="catalog_card--price">35 грн</div>
+                                    <div class="catalog_card--weight">305 г</div>
+                                </div>
+                                <div class="catalog_card--flex catalog_card--flex2">
+                                    <a href="#" class="catalog_card--info">Подробнее</a>
+                                    <a href="#basket" data-fancybox class="catalog_card--order">
+                                        <img src="img/basket.svg" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog_card">
+                                <div class="catalog_card--img">
+                                    <img src="img/card11.png" alt="alt">
+                                </div>
+                                <div class="catalog_card--title">
+                                    Каша гречневая с говядиной. Каша с мясом
+                                </div>
+                                <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                                <div class="catalog_card--flex catalog_card--flex1">
+                                    <div class="catalog_card--price">46 грн</div>
+                                    <div class="catalog_card--weight">410 г</div>
+                                </div>
+                                <div class="catalog_card--flex catalog_card--flex2">
+                                    <a href="#" class="catalog_card--info">Подробнее</a>
+                                    <a href="#basket" data-fancybox class="catalog_card--order">
+                                        <img src="img/basket.svg" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog_card">
+                                <div class="catalog_card--img">
+                                    <img src="img/card12.png" alt="alt">
+                                </div>
+                                <div class="catalog_card--title">
+                                    Каша перловая со свининой
+                                </div>
+                                <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                                <div class="catalog_card--flex catalog_card--flex1">
+                                    <div class="catalog_card--price">35 грн</div>
+                                    <div class="catalog_card--weight">410 г</div>
+                                </div>
+                                <div class="catalog_card--flex catalog_card--flex2">
+                                    <a href="#" class="catalog_card--info">Подробнее</a>
+                                    <a href="#basket" data-fancybox class="catalog_card--order">
+                                        <img src="img/basket.svg" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="catalog_more">
+                            Показать еще 16 товаров
+                        </div>
+                    </div>
+                    <div class="catalog_item"><div class="catalog_row">
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card1.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервы мясные. 
+                                Свинина тушенная 
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">57 грн</div>
+                                <div class="catalog_card--weight">480 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card2.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Мясо курицы в собственном соку
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">37 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card3.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервы мясные.
+                                Свинина тушенная
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">47 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card4.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Мясо курицы в собственном соку
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">34 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card5.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервированные грибы шампиньоны
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card6.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Перец острый. Консервированный
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">22 грн</div>
+                                <div class="catalog_card--weight">280 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card7.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Икра из кабачков. Консервировання
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">19 грн</div>
+                                <div class="catalog_card--weight">510 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card8.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Приправа 
+                                «Аджика грузинская»
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">54 грн</div>
+                                <div class="catalog_card--weight">125 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card9.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша рисовая с говядиной
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">38 грн</div>
+                                <div class="catalog_card--weight">305 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card10.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша гречневая со свининой
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">305 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card11.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша гречневая с говядиной. Каша с мясом
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">46 грн</div>
+                                <div class="catalog_card--weight">410 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card12.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша перловая со свининой
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">410 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                    <div class="catalog_item"><div class="catalog_row">
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card1.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервы мясные. 
+                                Свинина тушенная 
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">57 грн</div>
+                                <div class="catalog_card--weight">480 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card2.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Мясо курицы в собственном соку
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">37 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card3.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервы мясные.
+                                Свинина тушенная
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">47 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card4.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Мясо курицы в собственном соку
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">34 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card5.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервированные грибы шампиньоны
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card6.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Перец острый. Консервированный
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">22 грн</div>
+                                <div class="catalog_card--weight">280 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card7.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Икра из кабачков. Консервировання
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">19 грн</div>
+                                <div class="catalog_card--weight">510 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card8.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Приправа 
+                                «Аджика грузинская»
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">54 грн</div>
+                                <div class="catalog_card--weight">125 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card9.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша рисовая с говядиной
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">38 грн</div>
+                                <div class="catalog_card--weight">305 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card10.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша гречневая со свининой
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">305 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card11.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша гречневая с говядиной. Каша с мясом
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">46 грн</div>
+                                <div class="catalog_card--weight">410 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card12.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша перловая со свининой
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">410 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                    <div class="catalog_item"><div class="catalog_row">
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card1.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервы мясные. 
+                                Свинина тушенная 
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">57 грн</div>
+                                <div class="catalog_card--weight">480 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card2.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Мясо курицы в собственном соку
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">37 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card3.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервы мясные.
+                                Свинина тушенная
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">47 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card4.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Мясо курицы в собственном соку
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">34 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card5.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервированные грибы шампиньоны
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card6.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Перец острый. Консервированный
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">22 грн</div>
+                                <div class="catalog_card--weight">280 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card7.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Икра из кабачков. Консервировання
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">19 грн</div>
+                                <div class="catalog_card--weight">510 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card8.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Приправа 
+                                «Аджика грузинская»
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">54 грн</div>
+                                <div class="catalog_card--weight">125 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card9.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша рисовая с говядиной
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">38 грн</div>
+                                <div class="catalog_card--weight">305 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card10.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша гречневая со свининой
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">305 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card11.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша гречневая с говядиной. Каша с мясом
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">46 грн</div>
+                                <div class="catalog_card--weight">410 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card12.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша перловая со свининой
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">410 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                    <div class="catalog_item"><div class="catalog_row">
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card1.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервы мясные. 
+                                Свинина тушенная 
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">57 грн</div>
+                                <div class="catalog_card--weight">480 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card2.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Мясо курицы в собственном соку
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">37 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card3.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервы мясные.
+                                Свинина тушенная
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">47 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card4.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Мясо курицы в собственном соку
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">34 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card5.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервированные грибы шампиньоны
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card6.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Перец острый. Консервированный
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">22 грн</div>
+                                <div class="catalog_card--weight">280 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card7.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Икра из кабачков. Консервировання
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">19 грн</div>
+                                <div class="catalog_card--weight">510 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card8.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Приправа 
+                                «Аджика грузинская»
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">54 грн</div>
+                                <div class="catalog_card--weight">125 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card9.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша рисовая с говядиной
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">38 грн</div>
+                                <div class="catalog_card--weight">305 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card10.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша гречневая со свининой
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">305 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card11.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша гречневая с говядиной. Каша с мясом
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">46 грн</div>
+                                <div class="catalog_card--weight">410 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card12.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша перловая со свининой
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">410 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                    <div class="catalog_item"><div class="catalog_row">
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card1.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервы мясные. 
+                                Свинина тушенная 
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">57 грн</div>
+                                <div class="catalog_card--weight">480 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card2.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Мясо курицы в собственном соку
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">37 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card3.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервы мясные.
+                                Свинина тушенная
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">47 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card4.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Мясо курицы в собственном соку
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">34 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card5.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Консервированные грибы шампиньоны
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">500 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card6.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Перец острый. Консервированный
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">22 грн</div>
+                                <div class="catalog_card--weight">280 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card7.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Икра из кабачков. Консервировання
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">19 грн</div>
+                                <div class="catalog_card--weight">510 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--hit">
+                                Хит продаж
+                            </div>
+                            <div class="catalog_card--img">
+                                <img src="img/card8.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Приправа 
+                                «Аджика грузинская»
+                            </div>
+                            <div class="catalog_card--p">ТМ «Бим Бом»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">54 грн</div>
+                                <div class="catalog_card--weight">125 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card9.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша рисовая с говядиной
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">38 грн</div>
+                                <div class="catalog_card--weight">305 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card10.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша гречневая со свининой
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">305 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card11.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша гречневая с говядиной. Каша с мясом
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">46 грн</div>
+                                <div class="catalog_card--weight">410 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog_card">
+                            <div class="catalog_card--img">
+                                <img src="img/card12.png" alt="alt">
+                            </div>
+                            <div class="catalog_card--title">
+                                Каша перловая со свининой
+                            </div>
+                            <div class="catalog_card--p">ТМ «100% Удачный выбор»</div>
+                            <div class="catalog_card--flex catalog_card--flex1">
+                                <div class="catalog_card--price">35 грн</div>
+                                <div class="catalog_card--weight">410 г</div>
+                            </div>
+                            <div class="catalog_card--flex catalog_card--flex2">
+                                <a href="#" class="catalog_card--info">Подробнее</a>
+                                <a href="#basket" data-fancybox class="catalog_card--order">
+                                    <img src="img/basket.svg" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews_top">
+                    <div class="h2">Отзывы наших клиентов</div>
+                    <a href="#" class="reviews_btn">
+                        Все отзывы
+                    </a>
+                </div>
+                <div class="reviews_slider">
+                    <div>
+                        <div class="reviews_item">
+                            <div class="reviews_arrow1">
+                                <img src="img/reviews-back.svg" alt="alt">
+                            </div>
+                            <div class="reviews_arrow2">
+                                <img src="img/reviews-next.svg" alt="alt">
+                            </div>
+                            <div class="reviews_item--top">
+                                <div class="reviews_item--text">
+                                    <div class="reviews_item--name">Алексей Андреевич</div>
+                                    <div class="reviews_item--date">12.08.2020</div>
+                                </div>
+                                <div class="reviews_item--stars">
+                                    <img src="img/reviews-star.svg" alt="alt">
+                                    <img src="img/reviews-star.svg" alt="alt">
+                                    <img src="img/reviews-star.svg" alt="alt">
+                                    <img src="img/reviews-star.svg" alt="alt">
+                                    <img src="img/reviews-star--gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="reviews_item--p">
+                                Хочу поблагодарить компанию «» за очень вкусные консервы консервы. Постоянно беру, когда выбираемся с мужиками на рыбалку, все довольны и сыты!  Отличный выбор, советую! 
+                            </div>
+                            <div class="reviews_item--graphics">
+                                <img src="img/reviews1.jpg" alt="alt">
+                                <img src="img/reviews2.jpg" alt="alt">
+                                <img src="img/reviews3.jpg" alt="alt">
+                            </div>
+                            <a href="https://www.facebook.com/alexei_ali" class="reviews_item--fb">facebook.com/alexei_ali</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="reviews_item">
+                            <div class="reviews_arrow1">
+                                <img src="img/reviews-back.svg" alt="alt">
+                            </div>
+                            <div class="reviews_arrow2">
+                                <img src="img/reviews-next.svg" alt="alt">
+                            </div>
+                            <div class="reviews_item--top">
+                                <div class="reviews_item--text">
+                                    <div class="reviews_item--name">Алексей Андреевич</div>
+                                    <div class="reviews_item--date">12.08.2020</div>
+                                </div>
+                                <div class="reviews_item--stars">
+                                    <img src="img/reviews-star.svg" alt="alt">
+                                    <img src="img/reviews-star.svg" alt="alt">
+                                    <img src="img/reviews-star.svg" alt="alt">
+                                    <img src="img/reviews-star.svg" alt="alt">
+                                    <img src="img/reviews-star--gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="reviews_item--p">
+                                Хочу поблагодарить компанию «» за очень вкусные консервы консервы. Постоянно беру, когда выбираемся с мужиками на рыбалку, все довольны и сыты!  Отличный выбор, советую! 
+                            </div>
+                            <div class="reviews_item--graphics">
+                                <img src="img/reviews1.jpg" alt="alt">
+                                <img src="img/reviews2.jpg" alt="alt">
+                                <img src="img/reviews3.jpg" alt="alt">
+                            </div>
+                            <a href="https://www.facebook.com/alexei_ali" class="reviews_item--fb">facebook.com/alexei_ali</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="reviews_item">
+                            <div class="reviews_arrow1">
+                                <img src="img/reviews-back.svg" alt="alt">
+                            </div>
+                            <div class="reviews_arrow2">
+                                <img src="img/reviews-next.svg" alt="alt">
+                            </div>
+                            <div class="reviews_item--top">
+                                <div class="reviews_item--text">
+                                    <div class="reviews_item--name">Алексей Андреевич</div>
+                                    <div class="reviews_item--date">12.08.2020</div>
+                                </div>
+                                <div class="reviews_item--stars">
+                                    <img src="img/reviews-star.svg" alt="alt">
+                                    <img src="img/reviews-star.svg" alt="alt">
+                                    <img src="img/reviews-star.svg" alt="alt">
+                                    <img src="img/reviews-star.svg" alt="alt">
+                                    <img src="img/reviews-star--gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="reviews_item--p">
+                                Хочу поблагодарить компанию «» за очень вкусные консервы консервы. Постоянно беру, когда выбираемся с мужиками на рыбалку, все довольны и сыты!  Отличный выбор, советую! 
+                            </div>
+                            <div class="reviews_item--graphics">
+                                <img src="img/reviews1.jpg" alt="alt">
+                                <img src="img/reviews2.jpg" alt="alt">
+                                <img src="img/reviews3.jpg" alt="alt">
+                            </div>
+                            <a href="https://www.facebook.com/alexei_ali" class="reviews_item--fb">facebook.com/alexei_ali</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <section class="blog">
+            <div class="container">
+                <div class="h2">
+                    Наши статьи и новости
+                </div>
+                <div class="blog_row">
+                    <div class="blog_item">
+                        <div class="blog_item--img">
+                            <img src="img/image.jpg" alt="alt">
+                            <div class="blog_item--date">
+                                <span>24.09</span>
+                            </div>
+                        </div>
+                        <div class="blog_item--title">
+                            Готовим картофель с говяжей тушенкой
+                        </div>
+                        <div class="blog_item--p">
+                            Пожалуй одно из самых простых...
+                        </div>
+                        <a href="#" class="blog_item--btn">
+                            Рецепты
+                        </a>
+                    </div>
+                    <div class="blog_item">
+                        <div class="blog_item--img">
+                            <img src="img/image.jpg" alt="alt">
+                            <div class="blog_item--date">
+                                <span>24.09</span>
+                            </div>
+                        </div>
+                        <div class="blog_item--title">
+                            Готовим картофель с говяжей тушенкой
+                        </div>
+                        <div class="blog_item--p">
+                            Пожалуй одно из самых простых...
+                        </div>
+                        <a href="#" class="blog_item--btn">
+                            Рецепты
+                        </a>
+                    </div>
+                    <div class="blog_item">
+                        <div class="blog_item--img">
+                            <img src="img/image.jpg" alt="alt">
+                            <div class="blog_item--date">
+                                <span>24.09</span>
+                            </div>
+                        </div>
+                        <div class="blog_item--title">
+                            Готовим картофель с говяжей тушенкой
+                        </div>
+                        <div class="blog_item--p">
+                            Пожалуй одно из самых простых...
+                        </div>
+                        <a href="#" class="blog_item--btn">
+                            Рецепты
+                        </a>
+                    </div>
+                    <div class="blog_item">
+                        <div class="blog_item--img">
+                            <img src="img/image.jpg" alt="alt">
+                            <div class="blog_item--date">
+                                <span>24.09</span>
+                            </div>
+                        </div>
+                        <div class="blog_item--title">
+                            Готовим картофель с говяжей тушенкой
+                        </div>
+                        <div class="blog_item--p">
+                            Пожалуй одно из самых простых...
+                        </div>
+                        <a href="#" class="blog_item--btn">
+                            Рецепты
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="desc">
+            <div class="container">
+                <div class="desc_h2">Подробнее о нашем магазине</div>
+                <div class="desc_p scroll">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales</p>
+
+                    <p>pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctu</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales</p>
+
+                    <p>pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctu</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="block">
+            <div class="container">
+                <div class="block_row">
+                    <div class="block_item">
+                        <img src="img/block1.jpg" alt="alt">
+                        <div class="block_item--title">
+                            Cкидка 10% при заказе
+                            от 1500 грн
+                        </div>
+                        <div class="block_item--p">
+                            Больше значит дешевле
+                        </div>
+                    </div>
+                    <div class="block_item">
+                        <img src="img/block2.jpg" alt="alt">
+                        <div class="block_item--title">
+                            Оплата при получении
+                        </div>
+                        <div class="block_item--p">
+                            Оплачивайте при получении или на карту
+                        </div>
+                    </div>
+                    <div class="block_item">
+                        <img src="img/block3.jpg" alt="alt">
+                        <div class="block_item--title">
+                            Бесплатная доставка
+                        </div>
+                        <div class="block_item--p">
+                            Бесплатная доставка при заказе от 500 грн
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts_row">
+                    <div class="contacts_text">
+                        <div class="contacts_text--title">Контакты</div>
+                        <div class="contacts_text--tels">
+                            <div class="contacts_text--tel">
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3249 10.4219L14.278 11.6375C14.378 11.6938 14.403 11.7969 14.3593 11.875L13.5186 13.3438C13.0499 14.1625 12.0311 14.675 11.1905 14.3C6.21864 12.0875 3.75614 9.65626 1.69989 4.80939C1.34052 3.96251 1.83739 2.95001 2.65614 2.48126L4.12489 1.64064C4.17489 1.61251 4.29989 1.58126 4.34989 1.70314L5.58739 3.69376C5.61864 3.75001 5.59677 3.85001 5.52177 3.89689L5.09052 4.17189C4.50302 4.54689 4.26552 5.28439 4.52489 5.92189C5.09677 7.33126 6.78739 9.10939 6.85927 9.18439C6.95302 9.27501 8.68427 10.9188 10.0811 11.4781C10.7186 11.7344 11.4499 11.4938 11.8249 10.9094L12.0999 10.475C12.1343 10.425 12.2343 10.3656 12.3249 10.4219ZM11.7343 15.6563C12.8936 15.6563 14.0218 15.0313 14.6249 13.9781L15.4655 12.5094C15.8593 11.8188 15.6218 10.9375 14.9311 10.5406L12.978 9.32501C12.2905 8.93126 11.4405 9.13751 11.0249 9.79064L10.7499 10.225C10.7061 10.2906 10.6249 10.3219 10.5593 10.2938C9.39364 9.82814 7.78114 8.29689 7.76552 8.28439C7.76552 8.28439 6.19052 6.62501 5.71239 5.44376C5.68427 5.37501 5.71552 5.29376 5.78114 5.25001L6.21239 4.97501C6.86239 4.55939 7.07177 3.71251 6.68739 3.04064L5.44989 1.04689C5.26864 0.734389 4.50614 1.35601e-05 3.49052 0.531264L2.02177 1.37189C0.693641 2.13439 0.0436401 3.73439 0.478015 5.17501C1.19364 7.55314 2.54052 9.68439 4.48114 11.5156C6.31239 13.4531 8.44364 14.8 10.8218 15.5188C11.1218 15.6125 11.428 15.6563 11.7343 15.6563Z" fill="#272A2F"/>
+                                    <path d="M14.5187 6.85314C14.8719 6.85314 15.1562 6.56876 15.1562 6.21564C15.1562 3.25314 12.7469 0.840637 9.78438 0.840637C9.43125 0.840637 9.14687 1.12501 9.14687 1.47814C9.14687 1.83126 9.43125 2.11564 9.78438 2.11564C12.0438 2.11564 13.8812 3.95314 13.8812 6.21251C13.8812 6.56876 14.1656 6.85314 14.5187 6.85314Z" fill="#272A2F"/>
+                                    <path d="M11.7717 6.85314C12.1248 6.85314 12.4092 6.56876 12.4092 6.21564C12.4092 4.76876 11.2311 3.59064 9.78418 3.59064C9.43105 3.59064 9.14668 3.87501 9.14668 4.22814C9.14668 4.58126 9.43105 4.86564 9.78418 4.86564C10.5279 4.86564 11.1342 5.47189 11.1342 6.21564C11.1342 6.56876 11.4186 6.85314 11.7717 6.85314Z" fill="#272A2F"/>
+                                </svg>
+                                <a href="tel:+38(067)3813106">+38 (067) 381 31 06</a>
+                            </div>
+                            <div class="contacts_text--tel">
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3249 10.4219L14.278 11.6375C14.378 11.6938 14.403 11.7969 14.3593 11.875L13.5186 13.3438C13.0499 14.1625 12.0311 14.675 11.1905 14.3C6.21864 12.0875 3.75614 9.65626 1.69989 4.80939C1.34052 3.96251 1.83739 2.95001 2.65614 2.48126L4.12489 1.64064C4.17489 1.61251 4.29989 1.58126 4.34989 1.70314L5.58739 3.69376C5.61864 3.75001 5.59677 3.85001 5.52177 3.89689L5.09052 4.17189C4.50302 4.54689 4.26552 5.28439 4.52489 5.92189C5.09677 7.33126 6.78739 9.10939 6.85927 9.18439C6.95302 9.27501 8.68427 10.9188 10.0811 11.4781C10.7186 11.7344 11.4499 11.4938 11.8249 10.9094L12.0999 10.475C12.1343 10.425 12.2343 10.3656 12.3249 10.4219ZM11.7343 15.6563C12.8936 15.6563 14.0218 15.0313 14.6249 13.9781L15.4655 12.5094C15.8593 11.8188 15.6218 10.9375 14.9311 10.5406L12.978 9.32501C12.2905 8.93126 11.4405 9.13751 11.0249 9.79064L10.7499 10.225C10.7061 10.2906 10.6249 10.3219 10.5593 10.2938C9.39364 9.82814 7.78114 8.29689 7.76552 8.28439C7.76552 8.28439 6.19052 6.62501 5.71239 5.44376C5.68427 5.37501 5.71552 5.29376 5.78114 5.25001L6.21239 4.97501C6.86239 4.55939 7.07177 3.71251 6.68739 3.04064L5.44989 1.04689C5.26864 0.734389 4.50614 1.35601e-05 3.49052 0.531264L2.02177 1.37189C0.693641 2.13439 0.0436401 3.73439 0.478015 5.17501C1.19364 7.55314 2.54052 9.68439 4.48114 11.5156C6.31239 13.4531 8.44364 14.8 10.8218 15.5188C11.1218 15.6125 11.428 15.6563 11.7343 15.6563Z" fill="#272A2F"/>
+                                    <path d="M14.5187 6.85314C14.8719 6.85314 15.1562 6.56876 15.1562 6.21564C15.1562 3.25314 12.7469 0.840637 9.78438 0.840637C9.43125 0.840637 9.14687 1.12501 9.14687 1.47814C9.14687 1.83126 9.43125 2.11564 9.78438 2.11564C12.0438 2.11564 13.8812 3.95314 13.8812 6.21251C13.8812 6.56876 14.1656 6.85314 14.5187 6.85314Z" fill="#272A2F"/>
+                                    <path d="M11.7717 6.85314C12.1248 6.85314 12.4092 6.56876 12.4092 6.21564C12.4092 4.76876 11.2311 3.59064 9.78418 3.59064C9.43105 3.59064 9.14668 3.87501 9.14668 4.22814C9.14668 4.58126 9.43105 4.86564 9.78418 4.86564C10.5279 4.86564 11.1342 5.47189 11.1342 6.21564C11.1342 6.56876 11.4186 6.85314 11.7717 6.85314Z" fill="#272A2F"/>
+                                </svg>
+                                <a href="tel:+38(067)9553545">+38 (067) 955 35 45</a>
+                            </div>
+                        </div>
+                        <div class="contacts_text--b">У вас остались вопросы?</div>
+                        <div class="contacts_text--p">Оставьте заявку и мы свяжемся с вами и подскажем :) </div>
+                        <a href="#feedback" data-fancybox class="contacts_text--btn">перезвоните мне</a>
+                    </div>
+                    <div class="contacts_white">
+                        <div class="contacts_white--title">Находимся в санаторной зоне и ждем Вас в гости!</div>
+                        <div class="contacts_white--desc">Мы на связи: 8:00 - 19:00</div>
+                        <div class="contacts_white--item">
+                            <img src="img/geo.svg" alt="alt">
+                            <div class="contacts_white--text">
+                                <div class="contacts_white--b">Адрес:</div>
+                                <div class="contacts_white--p">Ул. Заводская, 1 с. Сатановка, 
+                                    Городокский район, Хмельницкая область</div>
+                            </div>
+                        </div>
+                        <div class="contacts_white--item">
+                            <img src="img/mail.svg" alt="alt">
+                            <div class="contacts_white--text">
+                                <div class="contacts_white--b">Почта:</div>
+                                <a href="mailto:gumennalarisa392@gmail.com" class="contacts_white--mail">gumennalarisa392@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts_map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10412.89440128127!2d26.255214781079605!3d49.272160169280475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473192fd43e643dd%3A0x8a2107ac9dde18ba!2z0KHQsNGC0LDQvdC-0LLQutCwLCDQpdC80LXQu9GM0L3QuNGG0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzMjAzMw!5e0!3m2!1sru!2sua!4v1605121632536!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_row">
+                    <div class="footer_1">
+                        <img src="img/h-logo.jpg" alt="alt">
+                        <div class="footer_1--block">
+                            <p>Консервация от производителя</p>
+                            <a href="#" class="footer_1--a footer_1--a1">Пользовательское соглашение</a>
+                            <a href="#" class="footer_1--a footer_1--a2">Политика конфиденциальности</a>
+                            <div class="footer_1--text">
+                                <p>18+ | 2000-2020</p>
+                                <p>© Все права защищены.</p>
+                                <p>Копирование любых материалов с сайта преследуюется по закону.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_2">
+                        <div class="footer_h3">
+                            <h3>Продукция</h3>
+                        </div>
+                        <nav class="footer_nav">
+                            <ul>
+                                <li class="footer_li"><a href="#">Мясные консервы</a></li>
+                                <li class="footer_li"><a href="#">Каши с овощами</a></li>
+                                <li class="footer_li"><a href="#">Овощная консервация</a></li>
+                                <li class="footer_li"><a href="#">Варенье и джемы</a></li>
+                                <li class="footer_li"><a href="#">Грибы</a></li>
+                                <li class="footer_li"><a href="#">Корм для животных</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer_3">
+                        <div class="footer_h3">
+                            <h3>Компания</h3>
+                        </div>
+                        <nav class="footer_nav">
+                            <ul>
+                                <li class="footer_li"><a href="#">О компании</a></li>
+                                <li class="footer_li"><a href="#">Отзывы о продукции</a></li>
+                                <li class="footer_li"><a href="#">Статьи и новости</a></li>
+                                <li class="footer_li"><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="footer_pay">
+                            <div class="footer_pay--b">
+                                Принимаем к оплате:
+                            </div>
+                            <div class="footer_pay--row">
+                                <img src="img/mastercard.png" alt="alt">
+                                <img src="img/Visa.png" alt="alt">
+                                <img src="img/applepay.png" alt="alt">
+                                <img src="img/gpay.png" alt="alt">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_4">
+                        <div class="footer_h3">
+                            <h3>Мы на связи</h3>
+                        </div>
+                        <div class="footer_tels">
+                            <div class="footer_tel">
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3249 10.4219L14.278 11.6375C14.378 11.6938 14.403 11.7969 14.3593 11.875L13.5186 13.3438C13.0499 14.1625 12.0311 14.675 11.1905 14.3C6.21864 12.0875 3.75614 9.65626 1.69989 4.80939C1.34052 3.96251 1.83739 2.95001 2.65614 2.48126L4.12489 1.64064C4.17489 1.61251 4.29989 1.58126 4.34989 1.70314L5.58739 3.69376C5.61864 3.75001 5.59677 3.85001 5.52177 3.89689L5.09052 4.17189C4.50302 4.54689 4.26552 5.28439 4.52489 5.92189C5.09677 7.33126 6.78739 9.10939 6.85927 9.18439C6.95302 9.27501 8.68427 10.9188 10.0811 11.4781C10.7186 11.7344 11.4499 11.4938 11.8249 10.9094L12.0999 10.475C12.1343 10.425 12.2343 10.3656 12.3249 10.4219ZM11.7343 15.6563C12.8936 15.6563 14.0218 15.0313 14.6249 13.9781L15.4655 12.5094C15.8593 11.8188 15.6218 10.9375 14.9311 10.5406L12.978 9.32501C12.2905 8.93126 11.4405 9.13751 11.0249 9.79064L10.7499 10.225C10.7061 10.2906 10.6249 10.3219 10.5593 10.2938C9.39364 9.82814 7.78114 8.29689 7.76552 8.28439C7.76552 8.28439 6.19052 6.62501 5.71239 5.44376C5.68427 5.37501 5.71552 5.29376 5.78114 5.25001L6.21239 4.97501C6.86239 4.55939 7.07177 3.71251 6.68739 3.04064L5.44989 1.04689C5.26864 0.734389 4.50614 1.35601e-05 3.49052 0.531264L2.02177 1.37189C0.693641 2.13439 0.0436401 3.73439 0.478015 5.17501C1.19364 7.55314 2.54052 9.68439 4.48114 11.5156C6.31239 13.4531 8.44364 14.8 10.8218 15.5188C11.1218 15.6125 11.428 15.6563 11.7343 15.6563Z" fill="#66BF01"/>
+                                    <path d="M14.5187 6.85314C14.8719 6.85314 15.1562 6.56876 15.1562 6.21564C15.1562 3.25314 12.7469 0.840637 9.78438 0.840637C9.43125 0.840637 9.14687 1.12501 9.14687 1.47814C9.14687 1.83126 9.43125 2.11564 9.78438 2.11564C12.0438 2.11564 13.8812 3.95314 13.8812 6.21251C13.8812 6.56876 14.1656 6.85314 14.5187 6.85314Z" fill="#66BF01"/>
+                                    <path d="M11.7717 6.85314C12.1248 6.85314 12.4092 6.56876 12.4092 6.21564C12.4092 4.76876 11.2311 3.59064 9.78418 3.59064C9.43105 3.59064 9.14668 3.87501 9.14668 4.22814C9.14668 4.58126 9.43105 4.86564 9.78418 4.86564C10.5279 4.86564 11.1342 5.47189 11.1342 6.21564C11.1342 6.56876 11.4186 6.85314 11.7717 6.85314Z" fill="#66BF01"/>
+                                </svg>
+                                <a href="tel:+38(067)3813106">+38 (067) 381 31 06</a>
+                            </div>
+                            <div class="footer_tel">
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3249 10.4219L14.278 11.6375C14.378 11.6938 14.403 11.7969 14.3593 11.875L13.5186 13.3438C13.0499 14.1625 12.0311 14.675 11.1905 14.3C6.21864 12.0875 3.75614 9.65626 1.69989 4.80939C1.34052 3.96251 1.83739 2.95001 2.65614 2.48126L4.12489 1.64064C4.17489 1.61251 4.29989 1.58126 4.34989 1.70314L5.58739 3.69376C5.61864 3.75001 5.59677 3.85001 5.52177 3.89689L5.09052 4.17189C4.50302 4.54689 4.26552 5.28439 4.52489 5.92189C5.09677 7.33126 6.78739 9.10939 6.85927 9.18439C6.95302 9.27501 8.68427 10.9188 10.0811 11.4781C10.7186 11.7344 11.4499 11.4938 11.8249 10.9094L12.0999 10.475C12.1343 10.425 12.2343 10.3656 12.3249 10.4219ZM11.7343 15.6563C12.8936 15.6563 14.0218 15.0313 14.6249 13.9781L15.4655 12.5094C15.8593 11.8188 15.6218 10.9375 14.9311 10.5406L12.978 9.32501C12.2905 8.93126 11.4405 9.13751 11.0249 9.79064L10.7499 10.225C10.7061 10.2906 10.6249 10.3219 10.5593 10.2938C9.39364 9.82814 7.78114 8.29689 7.76552 8.28439C7.76552 8.28439 6.19052 6.62501 5.71239 5.44376C5.68427 5.37501 5.71552 5.29376 5.78114 5.25001L6.21239 4.97501C6.86239 4.55939 7.07177 3.71251 6.68739 3.04064L5.44989 1.04689C5.26864 0.734389 4.50614 1.35601e-05 3.49052 0.531264L2.02177 1.37189C0.693641 2.13439 0.0436401 3.73439 0.478015 5.17501C1.19364 7.55314 2.54052 9.68439 4.48114 11.5156C6.31239 13.4531 8.44364 14.8 10.8218 15.5188C11.1218 15.6125 11.428 15.6563 11.7343 15.6563Z" fill="#66BF01"/>
+                                    <path d="M14.5187 6.85314C14.8719 6.85314 15.1562 6.56876 15.1562 6.21564C15.1562 3.25314 12.7469 0.840637 9.78438 0.840637C9.43125 0.840637 9.14687 1.12501 9.14687 1.47814C9.14687 1.83126 9.43125 2.11564 9.78438 2.11564C12.0438 2.11564 13.8812 3.95314 13.8812 6.21251C13.8812 6.56876 14.1656 6.85314 14.5187 6.85314Z" fill="#66BF01"/>
+                                    <path d="M11.7717 6.85314C12.1248 6.85314 12.4092 6.56876 12.4092 6.21564C12.4092 4.76876 11.2311 3.59064 9.78418 3.59064C9.43105 3.59064 9.14668 3.87501 9.14668 4.22814C9.14668 4.58126 9.43105 4.86564 9.78418 4.86564C10.5279 4.86564 11.1342 5.47189 11.1342 6.21564C11.1342 6.56876 11.4186 6.85314 11.7717 6.85314Z" fill="#66BF01"/>
+                                </svg>
+                                <a href="tel:+38(067)9553545">+38 (067) 955 35 45</a>
+                            </div>
+                        </div>
+                        <a href="#" class="footer_mes">
+                            <img src="img/telegram.png" alt="alt">
+                            <p>Напишите нам в Telegram</p>
+                        </a>
+                        <a href="#" class="footer_mes">
+                            <img src="img/viber.png" alt="alt">
+                            <p>Напишите нам в Viber</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <div style="display: none;">
+            <div id="feedback" class="feedback">
+                <p>popup feedback</p>
+            </div>
+        </div>
+       
+        <div style="display: none;">
+            <div id="video" class="video">
+                <p>popup video</p>
+            </div>
+        </div>
+       
+        <div style="display: none;">
+            <div id="basket" class="basket">
+                <div class="basket_title">
+                    <h2>Корзина</h2>
+                </div>
+                <div class="basket_block scroll">
+                    <div class="basket_item">
+                        <img src="img/basket-img.jpg" alt="alt" class="basket_img">
+                        <div class="basket_item--text">
+                            <div class="basket_item--b">
+                                <b>Грибы шампиньоны консервированные целые</b>
+                            </div>
+                            <div class="basket_item--p">
+                                <p>ТМ «Бим Бом»</p>
+                            </div>
+                            <div class="basket_item--p">
+                                <p>500 г</p>
+                            </div>
+                            <div class="basket_item--garbage" id="garbage">
+                                <img src="img/garbage.svg" alt="alt">
+                            </div>
+                        </div>
+                        <div class="basket_item--cp">
+                            <div class="basket_item--count">
+                                <span class="minus">-</span>
+                                <input class="numb" type="text" value="1" size="12">
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="basket_item--price">
+                                <span id="price" value='55'>55</span><span>₴</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket_item">
+                        <img src="img/basket-img.jpg" alt="alt">
+                        <div class="basket_item--text">
+                            <div class="basket_item--b">
+                                <b>Грибы шампиньоны консервированные целые</b>
+                            </div>
+                            <div class="basket_item--p">
+                                <p>ТМ «Бим Бом»</p>
+                            </div>
+                            <div class="basket_item--p">
+                                <p>500 г</p>
+                            </div>
+                            <div class="basket_item--garbage" id="garbage">
+                                <img src="img/garbage.svg" alt="alt">
+                            </div>
+                        </div>
+                        <div class="basket_item--cp">
+                            <div class="basket_item--count">
+                                <span class="minus">-</span>
+                                <input class="numb" type="text" value="1" size="12">
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="basket_item--price">
+                                <span id="price" value='55'>55</span><span>₴</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket_item">
+                        <img src="img/basket-img.jpg" alt="alt">
+                        <div class="basket_item--text">
+                            <div class="basket_item--b">
+                                <b>Грибы шампиньоны консервированные целые</b>
+                            </div>
+                            <div class="basket_item--p">
+                                <p>ТМ «Бим Бом»</p>
+                            </div>
+                            <div class="basket_item--p">
+                                <p>500 г</p>
+                            </div>
+                            <div class="basket_item--garbage" id="garbage">
+                                <img src="img/garbage.svg" alt="alt">
+                            </div>
+                        </div>
+                        <div class="basket_item--cp">
+                            <div class="basket_item--count">
+                                <span class="minus">-</span>
+                                <input class="numb" type="text" value="1" size="12">
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="basket_item--price">
+                                <span id="price" value='55'>55</span><span>₴</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket_bottom">
+                    <a href="#" class="basket_bottom--next">Продолжить покупки</a>
+                    <div class="basket_bottom--around">
+                        <div class="basket_bottom--price">
+                            <span>220</span>
+                            <div class="sign">₴</div>
+                        </div>
+                        <a href="#" class="basket_bottom--btn">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="display: none;">
+            <div id="menu" class="mobmenu">
+                <div class="scroll">
+                    <div class="mobmenu_top">
+                        <a href="index.html" class="mobmenu_logo">
+                            <img src="img/h-logo--mob.jpg" alt="alt">
+                        </a>
+                        <div class="mobmenu_basket">
+                            <a href="#basket" data-fancybox><img src="img/shopping.svg" alt="alt"></a>
+                            <span class="mobmenu_basket--count">0</span>
+                        </div>
+                    </div>
+                    <div class="mobmenu1">
+                        <ul class="mobmenu_ul">
+                            <li class="mobmenu_li">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M13.6362 16.9999H10.8029C10.5097 16.9999 10.2717 16.762 10.2717 16.4687V11.8646C10.2717 11.7668 10.1923 11.6876 10.0945 11.6876H6.90708C6.80942 11.6876 6.73005 11.7668 6.73005 11.8646V16.4687C6.73005 16.762 6.49205 16.9999 6.19881 16.9999H3.36558C2.68207 16.9999 2.12593 16.4439 2.12593 15.7603V9.2084H0.886418C0.398368 9.2084 0.000976562 8.81101 0.000976562 8.32296C0.000976562 8.08859 0.0966929 7.85903 0.263094 7.69263L8.13324 0.147635C8.33868 -0.0493745 8.66305 -0.0493745 8.86849 0.147635L16.7309 7.68407C16.905 7.85903 17.0006 8.08859 17.0006 8.32296C17.0006 8.81101 16.6034 9.2084 16.1153 9.2084H14.8757V15.7603C14.8757 16.4439 14.3197 16.9999 13.6362 16.9999ZM11.3342 15.9375H13.6362C13.7325 15.9375 13.8132 15.8567 13.8132 15.7603V8.67716C13.8132 8.38391 14.0512 8.14592 14.3444 8.14592H15.6768L8.5008 1.26744L1.32492 8.14592H2.65717C2.95042 8.14592 3.18841 8.38391 3.18841 8.67716V15.7603C3.18841 15.8567 3.26921 15.9375 3.36558 15.9375H5.66757V11.8646C5.66757 11.1811 6.22358 10.6251 6.90708 10.6251H10.0945C10.7781 10.6251 11.3342 11.1811 11.3342 11.8646V15.9375Z" fill="#454B50"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="17" height="17" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <a href="#">Главная</a>
+                            </li>
+                            <li class="mobmenu_li">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M6.67857 0H0.607143C0.271558 0 0 0.271558 0 0.607143V6.67857C0 7.01416 0.271558 7.28571 0.607143 7.28571H6.67857C7.01416 7.28571 7.28571 7.01416 7.28571 6.67857V4.85714V0.607143C7.28571 0.271558 7.01416 0 6.67857 0ZM6.07143 6.07143H1.21429V1.21429H6.07143V6.07143Z" fill="#272A2F"/>
+                                        <path d="M6.67857 9.71426H0.607143C0.271558 9.71426 0 9.98582 0 10.3214V16.3928C0 16.7284 0.271558 17 0.607143 17H6.67857C7.01416 17 7.28571 16.7284 7.28571 16.3928V10.3214C7.28571 9.98582 7.01416 9.71426 6.67857 9.71426ZM6.07143 15.7857H1.21429V10.9285H6.07143V15.7857Z" fill="#272A2F"/>
+                                        <path d="M16.3929 9.71426H12.1429H10.3215C9.98591 9.71426 9.71436 9.98582 9.71436 10.3214V16.3928C9.71436 16.7284 9.98591 17 10.3215 17H16.3929C16.7285 17 17.0001 16.7284 17.0001 16.3928V10.3214C17.0001 9.98582 16.7285 9.71426 16.3929 9.71426ZM15.7858 15.7857H10.9286V10.9285H15.7858V15.7857Z" fill="#272A2F"/>
+                                        <path d="M16.8221 5.2864C17.0592 5.04925 17.0592 4.66502 16.8221 4.42787L12.5721 0.177865C12.3349 -0.0592884 11.9507 -0.0592884 11.7135 0.177865L7.46352 4.42787C7.34492 4.54646 7.28564 4.70178 7.28564 4.85713C7.28564 5.01249 7.34492 5.16781 7.46352 5.2864L11.7135 9.5364C11.8321 9.655 11.9874 9.71428 12.1428 9.71428C12.2981 9.71428 12.4535 9.655 12.5721 9.5364L16.8221 5.2864ZM8.75132 4.85713L12.1428 1.46567L15.5343 4.85713L12.1428 8.2486L8.75132 4.85713Z" fill="#272A2F"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="17" height="17" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <a href="#">Каталог товаров</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobmenu1">
+                        <ul class="mobmenu_ul">
+                            <li class="mobmenu_li">
+                                <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.09995L10.129 7.5L1 13.9L1 1.09995Z" stroke="#454B50"/>
+                                </svg>
+                                <a href="#">Мясные консервы</a>
+                            </li>
+                            <li class="mobmenu_li">
+                                <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.09995L10.129 7.5L1 13.9L1 1.09995Z" stroke="#454B50"/>
+                                </svg>
+                                <a href="#">Каши с мясом</a>
+                            </li>
+                            <li class="mobmenu_li">
+                                <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.09995L10.129 7.5L1 13.9L1 1.09995Z" stroke="#454B50"/>
+                                </svg>
+                                <a href="#">Овощная консервация</a>
+                            </li>
+                            <li class="mobmenu_li">
+                                <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.09995L10.129 7.5L1 13.9L1 1.09995Z" stroke="#454B50"/>
+                                </svg>
+                                <a href="#">Варенье и джемы</a>
+                            </li>
+                            <li class="mobmenu_li"><svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.09995L10.129 7.5L1 13.9L1 1.09995Z" stroke="#454B50"/>
+                                </svg>
+                                <a href="#">Корм для животных</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobmenu_bt">
+                        <div class="mobmenu_tel">
+                            <div class="mobmenu_li">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3249 10.4219L14.278 11.6375C14.378 11.6938 14.403 11.7969 14.3593 11.875L13.5186 13.3438C13.0499 14.1625 12.0311 14.675 11.1905 14.3C6.21864 12.0875 3.75614 9.65626 1.69989 4.80939C1.34052 3.96251 1.83739 2.95001 2.65614 2.48126L4.12489 1.64064C4.17489 1.61251 4.29989 1.58126 4.34989 1.70314L5.58739 3.69376C5.61864 3.75001 5.59677 3.85001 5.52177 3.89689L5.09052 4.17189C4.50302 4.54689 4.26552 5.28439 4.52489 5.92189C5.09677 7.33126 6.78739 9.10939 6.85927 9.18439C6.95302 9.27501 8.68427 10.9188 10.0811 11.4781C10.7186 11.7344 11.4499 11.4938 11.8249 10.9094L12.0999 10.475C12.1343 10.425 12.2343 10.3656 12.3249 10.4219ZM11.7343 15.6563C12.8936 15.6563 14.0218 15.0313 14.6249 13.9781L15.4655 12.5094C15.8593 11.8188 15.6218 10.9375 14.9311 10.5406L12.978 9.32501C12.2905 8.93126 11.4405 9.13751 11.0249 9.79064L10.7499 10.225C10.7061 10.2906 10.6249 10.3219 10.5593 10.2938C9.39364 9.82814 7.78114 8.29689 7.76552 8.28439C7.76552 8.28439 6.19052 6.62501 5.71239 5.44376C5.68427 5.37501 5.71552 5.29376 5.78114 5.25001L6.21239 4.97501C6.86239 4.55939 7.07177 3.71251 6.68739 3.04064L5.44989 1.04689C5.26864 0.734389 4.50614 1.35601e-05 3.49052 0.531264L2.02177 1.37189C0.693641 2.13439 0.0436401 3.73439 0.478015 5.17501C1.19364 7.55314 2.54052 9.68439 4.48114 11.5156C6.31239 13.4531 8.44364 14.8 10.8218 15.5188C11.1218 15.6125 11.428 15.6563 11.7343 15.6563Z" fill="#272A2F"/>
+                                    <path d="M14.5187 6.85314C14.8719 6.85314 15.1562 6.56876 15.1562 6.21564C15.1562 3.25314 12.7469 0.840637 9.78438 0.840637C9.43125 0.840637 9.14687 1.12501 9.14687 1.47814C9.14687 1.83126 9.43125 2.11564 9.78438 2.11564C12.0438 2.11564 13.8812 3.95314 13.8812 6.21251C13.8812 6.56876 14.1656 6.85314 14.5187 6.85314Z" fill="#272A2F"/>
+                                    <path d="M11.7717 6.85314C12.1248 6.85314 12.4092 6.56876 12.4092 6.21564C12.4092 4.76876 11.2311 3.59064 9.78418 3.59064C9.43105 3.59064 9.14668 3.87501 9.14668 4.22814C9.14668 4.58126 9.43105 4.86564 9.78418 4.86564C10.5279 4.86564 11.1342 5.47189 11.1342 6.21564C11.1342 6.56876 11.4186 6.85314 11.7717 6.85314Z" fill="#272A2F"/>
+                                </svg>
+
+                                <a href="tel:+38(067)3813106">+38 (067) 381 31 06</a>
+                            </div>
+                            <div class="mobmenu_li">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3249 10.4219L14.278 11.6375C14.378 11.6938 14.403 11.7969 14.3593 11.875L13.5186 13.3438C13.0499 14.1625 12.0311 14.675 11.1905 14.3C6.21864 12.0875 3.75614 9.65626 1.69989 4.80939C1.34052 3.96251 1.83739 2.95001 2.65614 2.48126L4.12489 1.64064C4.17489 1.61251 4.29989 1.58126 4.34989 1.70314L5.58739 3.69376C5.61864 3.75001 5.59677 3.85001 5.52177 3.89689L5.09052 4.17189C4.50302 4.54689 4.26552 5.28439 4.52489 5.92189C5.09677 7.33126 6.78739 9.10939 6.85927 9.18439C6.95302 9.27501 8.68427 10.9188 10.0811 11.4781C10.7186 11.7344 11.4499 11.4938 11.8249 10.9094L12.0999 10.475C12.1343 10.425 12.2343 10.3656 12.3249 10.4219ZM11.7343 15.6563C12.8936 15.6563 14.0218 15.0313 14.6249 13.9781L15.4655 12.5094C15.8593 11.8188 15.6218 10.9375 14.9311 10.5406L12.978 9.32501C12.2905 8.93126 11.4405 9.13751 11.0249 9.79064L10.7499 10.225C10.7061 10.2906 10.6249 10.3219 10.5593 10.2938C9.39364 9.82814 7.78114 8.29689 7.76552 8.28439C7.76552 8.28439 6.19052 6.62501 5.71239 5.44376C5.68427 5.37501 5.71552 5.29376 5.78114 5.25001L6.21239 4.97501C6.86239 4.55939 7.07177 3.71251 6.68739 3.04064L5.44989 1.04689C5.26864 0.734389 4.50614 1.35601e-05 3.49052 0.531264L2.02177 1.37189C0.693641 2.13439 0.0436401 3.73439 0.478015 5.17501C1.19364 7.55314 2.54052 9.68439 4.48114 11.5156C6.31239 13.4531 8.44364 14.8 10.8218 15.5188C11.1218 15.6125 11.428 15.6563 11.7343 15.6563Z" fill="#272A2F"/>
+                                    <path d="M14.5187 6.85314C14.8719 6.85314 15.1562 6.56876 15.1562 6.21564C15.1562 3.25314 12.7469 0.840637 9.78438 0.840637C9.43125 0.840637 9.14687 1.12501 9.14687 1.47814C9.14687 1.83126 9.43125 2.11564 9.78438 2.11564C12.0438 2.11564 13.8812 3.95314 13.8812 6.21251C13.8812 6.56876 14.1656 6.85314 14.5187 6.85314Z" fill="#272A2F"/>
+                                    <path d="M11.7717 6.85314C12.1248 6.85314 12.4092 6.56876 12.4092 6.21564C12.4092 4.76876 11.2311 3.59064 9.78418 3.59064C9.43105 3.59064 9.14668 3.87501 9.14668 4.22814C9.14668 4.58126 9.43105 4.86564 9.78418 4.86564C10.5279 4.86564 11.1342 5.47189 11.1342 6.21564C11.1342 6.56876 11.4186 6.85314 11.7717 6.85314Z" fill="#272A2F"/>
+                                </svg>
+                                <a href="tel:+38(067)9553545">+38 (067) 955 35 45</a>
+                            </div>
+                        </div>
+                        <a href="#feedback" data-fancybox class="mobmenu_callback">
+                            Связаться с нами
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="libs/jquery-3.2.1.min.js"></script>
+        <script src="libs/jquery.fancybox.min.js"></script>
+        <script src="libs/perfect-scrollbar.jquery.min.js"></script>
+        <script src="libs/slick.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
