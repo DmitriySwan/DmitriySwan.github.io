@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
+        <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
@@ -54,24 +55,41 @@
                 </ul>
             </nav>
         </header>
-
-        <section class="bottom">
-            <div class="container">
-                <div class="bottom_block">
-                    <img src="img/safe.jpg" alt="alt">
-                    <div class="bottom_text">
-                        <p>To ensure safety of patients and staff 
-                            all appointments are held via telehealth until 
-                            further notice
-                        </p>
-                        <a href="#!" class="btn">
-                            APPOINTMENTS
-                        </a>
-                    </div>
-                </div>
-            </div>
+        
+        <section class="inner-intro" style="background-image: url(img/businesswoman-talking-her-psychologist.jpg)">
+            <h1 class="inner-intro_h1">Schedule your appointment</h1>
+        </section>
+        
+        <section class="appoint">
+           <div class="container">
+               <div class="appoint_block">
+                   <div class="appoint_title">
+                       Please indicate when would you like to be seen
+                   </div>
+                       <form>
+                           <div class="appoint_form">
+                               <div>
+                                   <input type="text" class="appoint_input" placeholder="Name">
+                                   <input type="tel" class="appoint_input" placeholder="Phone">
+                                   <input type="tel" class="appoint_input" placeholder="Mail">
+                                   <input id="date" class="appoint_input" type="date" value="2017-06-01">
+                               </div>
+                               <textarea class="appoint_textarea" placeholder="Text"></textarea>
+                           </div>
+                           <div class="appoint_p">
+                               You can send a message to scheduling department <b>24/7</b> or to call <b>814-243-0414</b>  M-F 9-5
+                           </div>
+                           <div class="appoint_btn">
+                               <button type="submit" class="btn">
+                                   Send Request
+                               </button>
+                           </div>
+                       </form>
+               </div>
+           </div>
         </section>
 
+       
         <footer class="footer">
             <div class="container">
                 <div class="footer_row">
@@ -123,7 +141,28 @@
             </div>
         </footer>
 
+        <div style="display: none;">
+            <div class="feedback" id="feedback">
+                <div class="feedback_title">Send message to Ekaterina Filatov</div>
+                <form>
+                    <div class="feedback_form">
+                        <div>
+                            <input type="text" class="feedback_input" placeholder="Name">
+                            <input type="tel" class="feedback_input" placeholder="Phone">
+                        </div>
+                        <textarea class="feedback_textarea" placeholder="Text"></textarea>
+                    </div>
+                    <div class="feedback_btn">
+                        <button type="submit" class="btn">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+       
         <script src="libs/jquery-3.2.1.min.js"></script>
+        <script src="libs/jquery.fancybox.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 

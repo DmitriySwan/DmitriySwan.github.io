@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
+        <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
@@ -99,14 +100,14 @@
                             all appointments are held via telehealth until 
                             further notice
                         </p>
-                        <a href="#!" class="btn">
-                            Schedule your appointment
+                        <a href="#feedback" data-fancybox class="btn">
+                            APPOINTMENTS
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
-
+      </section>
+        
      <section class="lotus">
          <div class="container">
              <div class="lotus_row">
@@ -174,8 +175,28 @@
             </div>
         </footer>
 
+      <div style="display: none;">
+            <div class="feedback" id="feedback">
+                <div class="feedback_title">Send message to Ekaterina Filatov</div>
+                <form>
+                    <div class="feedback_form">
+                        <div>
+                            <input type="text" class="feedback_input" placeholder="Name">
+                            <input type="tel" class="feedback_input" placeholder="Phone">
+                        </div>
+                        <textarea class="feedback_textarea" placeholder="Text"></textarea>
+                    </div>
+                    <div class="feedback_btn">
+                        <button type="submit" class="btn">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+      </div>
           
         <script src="libs/jquery-3.2.1.min.js"></script>
+        <script src="libs/jquery.fancybox.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 
