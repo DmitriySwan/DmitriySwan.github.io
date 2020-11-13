@@ -25,14 +25,27 @@ $(function(){
     });
     
     $('.category_slider').slick({
-        arrows: false,
-        variableWidth: true,
+        arrows: true,
+        infinity: false,
         slidesToShow: 4,
-        slidesToScroll: 1,
-        infinity:false,
+        slidesToScroll: 4,
         swipe: true,
         dotsClass: 'category_dots',
         dots: true
+        ,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    variableWidth: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
     
     $('.category_arrow1').on('click', function() {
