@@ -57,11 +57,25 @@ $(function(){
     
     $('.reviews_slider').slick({
         arrows: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         variableWidth: true,
-        slidesToShow: 1,
         swipe: true,
         dotsClass: 'reviews_dots',
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1030,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
 
     $('.reviews_arrow1').on('click', function() {
