@@ -72,9 +72,6 @@ $(function(){
                     variableWidth: false
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
 
@@ -102,6 +99,56 @@ $(function(){
         $(".catalog_click").click(function() {
             $('.catalog_tab').slideToggle(500);
         });
+    }
+    
+    $('.card__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.card__nav',
+        dots:false
+    });
+    $('.card__nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.card__slider',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+        dots:false
+    });
+    
+    $('.also__slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1030,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    });
+    
+    $('.also_arrow1').on('click', function() {
+        $('.also__slider').slick('slickPrev');
+    });
+    $('.also_arrow2').on('click', function() {
+        $('.also__slider').slick('slickNext');
+    });
+    
+    if(window.matchMedia('(max-width: 544px)').matches) {
+        $('.also__slider').slick('unslick');
     }
 
 });
