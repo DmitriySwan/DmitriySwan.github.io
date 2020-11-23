@@ -127,3 +127,139 @@
         display: none;
     }
 }
+
+.banner {
+    display: block;
+    position: relative;
+}
+
+.banner_item {
+    position: absolute;
+    font-size: 19px;
+    line-height: 25px;
+    color: #2957FC;
+    font-weight: 500;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.banner_item1--content {
+    position: absolute;
+    top: 410px;
+    right: 320px;
+    width: 222px;
+    height: 89px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 12px 18px;
+    transition: .4s all;
+    opacity: 0;
+}
+
+.banner_item1--content::after {
+    content: '';
+    position: absolute;
+    top: 30px; left: -10px;
+    width: 19px;
+    height: 19px;
+    background: #FFF;
+    transform: rotate(-46.69deg);
+}
+
+.banner_item2--content {
+    position: absolute;
+    width: 213px;
+    height: 89px;
+    top: 301px;
+    right: 407px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 8px 18px;
+    transition: .4s all;
+    opacity: 0;
+}
+
+.banner_item2--content::after {
+    content: '';
+    position: absolute;
+    bottom: 10px; right: -10px;
+    width: 19px;
+    height: 19px;
+    background: #FFF;
+    transform: rotate(-46.69deg);
+}
+
+.banner_item3--content {
+    position: absolute;
+    width: 213px;
+    height: 89px;
+    top: 169px;
+    right: 128px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 12px;
+    padding-right: 4px;
+    transition: .4s all;
+    opacity: 0;
+}
+
+.banner_item3--content::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; right: 10px;
+    width: 19px;
+    height: 19px;
+    background: #FFF;
+    transform: rotate(-46.69deg);
+}
+
+.banner_item1--content.active {
+    opacity: 1;
+}
+.banner_item2--content.active {
+    opacity: 1;
+}
+.banner_item3--content.active {
+    opacity: 1;
+}
+
+.banner_item1--content b {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #343741;
+}
+
+.banner_item1--content p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #343741;
+}
+
+.banner_item1 {
+    top: 438px;
+    right: 572px;
+}
+
+.banner_item2 {
+    top: 339px;
+    right: 350px;
+}
+
+.banner_item3 {
+    top: 288px;
+    right: 138px;
+}
+
+@media screen and (max-width: 900px) {
+    .banner_item {
+        display: none;
+    }
+}
