@@ -262,4 +262,9 @@
     .banner_item {
         display: none;
     }
+    .banner_item1--content,
+    .banner_item3--content,
+    .banner_item2--content {
+        display: none;
+    }
 }
