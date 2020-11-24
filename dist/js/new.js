@@ -29,6 +29,19 @@ $(function(){
     $( ".banner_item3" ).mouseleave(function() {
         $('.banner_item3--content').removeClass('active');
     });
+    
+    $(".form").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "mailer.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+            $(".form").trigger("reset");
+        });
+        return false;
+    });
 
     
 });

@@ -4867,7 +4867,7 @@ var fixedElements = getFixed();
 ============================= */
 var inputTelElements = document.querySelectorAll('#js-input-tel');
 var maskOptions = {
-  mask: '+{38}(000)000-00-00'
+    mask: '+{38}(___)___-__-__'
 };
 inputTelElements.forEach(function (inputElement) {
   (0, _imask["default"])(inputElement, maskOptions);

@@ -28,6 +28,7 @@
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .modal-rewiew--half {
@@ -39,6 +40,7 @@
 .modal-rewiew--div {
     width: 100%;
     max-width: inherit;
+    margin-right: 0;
 }
 
 .modal-rewiew--area {
@@ -266,5 +268,14 @@
     .banner_item3--content,
     .banner_item2--content {
         display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .reviews__title {
+         text-align: center;
+    }
+    .reviews__btn {
+        margin: 10px auto 0;
     }
 }

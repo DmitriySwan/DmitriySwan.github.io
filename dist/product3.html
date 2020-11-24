@@ -9,6 +9,9 @@
   Арка + Скалодром + Треугольник"> <!-- maxLength = 150 -->
   <title>Детская площадка Пиклер: Скалодром + Треугольник + Лестница</title> <!-- maxLength = 65 -->
   
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+  
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css">
 
@@ -673,18 +676,19 @@
       
       
     </main>
+    
 <footer class="page-footer wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s" id="footer">
     <div class="container">
         <div class="page-footer__inner">
             <h2 class="page-footer__title">Остались вопросы?</h2>
             <p class="page-footer__txt">Оставьте свои контакты и наш менеджер проконсультирует вас по всем вопросам)</p>
             <div class="page-footer__form-wrap">
-                <form action="" class="form">
+                <form class="form" method="post">
                     <div class="form__field-wrap">
-                        <input class="form__field form-input" type="text" placeholder="Имя" required>
+                        <input class="form__field form-input" type="text" placeholder="Имя" name="name" required>
                     </div>
                     <div class="form__field-wrap">
-                        <input id="js-input-tel" class="form__field form-input"  type="tel" placeholder="Телефон" required>
+                        <input id="js-input-tel" class="form__field form-input"  type="tel" name="tel" placeholder="+38(___)___-__-__" required>
                     </div>
                     <button type="submit" class="btn form__btn">Отправить</button>
                     <p class="form__agreement">Я принимаю условия <a href="" class="form__agreement-link">Пользовательского соглашения</a></p>
@@ -747,7 +751,7 @@
                         </li>
                     </ul>
                     <div class="footer-bar__mail">
-                        <a href="mailto:mail@gmail.com" class="footer-bar__mail-link">mail@gmail.com</a>
+                        <a href="mailto:heizer.ukraine@gmail.com" class="footer-bar__mail-link">heizer.ukraine@gmail.com</a>
                     </div>
                 </div>
             </div>
@@ -756,8 +760,6 @@
 </footer>
 
 <div class="modal-overlay">
-
-
     <div class="modal">
         <span class="modal__close-btn"></span>
         <div class="modal__inner">
@@ -768,13 +770,15 @@
                         Мы перезвоним Вам в самое ближайшее время.</p>
                 </div>
             </header>
-            <form action="" class="form modal-form">
+            <form class="form modal-form" method="post">
                 <div class="form__field-wrap">
-                    <input class="form__field form-input form-input--grey" type="text" placeholder="Имя" required>
+                    <input class="form__field form-input form-input--grey" type="text" placeholder="Имя" name="name" required>
                 </div>
                 <div class="form__field-wrap">
-                    <input id="js-input-tel" class="form__field form-input form-input--grey"  type="tel" placeholder="Телефон" required>
+                    <input id="js-input-tel" class="form__field form-input form-input--grey"  type="tel" name="tel" placeholder="+38(___)___-__-__" required>
                 </div>
+                <textarea name="product" type="hidden" style="display: none;">Детская площадка Пиклер: Скалодром + Треугольник + Лестница</textarea>
+
                 <button type="submit" class="btn form__btn">Отправить</button>
                 <p class="form__agreement">Я принимаю условия <a href="" class="form__agreement-link">Пользовательского соглашения</a></p>
             </form>
@@ -793,13 +797,13 @@
             <img src="img/Star%2011.svg" alt="alt">
         </div>
         <div class="modal-rewiew--form">
-            <form>
+            <form class="form" method="post">
                 <div class="modal-rewiew--cols">
                     <div class="modal-rewiew--half form__field-wrap">
                         <input class="form__field form-input form-input--grey" type="text" placeholder="Имя" required>
                     </div>
                     <div class="modal-rewiew--half form__field-wrap">
-                        <input id="js-input-tel" class="form__field form-input form-input--grey" type="tel" placeholder="Телефон" required>
+                        <input id="js-input-tel" class="form__field form-input form-input--grey" type="tel" placeholder="+38(___)___-__-__" required>
                     </div>
                 </div>
                 <div class="modal-rewiew--div form__field-wrap">
@@ -832,4 +836,4 @@
 <script src="js/new.js"></script>
 
 </body>
-</html>
+</html>  
