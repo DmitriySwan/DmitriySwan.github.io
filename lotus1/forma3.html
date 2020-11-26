@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>start</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="header_container">
+                <div class="header_row">
+                    <a href="index.html" class="header_logo">
+                        <img src="img/logo.svg" alt="alt">
+                    </a>
+                    <div class="header_right">
+                        <div class="header_geo">
+                            <img src="img/h-icon1.svg" alt="alt">
+                            <p>275 Grove St Suit 2-400 
+                                Newton, MA 02466</p>
+                        </div>
+                        <div class="header_mail">
+                            <img src="img/h-icon2.svg" alt="alt">
+                            <a href="mailto:ef@lotuspsychiatric.com">ef@lotuspsychiatric.com</a>
+                        </div>
+                        <div class="header_tel">
+                            <img src="img/h-icon3.svg" alt="alt">
+                            <a href="tel:617-992-4456" class="tel">617-992-4456
+                            </a>
+                        </div>
+                        <div class="btn_mnu">
+                            <div class="btn_row"></div>
+                            <div class="btn_row"></div>
+                            <div class="btn_row"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header_nav">
+                <ul class="header_ul">
+                    <li class="header_li"><a href="index.html">HOME</a></li>
+                    <li class="header_li"><a href="about.html">ABOUT US</a></li>
+                    <li class="header_li"><a href="services.html">SERVICES</a></li>
+                    <li class="header_li"><a href="appointment.html">schedule your appointment</a></li>
+                    <li class="header_li"><a href="payments.html">PAYMENTS</a></li>
+                    <li class="header_li"><a href="newpatient.html">New patient </a></li>
+                    <li class="header_li"><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="inner-intro" style="background-image: url(img/about-intro.jpg);">
+            <h1 class="inner-intro_h1">Intake Form</h1>
+        </section>
+
+        <section class="forma">
+            <div class="container">
+                <div class="forma_block">
+                    <div class="forma_top">
+                        General information
+                    </div>
+                    <div class="forma_div">
+                        <div class="forma_flex">
+                            <div class="forma_label">
+                                <div class="forma_label--p">First Name</div>
+                                <input type="text" class="forma_input" required>
+                            </div>
+                            <div class="forma_label">
+                                <div class="forma_label--p">Last Name</div>
+                                <input type="text" class="forma_input" required>
+                            </div>
+                            <div class="forma_label">
+                                <div class="forma_label--p">Gender</div>
+                                <input type="text" class="forma_input" required>
+                            </div>
+                        </div>
+                        <div class="forma_flex">
+                            <div class="forma_label">
+                                <div class="forma_label--p">Date of Birth (mm/dd/yyyy)</div>
+                                <input type="number" class="forma_input" required>
+                            </div>
+                            <div class="forma_label">
+                                <div class="forma_label--p">Social Security Number</div>
+                                <input type="number" class="forma_input" required>
+                            </div>
+                            <div class="forma_label">
+                                <div class="forma_label--p">Address</div>
+                                <input type="text" class="forma_input" required>
+                            </div>
+                        </div>
+                        <div class="forma_flex">
+                            <div class="forma_label">
+                                <div class="forma_label--p">City</div>
+                                <input type="text" class="forma_input" required>
+                            </div>
+                            <div class="forma_label">
+                                <div class="forma_label--p">State</div>
+                                <input type="text" class="forma_input" required>
+                            </div>
+                            <div class="forma_label">
+                                <div class="forma_label--p">Zip Code</div>
+                                <input type="number" class="forma_input" required>
+                            </div>
+                        </div>
+                        <div class="forma_flex">
+                            <div class="forma_label">
+                                <div class="forma_label--p">Main Phone</div>
+                                <input type="tel" class="forma_input" required>
+                            </div>
+                            <div class="forma_label">
+                                <div class="forma_label--p">Other Phone</div>
+                                <input type="tel" class="forma_input" required>
+                            </div>
+                            <div class="forma_label">
+                                <div class="forma_label--p">Email</div>
+                                <input type="email" class="forma_input" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forma_blue">EMERGENCY CONTACT</div>
+                    <div class="forma_div">
+                        <div class="forma_flex">
+                            <div class="forma_label">
+                                <div class="forma_label--p">First Name</div>
+                                <input type="text" class="forma_input forma_input__min" required>
+                            </div>
+                            <div class="forma_label">
+                                <div class="forma_label--p">Last Name</div>
+                                <input type="text" class="forma_input forma_input__min" required>
+                            </div>
+                            <div class="forma_label">
+                                <div class="forma_label--p">Phone</div>
+                                <input type="tel" class="forma_input forma_input__min" required>
+                            </div>
+                            <div class="forma_label">
+                                <div class="forma_label--p">Relationship</div>
+                                <input type="text" class="forma_input forma_input__min" required>
+                            </div>
+                            <div class="forma_label">
+                                <div class="forma_label--p">Do you authorize this person to discuss care or treatment with the office in the case of an emergency?</div>
+                                <label class="forma_radio">
+                                    <div class="forma_radio--item">
+                                        <input type="radio" name="bull">
+                                        <div class="forma_radio--p">YES</div>
+                                    </div>
+                                    <div class="forma_radio--item">
+                                        <input type="radio" name="bull">
+                                        <div class="forma_radio--p">NO</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="forma_blue">MENTAL HEALTH HISTORY/STATUS</div>
+                    <div class="forma_mental">
+                        <div class="forma_label">
+                            <div class="forma_label--p">What problems are you seeking help for?</div>
+                            <textarea class="forma_input forma_area forma_area1">If yes, when and where?If yes, when and where?If yes, when and where?If yes, when and where?If yes, when and where?If yes, when and where?If
+                            </textarea>
+                        </div>
+                        <div class="forma_mental--red">Past Mental Health Treatment</div>
+                        <div class="forma_label forma_label--mt">
+                            <div class="forma_label--p">Have you ever been hospitalized for psychiatric reasons?</div>
+                            <label class="forma_radio">
+                                <div class="forma_radio--item">
+                                    <input type="radio" name="bull">
+                                    <div class="forma_radio--p">YES</div>
+                                </div>
+                                <div class="forma_radio--item">
+                                    <input type="radio" name="bull">
+                                    <div class="forma_radio--p">NO</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="forma_label forma_label--mt">
+                            <div class="forma_label--p">If yes, when and where?</div>
+                            <textarea class="forma_input forma_area forma_area2">If yes, when and where?If yes, when and where?If yes, when and where?If yes, when and where?If yes, when and where?If yes, when and where?
+                            </textarea>
+                        </div>
+                        <div class="forma_mental--line"></div>
+                        <div class="forma_label forma_label--mt">
+                            <div class="forma_label--p">Have you ever had outpatient treatment by a psychiatrist?</div>
+                            <label class="forma_radio">
+                                <div class="forma_radio--item">
+                                    <input type="radio" name="bull">
+                                    <div class="forma_radio--p">YES</div>
+                                </div>
+                                <div class="forma_radio--item">
+                                    <input type="radio" name="bull">
+                                    <div class="forma_radio--p">NO</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="forma_label forma_label--mt">
+                            <div class="forma_label--p">If yes, when and by whom?</div>
+                            <textarea class="forma_input forma_area forma_area2">
+                            </textarea>
+                        </div>
+                        <div class="forma_mental--line"></div>
+                        <div class="forma_label forma_label--mt">
+                            <div class="forma_label--p">Have you ever received counseling or psychotherapy in the past?</div>
+                            <label class="forma_radio">
+                                <div class="forma_radio--item">
+                                    <input type="radio" name="bull">
+                                    <div class="forma_radio--p">YES</div>
+                                </div>
+                                <div class="forma_radio--item">
+                                    <input type="radio" name="bull">
+                                    <div class="forma_radio--p">NO</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="forma_label forma_label--mt">
+                            <div class="forma_label--p">If yes, when and where?</div>
+                            <textarea class="forma_input forma_area forma_area2">
+                            </textarea>
+                        </div>
+                        <div class="forma_mental--red">Please List any psychiatric medication you have taken or are taking:</div>
+                        <div class="forma_label forma_label--mt">
+                            <div class="forma_label--p">Medication; Date; Side Effects/Benefits</div>
+                            <textarea class="forma_input forma_area forma_area1">If yes, when and where?If yes, when and where?If yes, when and where?If yes, when and where?If yes, when and where?If yes, when and where?If
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="forma_mental--red">Please Check all that apply:</div>
+                    <div class="forma_div">
+                        <div class="forma_flex">
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Depressed mood</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Excessive talking</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Unreasonable fear</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Lost or gained weight</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Racing thoughts</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Fear of social situations</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Not enough sleep</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Easily distracted</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Repetitive thoughts/behavior</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Too much sleep</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Over working yourself</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Upsetting memories</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Sluggish</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Impulsive behavior</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Recent loss/grief</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Agitated</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">See/hear things that are not real</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Work/school problems</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Never tired</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Suspect things may not be real</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Violent thoughts/behaviors</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Cannot concentrate</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Tense/unable to relax</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Self harm</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Afraid to leave home</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Excessive worry</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Anger outburst</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Inflated self esteem</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Panic attacks</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Careless, high-risk behavior</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Feel guilty or worthless</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Thoughts of death or suicide</div>
+                            </label>
+                            <label class="forma_check">
+                                <input type="checkbox">
+                                <div class="forma_check--p">Financial problems</div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="forma_blue">GENERAL MEDICAL HISTORY</div>
+                    <div class="forma_mental">
+                        <div class="forma_label">
+                            <div class="forma_label--p">Primary Care Physician:</div>
+                            <input type="text" class="forma_input forma_input__max" required>
+                        </div>
+                        <div class="forma_label">
+                            <div class="forma_label--p">Please list any medical problems you may have below:</div>
+                            <textarea class="forma_input forma_area forma_area1">If yes, when and where?If yes, when and where?If yes, when and where?If yes, when and where?If yes, when and where?If yes, when and where?If
+                            </textarea>
+                        </div>
+                        <div class="forma_label">
+                            <div class="forma_label--p">Please list any serious medical procedures you have had in the past:</div>
+                            <textarea class="forma_input forma_area forma_area1">
+                            </textarea>
+                        </div>
+                        <div class="forma_label">
+                            <div class="forma_label--p">Are you on any medications for any general medical problems you may have?</div>
+                            <label class="forma_radio">
+                                <div class="forma_radio--item">
+                                    <input type="radio" name="bull">
+                                    <div class="forma_radio--p">YES</div>
+                                </div>
+                                <div class="forma_radio--item">
+                                    <input type="radio" name="bull">
+                                    <div class="forma_radio--p">NO</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="forma_label forma_label--mt">
+                            <div class="forma_label--p">If yes, which ones?</div>
+                            <textarea class="forma_input forma_area forma_area2">
+                            </textarea>
+                        </div>
+                        <div class="forma_mental--line"></div>
+                        <div class="forma_label forma_label--mt">
+                            <div class="forma_label--p">Do you have any allergies to medications?</div>
+                            <label class="forma_radio">
+                                <div class="forma_radio--item">
+                                    <input type="radio" name="bull">
+                                    <div class="forma_radio--p">YES</div>
+                                </div>
+                                <div class="forma_radio--item">
+                                    <input type="radio" name="bull">
+                                    <div class="forma_radio--p">NO</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="forma_label forma_label--mt">
+                            <div class="forma_label--p">If yes, which ones?</div>
+                            <textarea class="forma_input forma_area forma_area2">
+                            </textarea>
+                        </div>
+                        <div class="forma_mental--red">Alcohol, Drug, and Tobacco Use</div>
+                        <div class="forma_label forma_label--mt">
+                            <div class="forma_label--p">Describe your use of alcohol:</div>
+                            <input type="text" class="forma_input forma_input__max" required>
+                        </div>
+                        <div class="forma_label">
+                            <div class="forma_label--p">Describe your use of recreational drugs:</div>
+                            <input type="text" class="forma_input forma_input__max" required>
+                        </div>
+                        <div class="forma_label">
+                            <div class="forma_label--p">Describe your use of tobacco:</div>
+                            <input type="text" class="forma_input forma_input__max" required>
+                        </div>
+
+                        <div class="forma_mental--red">Family Medical History</div>
+                        <div class="forma_label forma_label--mt">
+                            <div class="forma_label--p">List any history of illness (mental or other) and substance abuse among blood relatives:
+                                Mother’s side; Father’s side</div>
+                            <textarea class="forma_input forma_area forma_area1">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="forma_close3">
+                        <div class="forma_mental">
+                            <div class="forma_label">
+                                <div class="forma_label--p">Patient’s Signature</div>
+                                <div class="forma_sign"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forma_submit">
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_row">
+                    <div class="footer_left">
+                        <img src="img/f-logo.svg" alt="alt">
+                        <div class="footer_p">
+                            © Lotus Psychiatry, 2020.
+                        </div>
+                        <a href="#" class="footer_site">
+                            <img src="img/lgo-ste.svg" alt="alt" class="footer_site--img">
+                            <div class="footer_site--p">
+                                Разработка сайта
+                            </div>
+                        </a>
+                    </div>
+                    <nav class="footer_nav">
+                        <ul class="footer_ul">
+                            <li class="footer_li"><a href="index.html">HOME</a></li>
+                            <li class="footer_li"><a href="about.html">ABOUT US</a></li>
+                            <li class="footer_li"><a href="services.html">SERVICES</a></li>
+                            <li class="footer_li"><a href="appointment.html">schedule your appointment</a></li>
+                            <li class="footer_li"><a href="payments.html">PAYMENTS</a></li>
+                            <li class="footer_li"><a href="newpatient.html">New patient </a></li>
+                            <li class="footer_li"><a href="resources.html">Resources</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer_right">
+                        <div class="footer_tel">
+                            <img src="img/f-tel.svg" alt="alt">
+                            <a href="tel:617-992-4456" class="tel">617-992-4456
+                            </a>
+                        </div>
+                        <div class="footer_geo">
+                            <img src="img/f-geo.svg" alt="alt">
+                            <p>275 Grove St Suit 2-400 
+                                Newton, MA 02466</p>
+                        </div>
+                        <div class="footer_mail">
+                            <img src="img/f-mail.svg" alt="alt">
+                            <a href="mailto:ef@lotuspsychiatric.com">ef@lotuspsychiatric.com</a>
+                        </div>
+                        <div class="footer_soc">
+                            <a href="https://www.instagram.com/" class="footer_soc--item" target="_blank"><img src="img/f-inst.svg" alt="alt"></a>
+                            <a href="https://www.youtube.com/" class="footer_soc--item" target="_blank"><img src="img/f-youtube.svg" alt="alt"></a>
+                            <a href="https://www.facebook.com/" class="footer_soc--item" target="_blank"><img src="img/f-fb.svg" alt="alt"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div style="display: none;">
+            <div class="feedback" id="feedback">
+                <div class="feedback_title">Send message to Ekaterina Filatov</div>
+                <form>
+                    <div class="feedback_form">
+                        <div>
+                            <input type="text" class="feedback_input" placeholder="Name">
+                            <input type="tel" class="feedback_input" placeholder="Phone">
+                        </div>
+                        <textarea class="feedback_textarea" placeholder="Text"></textarea>
+                    </div>
+                    <div class="feedback_btn">
+                        <button type="submit" class="btn">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="libs/jquery-3.2.1.min.js"></script>
+        <script src="libs/jquery.fancybox.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
