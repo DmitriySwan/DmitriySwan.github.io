@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
@@ -10,6 +10,8 @@
 
         <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
 
     <body>
@@ -154,7 +156,7 @@
                         <div class="footer_p">
                             © Lotus Psychiatry, 2020.
                         </div>
-                        <a href="#" class="footer_site">
+                        <a href="https://en-design.com.ua/" class="footer_site" target="_blank">
                             <img src="img/lgo-ste.svg" alt="alt" class="footer_site--img">
                             <div class="footer_site--p">
                                 Разработка сайта
@@ -224,14 +226,17 @@
                        <div class="modal_p">Ваша форма добавлена</div>
                    </div>
                    <div class="modal_btn">
-                       <button type="submit" class="btn">
+                       <a href="newpatient.html" class="btn">
                            Заполнить остальные формы
-                       </button>
+                       </a>
                    </div>
                </div>
             </div>
         </div>
 
+        <script> document.getElementById('date').valueAsDate = new Date();</script>
+        
+        
         <script src="libs/jquery-3.2.1.min.js"></script>
         <script src="libs/jquery.fancybox.min.js"></script>
         <script src="js/script.js"></script>

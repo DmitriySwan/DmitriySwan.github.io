@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
@@ -7,9 +7,13 @@
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        
+        <meta property='og:image' content='img/logo.svg' />
 
         <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
 
     <body>
@@ -84,7 +88,7 @@
                         <div class="forma_flex">
                             <div class="forma_label">
                                 <div class="forma_label--p">Date of Birth (mm/dd/yyyy)</div>
-                                <input type="number" class="forma_input" required>
+                                <input type="date" id="date" class="forma_input" required>
                             </div>
                             <div class="forma_label">
                                 <div class="forma_label--p">Social Security Number</div>
@@ -147,11 +151,11 @@
                                 <div class="forma_label--p">Do you authorize this person to discuss care or treatment with the office in the case of an emergency?</div>
                                 <label class="forma_radio">
                                     <div class="forma_radio--item">
-                                        <input type="radio" name="bull">
+                                        <input type="radio" name="bull1">
                                         <div class="forma_radio--p">YES</div>
                                     </div>
                                     <div class="forma_radio--item">
-                                        <input type="radio" name="bull">
+                                        <input type="radio" name="bull1">
                                         <div class="forma_radio--p">NO</div>
                                     </div>
                                 </label>
@@ -171,11 +175,11 @@
                             <div class="forma_label--p">Have you ever been hospitalized for psychiatric reasons?</div>
                             <label class="forma_radio">
                                 <div class="forma_radio--item">
-                                    <input type="radio" name="bull">
+                                    <input type="radio" name="bull2">
                                     <div class="forma_radio--p">YES</div>
                                 </div>
                                 <div class="forma_radio--item">
-                                    <input type="radio" name="bull">
+                                    <input type="radio" name="bull2">
                                     <div class="forma_radio--p">NO</div>
                                 </div>
                             </label>
@@ -190,11 +194,11 @@
                             <div class="forma_label--p">Have you ever had outpatient treatment by a psychiatrist?</div>
                             <label class="forma_radio">
                                 <div class="forma_radio--item">
-                                    <input type="radio" name="bull">
+                                    <input type="radio" name="bull3">
                                     <div class="forma_radio--p">YES</div>
                                 </div>
                                 <div class="forma_radio--item">
-                                    <input type="radio" name="bull">
+                                    <input type="radio" name="bull3">
                                     <div class="forma_radio--p">NO</div>
                                 </div>
                             </label>
@@ -209,11 +213,11 @@
                             <div class="forma_label--p">Have you ever received counseling or psychotherapy in the past?</div>
                             <label class="forma_radio">
                                 <div class="forma_radio--item">
-                                    <input type="radio" name="bull">
+                                    <input type="radio" name="bull4">
                                     <div class="forma_radio--p">YES</div>
                                 </div>
                                 <div class="forma_radio--item">
-                                    <input type="radio" name="bull">
+                                    <input type="radio" name="bull4">
                                     <div class="forma_radio--p">NO</div>
                                 </div>
                             </label>
@@ -387,11 +391,11 @@
                             <div class="forma_label--p">Are you on any medications for any general medical problems you may have?</div>
                             <label class="forma_radio">
                                 <div class="forma_radio--item">
-                                    <input type="radio" name="bull">
+                                    <input type="radio" name="bull5">
                                     <div class="forma_radio--p">YES</div>
                                 </div>
                                 <div class="forma_radio--item">
-                                    <input type="radio" name="bull">
+                                    <input type="radio" name="bull5">
                                     <div class="forma_radio--p">NO</div>
                                 </div>
                             </label>
@@ -406,11 +410,11 @@
                             <div class="forma_label--p">Do you have any allergies to medications?</div>
                             <label class="forma_radio">
                                 <div class="forma_radio--item">
-                                    <input type="radio" name="bull">
+                                    <input type="radio" name="bull6">
                                     <div class="forma_radio--p">YES</div>
                                 </div>
                                 <div class="forma_radio--item">
-                                    <input type="radio" name="bull">
+                                    <input type="radio" name="bull6">
                                     <div class="forma_radio--p">NO</div>
                                 </div>
                             </label>
@@ -451,7 +455,7 @@
                         </div>
                     </div>
                     <div class="forma_submit">
-                        <button class="btn">Submit</button>
+                        <button type="submit" href="#modal2" data-fancybox class="btn">Submit</button>
                     </div>
                 </div>
             </div>
@@ -465,7 +469,7 @@
                         <div class="footer_p">
                             © Lotus Psychiatry, 2020.
                         </div>
-                        <a href="#" class="footer_site">
+                        <a href="https://en-design.com.ua/" class="footer_site" target="_blank">
                             <img src="img/lgo-ste.svg" alt="alt" class="footer_site--img">
                             <div class="footer_site--p">
                                 Разработка сайта
@@ -527,6 +531,23 @@
                 </form>
             </div>
         </div>
+        
+        <div style="display: none;">
+            <div class="modal1" id="modal2">
+                <div class="modal">
+                    <div class="modal_block">
+                        <div class="modal_p">Ваша форма добавлена</div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="newpatient.html" class="btn">
+                            Заполнить остальные формы
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script> document.getElementById('date').valueAsDate = new Date();</script>
 
         <script src="libs/jquery-3.2.1.min.js"></script>
         <script src="libs/jquery.fancybox.min.js"></script>

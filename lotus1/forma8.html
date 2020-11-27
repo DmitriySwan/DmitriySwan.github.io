@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
@@ -10,6 +10,8 @@
 
         <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
 
     <body>
@@ -74,7 +76,7 @@
                         </div>
                         <div class="forma_label">
                             <div class="forma_label--p">Expires</div>
-                            <input type="date" id="date" class="forma_input" required>
+                            <input type="date"  id="date1" class="forma_input date" required>
                         </div>
                         <div class="forma_label">
                             <div class="forma_label--p">CVV</div>
@@ -88,7 +90,7 @@
                            </div>
                            <div class="forma_label">
                                <div class="forma_label--p">Date</div>
-                               <input type="date" id="date" class="forma_input" required>
+                               <input type="date" id="date2" class="forma_input date" required>
                            </div>
                            <div class="forma_label">
                                <div class="forma_label--p">Patient’s Signature</div>
@@ -101,7 +103,7 @@
                 </div>
                     <div class="forma_bottom">
                         <div class="forma_submit">
-                            <button class="btn">Submit</button>
+                            <button type="submit" href="#modal2" data-fancybox class="btn">Submit</button>
                         </div>
                     </div>
              </div>
@@ -117,7 +119,7 @@
                         <div class="footer_p">
                             © Lotus Psychiatry, 2020.
                         </div>
-                        <a href="#" class="footer_site">
+                        <a href="https://en-design.com.ua/" class="footer_site" target="_blank">
                             <img src="img/lgo-ste.svg" alt="alt" class="footer_site--img">
                             <div class="footer_site--p">
                                 Разработка сайта
@@ -179,7 +181,27 @@
                 </form>
             </div>
         </div>
-
+        
+        <div style="display: none;">
+            <div class="modal1" id="modal2">
+                <div class="modal">
+                    <div class="modal_block">
+                        <div class="modal_p">Ваша форма добавлена</div>
+                    </div>
+                    <div class="modal_btn">
+                        <a href="newpatient.html" class="btn">
+                            Заполнить остальные формы
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById('date1').valueAsDate = new Date();
+            document.getElementById('date2').valueAsDate = new Date();
+        </script>
+        
         <script src="libs/jquery-3.2.1.min.js"></script>
         <script src="libs/jquery.fancybox.min.js"></script>
         <script src="js/script.js"></script>
