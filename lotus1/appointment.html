@@ -72,7 +72,7 @@
                                    <input type="text" class="appoint_input" placeholder="Name">
                                    <input type="tel" class="appoint_input" placeholder="Phone">
                                    <input type="tel" class="appoint_input" placeholder="Mail">
-                                   <input id="date" class="appoint_input" type="date" value="2017-06-01">
+                                   <input id="date" class="appoint_input" type="date">
                                </div>
                                <textarea class="appoint_textarea" placeholder="Text"></textarea>
                            </div>
@@ -80,7 +80,7 @@
                                You can send a message to scheduling department <b>24/7</b> or to call <b>814-243-0414</b>  M-F 9-5
                            </div>
                            <div class="appoint_btn">
-                               <button type="submit" class="btn">
+                               <button type="submit" href="#modal3" data-fancybox class="btn">
                                    Send Request
                                </button>
                            </div>
@@ -89,7 +89,6 @@
            </div>
         </section>
 
-       
         <footer class="footer">
             <div class="container">
                 <div class="footer_row">
@@ -132,9 +131,9 @@
                             <a href="mailto:ef@lotuspsychiatric.com">ef@lotuspsychiatric.com</a>
                         </div>
                         <div class="footer_soc">
-                            <a href="#" class="footer_soc--item"><img src="img/f-inst.svg" alt="alt"></a>
-                            <a href="#" class="footer_soc--item"><img src="img/f-youtube.svg" alt="alt"></a>
-                            <a href="#" class="footer_soc--item"><img src="img/f-fb.svg" alt="alt"></a>
+                            <a href="https://www.instagram.com/" class="footer_soc--item" target="_blank"><img src="img/f-inst.svg" alt="alt"></a>
+                            <a href="https://www.youtube.com/" class="footer_soc--item" target="_blank"><img src="img/f-youtube.svg" alt="alt"></a>
+                            <a href="https://www.facebook.com/" class="footer_soc--item" target="_blank"><img src="img/f-fb.svg" alt="alt"></a>
                         </div>
                     </div>
                 </div>
@@ -160,6 +159,18 @@
                 </form>
             </div>
         </div>
+        
+        <div style="display: none">
+            <div id="modal3" class="modal1">
+                <div class="modal">
+                    <div class="modal_block">
+                        <div class="modal_p">Your request has been sent</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script> document.getElementById('date').valueAsDate = new Date();</script>
        
         <script src="libs/jquery-3.2.1.min.js"></script>
         <script src="libs/jquery.fancybox.min.js"></script>
