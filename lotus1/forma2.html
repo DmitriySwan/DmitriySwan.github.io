@@ -79,7 +79,7 @@
                          </div>
                          <div class="forma_label">
                              <div class="forma_label--p">Date</div>
-                             <input type="date" id="date" class="forma_input" required>
+                             <input type="date" id="date2" class="forma_input" required>
                          </div>
                          <div class="forma_label">
                              <div class="forma_label--p">Printed Name of Patient’s <br>Representative (if applicable)</div>
@@ -116,7 +116,7 @@
                        <div class="forma_b">We attempted to obtain written acknowledgement of receipt of our 
                            Notice of Privacy Practices on the following date,</div>
                        <div class="forma_label">
-                           <input type="date" id="date" class="forma_input" required>
+                           <input type="date" id="date1" class="forma_input" required>
                        </div>
                        <div class="forma_b">but acknowledgment could not be obtained because:</div>
                        <div class="forma_label forma_label--mt">
@@ -234,7 +234,8 @@
             </div>
         </div>
 
-        <script> document.getElementById('date').valueAsDate = new Date();</script>
+        <script> document.getElementById('date1').valueAsDate = new Date();
+            document.getElementById('date2').valueAsDate = new Date();</script>
         
         
         <script src="libs/jquery-3.2.1.min.js"></script>
