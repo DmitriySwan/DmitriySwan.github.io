@@ -218,7 +218,7 @@
                        </div>
                        <div class="seven_col">
                            <input type="text" class="seven_input" placeholder="Last name" required>
-                           <input type="text" class="seven_input" placeholder="Date of birth" required>
+                           <input type="text" class="seven_input" placeholder="Date of birth" id="date" name="date" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
                            <input type="text" class="seven_input" placeholder="Address" required>
                            <input type="text" class="seven_input" placeholder="Subscriber ID" required>
                        </div>
@@ -239,6 +239,8 @@
             </div>
         </div>
 
+
+        <script> document.getElementById('date').valueAsDate = new Date();</script>
 
         <script src="libs/jquery-3.2.1.min.js"></script>
         <script src="libs/jquery.fancybox.min.js"></script>
