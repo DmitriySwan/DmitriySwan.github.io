@@ -477,6 +477,9 @@
             &:hover {
                 text-decoration: underline;
             }
+            .xs-block({
+                font-size: 16px;
+            });
         }
         .total {
             width: 15px;
@@ -822,6 +825,7 @@
             color: #fff;
             .xs-block({
                 color: #A5A5A5;
+                display: inline-block;
                 font-size: 16px;
             });
         }
@@ -852,7 +856,7 @@
             margin-left: 10px;
         });
         .xs-block({
-            font-size: 0;
+            display: none;
         });
     }
     &_head {
@@ -861,6 +865,9 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 50px;
+        .xs-block({
+            padding: 10px 30px;
+        });
         &--mob {
             display: none;
             .xs-block({
@@ -886,6 +893,14 @@
                     .m();
                 }
             }
+        }
+    }
+    &_slider {
+        .slick-track {
+            padding: 10px 5px; 
+            .xs-block({
+                padding: 0;
+            });
         }
     }
     &_arrow {
@@ -929,6 +944,7 @@
             color: #A5A5A5;
             transition: .4s all;
             cursor: pointer;
+            padding: 0;
             .m();
             &:hover {
                 background-color: #009900;
@@ -940,12 +956,15 @@
         margin-top: 20px;
     }
     &_card {
-        width: 297px;
+        width: 303px;
         .md-block({
             width: 354px;
         });
         .xs-block({
             width: 100%;
+            margin: auto;
+            box-shadow: none;
+            border: 1px solid #c4c4c4;
         });
         background: #FFFFFF;
         box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.08);
@@ -1094,6 +1113,9 @@
     }
     &_arrow {
         position: relative;
+        .xs-block({
+           display: none;
+        });
         &1 {
             cursor: pointer;
             position: absolute;
@@ -1101,9 +1123,6 @@
             left: 40%;
             .md-block({
                 left: 30%;
-            });
-            .xs-block({
-                left: 0%;
             });
         }
         &2 {
@@ -1146,6 +1165,7 @@
             color: #A5A5A5;
             transition: .4s all;
             cursor: pointer;
+            padding: 0;
             .m();
             &:hover {
                 background-color: #009900;
@@ -1248,29 +1268,84 @@
     .lg-block({
         overflow: hidden;
     });
-    &_row {
-        margin: 30px auto 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    &_slider {
+        margin: 50px auto 0;
     }
     &_item {
-        margin: 0 15px;
+        margin: 0 auto;
         filter: grayscale(100%);
         transition: .4s all;
-        width: 13%;
         object-fit: cover;
-        .xs-block({
-            width: 20%;
-        });
         &:hover {
             filter: none;
+        }
+    }
+    &_dots {
+        position: absolute;
+        bottom: -55px; left: 0;
+        display: block;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        li {
+            position: relative;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: none;
+            margin: 0 15px;
+            padding: 0;
+            cursor: pointer;
+            border-radius: 100%;
+        }
+        li button {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            cursor: pointer;
+            color: transparent;
+            border: none;
+            outline: none;
+            background: transparent;
+            border-radius: 100%;
+        }
+        li button:hover,
+        li button:focus {
+            outline: none;
+        }
+        li button:hover:before,
+        li button:focus:before {
+            opacity: 1;
+        }
+        li button:before {
+            font-size: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            content: '';
+            text-align: center;
+            background-color: transparent;
+            border: 2px solid #9E9E9E;
+            border-radius: 100%;
+        }
+        li.slick-active button:before {
+            border-color: #009900;
+            background-color: #009900;
         }
     }
 }
 
 .news {
-    margin-top: 100px;
+    margin-top: 140px;
+    .xs-block({
+        margin-top: 100px;
+    });
     &_row {
         display: flex;
         justify-content: space-between;
@@ -1416,12 +1491,15 @@
 .watched {
     margin-top: 100px;
     &_card {
-        width: 297px;
+        width: 303px;
         .md-block({
             width: 354px;
         });
         .xs-block({
             width: 100%;
+            margin: auto;
+            box-shadow: none;
+            border: 1px solid #c4c4c4;
         });
         background: #FFFFFF;
         box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.08);
@@ -1444,9 +1522,18 @@
     }
     &_slider {
         margin-top: 40px;
+        .slick-track {
+            padding: 10px 5px; 
+            .xs-block({
+                padding: 0;
+            });
+        }
     }
     &_arrow {
         position: relative;
+        .xs-block({
+            display: none;
+        });
         &1 {
             cursor: pointer;
             position: absolute;
@@ -1499,6 +1586,7 @@
             color: #A5A5A5;
             transition: .4s all;
             cursor: pointer;
+            padding: 0;
             .m();
             &:hover {
                 background-color: #009900;

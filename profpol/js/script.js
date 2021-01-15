@@ -16,7 +16,8 @@ $(function(){
         infinity: true,
         dots:true,
         dotsClass: 'intro_dots',
-        arrows: true
+        arrows: true,
+        autoplay:true
     });
     
     $('.intro_arrow1').on('click', function() {
@@ -33,6 +34,7 @@ $(function(){
         dots:true,
         dotsClass: 'trig_dots',
         arrows: true,
+        autoplay:true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -51,6 +53,33 @@ $(function(){
         ]
     });
     
+    $('.partners_slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        swipe: true,
+        infinity: true,
+        dots:true,
+        dotsClass: 'partners_dots',
+        arrows: true,
+        autoplay:true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    
     $('.reviews_slider').slick({
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -59,6 +88,7 @@ $(function(){
         dots:true,
         dotsClass: 'reviews_dots',
         arrows: true,
+        autoplay:true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -85,6 +115,7 @@ $(function(){
         dots:true,
         dotsClass: 'watched_dots',
         arrows: true,
+        autoplay:true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -118,6 +149,7 @@ $(function(){
         dots:true,
         dotsClass: 'tab_dots',
         arrows: true,
+        autoplay:true,
         responsive: [
             {
                 breakpoint: 1024,
