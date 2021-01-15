@@ -17,7 +17,9 @@ $(function(){
         dots:true,
         dotsClass: 'intro_dots',
         arrows: true,
-        autoplay:true
+        autoplay:true,
+        autoplaySpeed: 3000,
+        speed: 600
     });
     
     $('.intro_arrow1').on('click', function() {
@@ -34,7 +36,6 @@ $(function(){
         dots:true,
         dotsClass: 'trig_dots',
         arrows: true,
-        autoplay:true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -61,13 +62,12 @@ $(function(){
         dots:true,
         dotsClass: 'partners_dots',
         arrows: true,
-        autoplay:true,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 3,
+                    slidesToScroll: 3
                 }
             },
             {
@@ -88,10 +88,9 @@ $(function(){
         dots:true,
         dotsClass: 'reviews_dots',
         arrows: true,
-        autoplay:true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 770,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -115,17 +114,23 @@ $(function(){
         dots:true,
         dotsClass: 'watched_dots',
         arrows: true,
-        autoplay:true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1310,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 1074,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 544,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -149,17 +154,23 @@ $(function(){
         dots:true,
         dotsClass: 'tab_dots',
         arrows: true,
-        autoplay:true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1310,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 1074,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 544,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
