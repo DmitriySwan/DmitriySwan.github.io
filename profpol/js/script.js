@@ -178,6 +178,25 @@ $(function(){
             }
         ]
     });
+    
+    $('.card__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.card__nav',
+        dots:false,
+        infinity:false
+    });
+    $('.card__nav').slick({
+        asNavFor: '.card__slider',
+        dots: true,
+        focusOnSelect: true,
+        dots:false,
+        infinity:false,
+        centerMode: true,
+        variableWidth: true
+    });
 
     $('.tab_arrow1').on('click', function() {
         $('.tab_slider').slick('slickPrev');
@@ -236,7 +255,83 @@ $(function(){
     
     $('.scroll').perfectScrollbar();
     
+    $(window).on('load', function () {
 
+        $(".loader_inner").fadeOut();
+        $(".loader").delay(400).fadeOut("slow");
+    });
+    
+    const slider = document.getElementById('sliderPrice');
+    const rangeMin = parseInt(slider.dataset.min);
+    const rangeMax = parseInt(slider.dataset.max);
+    const step = parseInt(slider.dataset.step);
+    const filterInputs = document.querySelectorAll('input.range__input');
+
+    noUiSlider.create(slider, {
+        start: [rangeMin, rangeMax],
+        connect: true,
+        step: step,
+        range: {
+            'min': rangeMin,
+            'max': rangeMax
+        },
+
+        // make numbers whole
+        format: {
+            to: value => value,
+            from: value => value
+        }
+    });
+
+    // bind inputs with noUiSlider 
+    slider.noUiSlider.on('update', (values, handle) => { 
+        filterInputs[handle].value = values[handle]; 
+    });
+
+    filterInputs.forEach((input, indexInput) => { 
+        input.addEventListener('change', () => {
+            slider.noUiSlider.setHandle(indexInput, input.value);
+        })
+    });
+    
+    $(".navbar_content").hide();
+
+    $(".navbar_top").click(function() {
+        $(this).next(".navbar_content").slideToggle();
+        $(this).toggleClass('active');
+    });
+    
+    const slider1 = document.getElementById('sliderPrice2');
+    const rangeMin1 = parseInt(slider.dataset.min);
+    const rangeMax1 = parseInt(slider.dataset.max);
+    const step1 = parseInt(slider.dataset.step);
+    const filterInputs1 = document.querySelectorAll('input.range__input2');
+
+    noUiSlider.create(slider1, {
+        start: [rangeMin1, rangeMax1],
+        connect: true,
+        step: step1,
+        range: {
+            'min': rangeMin1,
+            'max': rangeMax1
+        },
+
+        // make numbers whole
+        format: {
+            to: value => value,
+            from: value => value
+        }
+    });
+
+    // bind inputs with noUiSlider 
+    slider1.noUiSlider.on('update', (values, handle) => { 
+        filterInputs1[handle].value = values[handle]; 
+    });
+
+    filterInputs1.forEach((input, indexInput) => { 
+        input.addEventListener('change', () => {
+            slider1.noUiSlider.setHandle(indexInput, input.value);
+        })
+    });
+    
 });
-
-
