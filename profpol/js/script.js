@@ -206,8 +206,8 @@ $(function(){
     });
     
     $(".tab_item").not(":first").hide();
-    $(".wrapper .tab").click(function() {
-        $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+    $(".tab").click(function() {
+        $(".tab").removeClass("active").eq($(this).index()).addClass("active");
         $(".tab_item").hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass("active");
     
@@ -332,6 +332,17 @@ $(function(){
         input.addEventListener('change', () => {
             slider1.noUiSlider.setHandle(indexInput, input.value);
         })
+    });
+    
+    $(".characteristic_item").not(":first").hide();
+    $(".characteristic_row .characteristic_tab").click(function() {
+        $(".characteristic_row .characteristic_tab").removeClass("active").eq($(this).index()).addClass("active");
+        $(".characteristic_item").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("active");
+    
+    $(".card_dop--child").click(function(){
+        $(".card_dop--child").removeClass("active");
+        $(this).addClass("active");
     });
     
 });

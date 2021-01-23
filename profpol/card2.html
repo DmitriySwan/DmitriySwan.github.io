@@ -19,7 +19,7 @@
 
  <body> 
       
-     <header class="header">
+      <header class="header">
           <div class="header_top">
              <div class="container">
                  <div class="header_top--row">
@@ -167,7 +167,7 @@
           </div>
       </header>
       
-     <div class="top">
+      <div class="top">
           <div class="container">
               <div class="top_row">
                   <div class="breadcrumbs">
@@ -176,961 +176,699 @@
                               <a href="#">Главная</a>
                           </li>
                           <li>
-                              <span class="breadcrumbs_active">Ламинат</span>
+                              <a href="#">Ламинат</a>
+                          </li>
+                          <li>
+                              <a href="#">Tarkett</a>
+                          </li>
+                          <li>
+                              <a href="#">Absolut</a>
+                          </li>
+                          <li class="breadcrumbs_active">
+                              <span>Ламинат Коростень Comfort Click Дуб светлый</span>
                           </li>
                       </ul>
                   </div>
-                  <div class="filter">
-                     <button href="#fmnu" data-fancybox class="filter_button">
-                        <img src="img/Vector.svg" alt="alt">
-                         <p>Фильтр</p>
-                     </button>
-                      <div class="filter_div">
-                          <div class="select select1">
-                              <select name="format" id="format">
-                                  <option selected disabled>Показывать по</option>
-                                  <option>9</option>
-                                  <option>8</option>
-                                  <option>7</option>
-                                  <option>6</option>
-                                  <option>5</option>
-                              </select>
+              </div>
+          </div>
+      </div>
+     
+      <div class="card">
+          <div class="container">
+              <div class="card_row">
+                  <div class="card_photo">
+                      <div class="card__slider">
+                          <div>
+                              <div class="card_item">
+                                  <img src="img/slider-card1.jpg" alt="alt">
+                              </div>
                           </div>
-                          <div class="select select2">
-                              <select name="format" id="format">
-                                  <option selected disabled>По рейтингу</option>
-                                  <option>По рейтингу</option>
-                                  <option>По рейтингу</option>
-                                  <option>По рейтингу</option>
-                                  <option>По рейтингу</option>
-                                  <option>По рейтингу</option>
-                              </select>
+                          <div>
+                              <div class="card_item">
+                                  <img src="img/slider-card1.jpg" alt="alt">
+                              </div>
+                          </div>
+                          <div>
+                              <div class="card_item">
+                                  <img src="img/slider-card1.jpg" alt="alt">
+                              </div>
+                          </div>
+                          <div>
+                              <div class="card_item">
+                                  <img src="img/slider-card1.jpg" alt="alt">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card__nav">
+                          <div class="card__nav--item"> 
+                              <img src="img/slider-card1.jpg" alt="alt">
+                          </div>
+                          <div class="card__nav--item"> 
+                              <img src="img/slider-card1.jpg" alt="alt">
+                          </div>
+                          <div class="card__nav--item"> 
+                              <img src="img/slider-card1.jpg" alt="alt">
+                          </div>
+                          <div class="card__nav--item"> 
+                              <img src="img/slider-card1.jpg" alt="alt">
+                          </div>
+                      </div>
+                  </div>  
+                  <div class="card_text">
+                      <div class="card_text--title">Ламинат Коростень Comfort Click Дуб светлый</div>
+                      <div class="card_text--row card_text--row2">
+                          <div class="card_text--gray">
+                              <ul>
+                                  <li>Производитель: Tarkett</li>
+                                  <li>Код товара: Absolut Jasper 1</li>
+                                  <li>Доступность: На складе</li>
+                                  <li>ISBN: 30</li>
+                                  <li>MPN: 205.0000</li>
+                                  <li>Название коллекции: ABSOLUT</li>
+                                  <li>Класс применения: 23, 32</li>
+                                  <li>Вес 1 кв.м., кг (ГОСТ 11529): 2,45</li>
+                                  <li class="last">Все характеристики</li>
+                              </ul>  
+                          </div>
+                          <div class="card_dop">
+                              <div class="card_dop--p">Ширина рулона (м):</div>
+                              <ul class="card_dop--ul">
+                                  <li class="card_dop--li">
+                                      <input type="radio" id="lid1" class="card_dop--input" name="diameter">
+                                      <label for="lid1" class="card_dop--label">2.3</label>
+                                  </li>
+                                  <li class="card_dop--li">
+                                      <input type="radio" id="lid2" class="card_dop--input" name="diameter" checked>
+                                      <label for="lid2" class="card_dop--label">3</label>
+                                  </li>
+                                  <li class="card_dop--li">
+                                      <input type="radio" id="lid3" class="card_dop--input" name="diameter">
+                                      <label for="lid3" class="card_dop--label">3.5</label>
+                                  </li>
+                                  <li class="card_dop--li">
+                                      <input type="radio" id="lid4" class="card_dop--input" name="diameter">
+                                      <label for="lid4" class="card_dop--label">4</label>
+                                  </li>
+                              </ul>
+                              <div class="card_dop--calc">
+                                  <div class="card_dop--parent"><span class="card_dop--child active">Отрез</span><span class="card_dop--child">Рулон</span></div>
+                                  <div class="card_dop--body">
+                                      <div class="card_dop--line">
+                                          <div class="card_dop--p">Длина отрезка: </div>
+                                          <div class="card_dop--calcin">
+                                              <span class="minus">-</span>
+                                              <input class="numb" type="text" value="1m">
+                                              <span class="plus">+</span>
+                                          </div>
+                                      </div>
+                                      <div class="card_dop--line">
+                                          <div class="card_dop--p">Покупаемое количество товара:
+                                              1м * 1м = 1м²</div>
+                                      </div>
+                                      <div class="card_dop--line">
+                                          <div class="card_dop--p">Итого:</div>
+                                          <div class="card_dop--red">225 грн.</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card_text--block card_text--block2">
+                              <div class="card_text--old">455 грн./м²</div>
+                              <div class="card_text--line">
+                                  <div class="card_text--red">225 грн./м²</div>
+                              </div>
+                              <div class="card_text--gray">От 1 рулона 205 грн.м²</div>
+                              <div class="card_text--flex">
+                                  <button class="card_text--btn">
+                                      Купить
+                                  </button>
+                                  <div class="tab_item--btns">
+                                      <a href="#">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                              <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
+                                          </svg>
+
+                                      </a>
+                                      <a href="#sravnenie" data-fancybox>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                              <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
+                                          </svg>
+                                      </a>
+                                      <a href="#">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                              <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                              <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
+                                          </svg>
+
+                                      </a>
+                                  </div>
+
+                              </div>
+                              <div class="card_text--bottom">
+                                  <div class="card_text--trig">
+                                      <img src="img/cargo-truck1.svg" alt="alt">
+                                      <p class="card_text--trig__p">
+                                          Доставим за 2 дня
+                                      </p>
+                                  </div>
+                                  <div class="card_text--trig">
+                                      <img src="img/card_trig3.svg" alt="alt">
+                                      <p class="card_text--trig__p">
+                                          Самые низкие цены
+                                      </p>
+                                  </div>
+                                  <div class="card_text--trig">
+                                      <img src="img/card_trig2.svg" alt="alt">
+                                      <p class="card_text--trig__p">
+                                          Любой вариант оплаты
+                                      </p>
+                                  </div>
+                                  <div class="card_text--trig">
+                                      <img src="img/card_trig4.svg" alt="alt">
+                                      <p class="card_text--trig__p">
+                                          Сотни довольных клиентов
+                                      </p>
+                                  </div>
+                              </div>
                           </div>
                       </div>
                   </div>
               </div>
           </div>
-      </div>
+      </div> 
       
-     <div class="catalog">
+     <div class="characteristic">
          <div class="container">
-             <div class="catalog_row">
-                 <div class="catalog_left">
-                     <div class="navbar">
-                         <div class="navbar_item">
-                             <div class="navbar_top">
-                                 <img src="img/navbar-arrow.svg" alt="alt">
-                                 <div class="navbar_top--p">
-                                     Стоимость, грн.
-                                 </div>
-                             </div>
-                             <div class="navbar_content">
-                                 <div class="range__div">
-                                     <label class="range__label">
-                                         <input type="text" class="range__input">
-                                     </label>  
-
-                                     <label class="range__label">
-                                         <input type="text" class="range__input">
-                                     </label>
-                                 </div>
-                                 <div class="range">
-                                     <div id="sliderPrice" class="range__slider-price" data-min="100" data-max="1000" data-step="10"></div>
-                                 </div>
-                              </div>
-                         </div>
-                         <div class="navbar_item">
-                             <div class="navbar_top">
-                                 <img src="img/navbar-arrow.svg" alt="alt">
-                                 <div class="navbar_top--p">
-                                     Производитель
-                                 </div>
-                             </div>
-                             <div class="navbar_content">
-                                <div class="check_div">
-                                    <label class="check_label">
-                                        <input type="checkbox" checked>
-                                        <i></i>
-                                    </label>
-                                    <div class="check_p">
-                                        Balterio
-                                    </div>
-                                </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Classen
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Egger
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Tarkett
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Коростень
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="navbar_item">
-                             <div class="navbar_top">
-                                 <img src="img/navbar-arrow.svg" alt="alt">
-                                 <div class="navbar_top--p">
-                                     Цвет
-                                 </div>
-                             </div>
-                             <div class="navbar_content">
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox" checked>
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Светлое дерево
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Классическое дерево
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Серый
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Темное дерево
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Абстракция
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Черный
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="navbar_item">
-                             <div class="navbar_top">
-                                 <img src="img/navbar-arrow.svg" alt="alt">
-                                 <div class="navbar_top--p">
-                                     Класс износостойкости
-                                 </div>
-                             </div>
-                             <div class="navbar_content">
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         32
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         33
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="navbar_item">
-                             <div class="navbar_top">
-                                 <img src="img/navbar-arrow.svg" alt="alt">
-                                 <div class="navbar_top--p">
-                                     Толщина доски
-                                 </div>
-                             </div>
-                             <div class="navbar_content">
-                                  <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         8 мм
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         10 мм
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         12 мм
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="navbar_item">
-                             <div class="navbar_top">
-                                 <img src="img/navbar-arrow.svg" alt="alt">
-                                 <div class="navbar_top--p">
-                                     Фаска
-                                 </div>
-                             </div>
-                             <div class="navbar_content">
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox" checked>
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Четырехсторонняя (4 V)
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Двухсторонняя (2 V)
-                                     </div>
-                                 </div>
-                                 <div class="check_div">
-                                     <label class="check_label">
-                                         <input type="checkbox">
-                                         <i></i>
-                                     </label>
-                                     <div class="check_p">
-                                         Без фаски
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="navbar_item">
-                             <div class="navbar_top">
-                                 <img src="img/navbar-arrow.svg" alt="alt">
-                                 <div class="navbar_top--p">
-                                     Страна - производитель
-                                 </div>
-                             </div>
-                             <div class="navbar_content">
-                                 <div>
-                                     <div class="check_div">
-                                         <label class="check_label">
-                                             <input type="checkbox">
-                                             <i></i>
-                                         </label>
-                                         <div class="check_p">
-                                             Германия
-                                         </div>
-                                     </div>
-                                     <div class="check_div">
-                                         <label class="check_label">
-                                             <input type="checkbox">
-                                             <i></i>
-                                         </label>
-                                         <div class="check_p">
-                                             Бельгия
-                                         </div>
-                                     </div>
-                                     <div class="check_div">
-                                         <label class="check_label">
-                                             <input type="checkbox">
-                                             <i></i>
-                                         </label>
-                                         <div class="check_p">
-                                             Украина
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="navbar_btns">
-                                     <button class="navbar_apply">Применить (1255)</button>
-                                     <button class="navbar_off">Сбросить</button>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
+             <div class="characteristic_row">
+                 <div class="tabs">
+                     <span class="tab">Описание</span>
+                     <span class="tab">Характеристики</span>
+                     <span class="tab">Отзывы</span> 
+                     <span class="tab">Доставка</span>
+                     <span class="tab">Оплата</span>        
                  </div>
-                 <div class="catalog_right">
-                     <div class="catalog_right--row">
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
+                 <div class="tab_content">
+                     <div class="tab_item">
+                         <div class="characteristic_mob">
+                             Выбрать другую категорию
                          </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         
+                         <div class="characteristic_desc">
+                             В быту Tarkett Absolut Jasper 1 может применяться даже в коммунальных квартирах и хостелах. Без труда справится с повышенной нагрузкой, точечными воздействиями острыми предметами, частой влажной уборкой, не теряя первоначального лоска. Его качество проверено на соответствие жёстким требованиям европейских стандартов качества, никаких отклонений не выявлено. Tarkett Absolut Jasper 1 линолеум европейского качества, который при правильной эксплуатации сможет существенно превзойти гарантийный срок производителя 15 лет.
                          </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
+                         <div class="characteristic_desc">
+                             Описание товара
+                             Tarkett Absolut Jasper 1 — полукоммерческий линолеум с отличными характеристиками. Имеет класс использования «32», а значит может применяться для отделки полов любых помещений средней и большой проходимости, включая кабинеты школьных и дошкольных образовательных учреждений.
                          </div>
                      </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
+                     <div class="tab_item">
+                         <div class="characteristic_mob">
+                             Выбрать другую категорию
                          </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         <div class="characteristic_item">
+                             <p>Название коллекции</p>
+                             <p>ABSOLUT</p>
                          </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
+                         <div class="characteristic_item">
+                             <p>Класс применения</p>
+                             <p>23, 32</p>
                          </div>
-                     </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
+                         <div class="characteristic_item">
+                             <p>Толщина покрытия общая, мм. (ГОСТ 11529-86 п.2.2)</p>
+                             <p>3,00</p>
                          </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         <div class="characteristic_item">
+                             <p>Толщина защитного слоя, мм. (ГОСТ 11529 п.2.2.3 - толщина лицевого защитного прозрачного слоя)</p>
+                             <p>
+                                 0,45</p>
                          </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
+                         <div class="characteristic_item">
+                             <p>Вес 1 кв.м., кг (ГОСТ 11529)
+                             </p>
+                             <p>
+                                 2,45
+                             </p>
+                         </div>
+                         <div class="characteristic_item">
+                             <p>Дополнительное защитное покрытие</p>
+                             <p>EXTREME PROTECTION</p>
+                         </div>
+                         <div class="characteristic_item">
+                             <p>Намотка стандартного рулона, м
+                             </p>
+                             <p>30 (2,5м; 3м), 25 (3,5 м), 22(4м)
+                             </p>
+                         </div>
+                         <div class="characteristic_item">
+                             <p>Ширины в действующей коллекции, м
+                             </p>
+                             <p>2,5; 3; 3,5; 4
+                             </p>
+                         </div>
+                         <div class="characteristic_item">
+                             <p>Устойчивость к воздействию влаги</p>
+                             <p>устойчиво
+                             </p>
+                         </div>
+                         <div class="characteristic_item">
+                             <p>Использование для теплых полов
+                             </p>
+                             <p>
+                                 возможно, макс.+27°С
+                             </p>
                          </div>
                      </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
+                     <div class="tab_item">
+                         <div class="characteristic_mob">
+                             Выбрать другую категорию
                          </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
-                         </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
+                         <div class="characteristic_reviews">
+                             <div class="characteristic_reviews--up">
+                                 <div class="characteristic_reviews--item">
+                                     <div class="characteristic_reviews--top">
+                                         <div class="characteristic_reviews--name">Женя Шевченко</div>
+                                         <div class="characteristic_reviews--date">09 октября 2020</div>
+                                     </div>
+                                     <div class="characteristic_reviews--p">Даний ламінат з відтінком сивий дуб я придбав для коридору. Розміри заявлені на сайті повністю відповідають, ламінат має хорошу фаску з 4 сторін. Поверхня тверда та стійка до пошкоджень</div> 
+                                 </div>
+                                 <div class="characteristic_reviews--item">
+                                     <div class="characteristic_reviews--top">
+                                         <div class="characteristic_reviews--name">Женя Шевченко</div>
+                                         <div class="characteristic_reviews--date">09 октября 2020</div>
+                                     </div>
+                                     <div class="characteristic_reviews--p">Даний ламінат з відтінком сивий дуб я придбав для коридору. Розміри заявлені на сайті повністю відповідають, ламінат має хорошу фаску з 4 сторін. Поверхня тверда та стійка до пошкоджень</div> 
+                                 </div>
                              </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
+
+                             <div class="characteristic_reviews--down">
+                                 <div class="characteristic_form--row">
+                                     <input type="text" class="characteristic_form--input characteristic_form--input1" placeholder="Ваше имя">
+                                     <input type="text" class="characteristic_form--input characteristic_form--input2" placeholder="Достоинства">
+                                     <input type="text" class="characteristic_form--input characteristic_form--input2" placeholder="Недостатки">
+                                 </div>
+                                 <textarea class="characteristic_form--textarea" placeholder="Отзыв"></textarea>
+                                 <div class="characteristic_form--submit">
+                                     <button class="characteristic_form--btn">
+                                         Отправить
+                                     </button>
+                                 </div>
+                             </div>
                          </div>
                      </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
+                     <div class="tab_item">
+                         <div class="characteristic_mob">
+                             Выбрать другую категорию
                          </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         <div class="characteristic_desc">
+                             В быту Tarkett Absolut Jasper 1 может применяться даже в коммунальных квартирах и хостелах. Без труда справится с повышенной нагрузкой, точечными воздействиями острыми предметами, частой влажной уборкой, не теряя первоначального лоска. Его качество проверено на соответствие жёстким требованиям европейских стандартов качества, никаких отклонений не выявлено. Tarkett Absolut Jasper 1 линолеум европейского качества, который при правильной эксплуатации сможет существенно превзойти гарантийный срок производителя 15 лет.
                          </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
+                         <div class="characteristic_desc">
+                             Описание товара
+                             Tarkett Absolut Jasper 1 — полукоммерческий линолеум с отличными характеристиками. Имеет класс использования «32», а значит может применяться для отделки полов любых помещений средней и большой проходимости, включая кабинеты школьных и дошкольных образовательных учреждений.
                          </div>
                      </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
+                     <div class="tab_item">
+                         <div class="characteristic_mob">
+                             Выбрать другую категорию
                          </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         <div class="characteristic_desc">
+                             В быту Tarkett Absolut Jasper 1 может применяться даже в коммунальных квартирах и хостелах. Без труда справится с повышенной нагрузкой, точечными воздействиями острыми предметами, частой влажной уборкой, не теряя первоначального лоска. Его качество проверено на соответствие жёстким требованиям европейских стандартов качества, никаких отклонений не выявлено. Tarkett Absolut Jasper 1 линолеум европейского качества, который при правильной эксплуатации сможет существенно превзойти гарантийный срок производителя 15 лет.
                          </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
+                         <div class="characteristic_desc">
+                             Описание товара
+                             Tarkett Absolut Jasper 1 — полукоммерческий линолеум с отличными характеристиками. Имеет класс использования «32», а значит может применяться для отделки полов любых помещений средней и большой проходимости, включая кабинеты школьных и дошкольных образовательных учреждений.
                          </div>
                      </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
-                         </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
-                         </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
-                         </div>
-                     </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
-                         </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
-                         </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
-                         </div>
-                     </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
-                         </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
-                         </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
-                         </div>
-                     </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
-                         </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
-                         </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
-                         </div>
-                     </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
-                         </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
-                         </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
-                         </div>
-                     </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
-                         </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
-                         </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
-                         </div>
-                     </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
-                         </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
-                         </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
-                         </div>
-                     </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
-                         </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
-                         </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
-                         </div>
-                     </div>
-                     <div class="catalog_card">
-                         <a href="card.html" class="a"></a>
-                         <div class="tab_item--head">
-                             <div class="tab_item--sale">Скидка 20%</div>
-                             <div class="tab_item--btns">
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                                 <a href="#sravnenie" data-fancybox>
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
-                                     </svg>
-                                 </a>
-                                 <a href="#">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
-                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
-                                     </svg>
-
-                                 </a>
-                             </div>
-                         </div>
-                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
-                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
-                         <div class="tab_item--gray">Производитель: Sinteros
-                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
-                         </div>
-                         <div class="tab_item--black">Нет в наличии</div>
-                         <div class="tab_item--bottom">
-                             <div class="tab_item--price">
-                                 212 грн
-                             </div>
-                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
-                         </div>
-                     </div>
-                     </div>
-                     <div class="pagination">
-                        <a href="#" class="pagination_btn">
-                            <img src="img/Arrow5.svg" alt="alt">
-                        </a>
-                        <ul class="pagination_list">
-                            <li class="pagination_item"><a href="#" class="pagination_link">1</a></li>
-                            <li class="pagination_item"><a href="#" class="pagination_link">2</a></li>
-                            <li class="pagination_item"><a href="#" class="pagination_link">3</a></li>
-                            <li class="pagination_item"><a href="#" class="pagination_link pagination_link__active">4</a></li>
-                            <li class="pagination_item"><a href="#" class="pagination_link">5</a></li>
-                        </ul>
-                        <a href="#" class="pagination_btn">
-                            <img src="img/Arrow4.svg" alt="alt">
-                        </a>
-                    </div>
-
                  </div>
              </div>
+         </div>
+     </div> 
+      
+     <div class="watched">
+         <div class="container">
+             <div class="h2">Новинки</div>
+             <div class="watched_slider">
 
+                 <div>
+                     <div class="watched_card">
+                         <a href="card.html" class="a"></a>
+                         <div class="tab_item--head">
+                             <div class="tab_item--sale">Скидка 20%</div>
+                             <div class="tab_item--btns">
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                                 <a href="#sravnenie" data-fancybox>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
+                                     </svg>
+                                 </a>
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                             </div>
+                         </div>
+                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
+                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                         <div class="tab_item--gray">Производитель: Sinteros
+                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         </div>
+                         <div class="tab_item--black">Нет в наличии</div>
+                         <div class="tab_item--bottom">
+                             <div class="tab_item--price">
+                                 212 грн
+                             </div>
+                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
+                         </div>
+                     </div>
+
+                 </div>
+                 <div>
+                     <div class="watched_card">
+                         <a href="card.html" class="a"></a>
+                         <div class="tab_item--head">
+                             <div class="tab_item--sale">Скидка 20%</div>
+                             <div class="tab_item--btns">
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                                 <a href="#sravnenie" data-fancybox>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
+                                     </svg>
+                                 </a>
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                             </div>
+                         </div>
+                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
+                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                         <div class="tab_item--gray">Производитель: Sinteros
+                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         </div>
+                         <div class="tab_item--black">Нет в наличии</div>
+                         <div class="tab_item--bottom">
+                             <div class="tab_item--price">
+                                 212 грн
+                             </div>
+                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
+                         </div>
+                     </div>
+
+                 </div>
+                 <div>
+                     <div class="watched_card">
+                         <a href="card.html" class="a"></a>
+                         <div class="tab_item--head">
+                             <div class="tab_item--sale">Скидка 20%</div>
+                             <div class="tab_item--btns">
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                                 <a href="#sravnenie" data-fancybox>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
+                                     </svg>
+                                 </a>
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                             </div>
+                         </div>
+                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
+                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                         <div class="tab_item--gray">Производитель: Sinteros
+                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         </div>
+                         <div class="tab_item--black">Нет в наличии</div>
+                         <div class="tab_item--bottom">
+                             <div class="tab_item--price">
+                                 212 грн
+                             </div>
+                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
+                         </div>
+                     </div>
+
+                 </div>
+                 <div>
+                     <div class="watched_card">
+                         <a href="card.html" class="a"></a>
+                         <div class="tab_item--head">
+                             <div class="tab_item--sale">Скидка 20%</div>
+                             <div class="tab_item--btns">
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                                 <a href="#sravnenie" data-fancybox>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
+                                     </svg>
+                                 </a>
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                             </div>
+                         </div>
+                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
+                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                         <div class="tab_item--gray">Производитель: Sinteros
+                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         </div>
+                         <div class="tab_item--black">Нет в наличии</div>
+                         <div class="tab_item--bottom">
+                             <div class="tab_item--price">
+                                 212 грн
+                             </div>
+                             <button href="#zakaz" data-fancybox class="tab_item--btn">В корзину</button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div>
+                     <div class="watched_card">
+                         <a href="card.html" class="a"></a>
+                         <div class="tab_item--head">
+                             <div class="tab_item--sale">Скидка 20%</div>
+                             <div class="tab_item--btns">
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
+                                     </svg>
+                                 </a>
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                             </div>
+                         </div>
+                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
+                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                         <div class="tab_item--gray">Производитель: Sinteros
+                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         </div>
+                         <div class="tab_item--black">Нет в наличии</div>
+                         <div class="tab_item--bottom">
+                             <div class="tab_item--price">
+                                 212 грн
+                             </div>
+                             <button class="tab_item--btn">В корзину</button>
+                         </div>
+                     </div>
+
+                 </div>
+                 <div>
+                     <div class="watched_card">
+                         <a href="card.html" class="a"></a>
+                         <div class="tab_item--head">
+                             <div class="tab_item--sale">Скидка 20%</div>
+                             <div class="tab_item--btns">
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
+                                     </svg>
+                                 </a>
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                             </div>
+                         </div>
+                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
+                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                         <div class="tab_item--gray">Производитель: Sinteros
+                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         </div>
+                         <div class="tab_item--black">Нет в наличии</div>
+                         <div class="tab_item--bottom">
+                             <div class="tab_item--price">
+                                 212 грн
+                             </div>
+                             <button class="tab_item--btn">В корзину</button>
+                         </div>
+                     </div>
+
+                 </div>
+                 <div>
+                     <div class="watched_card">
+                         <a href="card.html" class="a"></a>
+                         <div class="tab_item--head">
+                             <div class="tab_item--sale">Скидка 20%</div>
+                             <div class="tab_item--btns">
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
+                                     </svg>
+                                 </a>
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                             </div>
+                         </div>
+                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
+                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                         <div class="tab_item--gray">Производитель: Sinteros
+                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         </div>
+                         <div class="tab_item--black">Нет в наличии</div>
+                         <div class="tab_item--bottom">
+                             <div class="tab_item--price">
+                                 212 грн
+                             </div>
+                             <button class="tab_item--btn">В корзину</button>
+                         </div>
+                     </div>
+
+                 </div>
+                 <div>
+                     <div class="watched_card">
+                         <a href="card.html" class="a"></a>
+                         <div class="tab_item--head">
+                             <div class="tab_item--sale">Скидка 20%</div>
+                             <div class="tab_item--btns">
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1375 5.08555C19.262 5.15647 19.3584 5.26677 19.4109 5.39845C19.4634 5.53013 19.4688 5.67539 19.4264 5.81051L17.1343 13.1251H21.3634C21.4877 13.125 21.6093 13.1607 21.7131 13.2278C21.817 13.2948 21.8986 13.3902 21.9479 13.5023C21.9971 13.6144 22.0119 13.7381 21.9904 13.8584C21.9688 13.9786 21.9119 14.09 21.8267 14.1788L11.6452 24.8032C11.5467 24.9061 11.4156 24.9731 11.2733 24.9935C11.131 25.0138 10.9859 24.9862 10.8616 24.9152C10.7373 24.8442 10.6412 24.7339 10.5889 24.6023C10.5366 24.4707 10.5312 24.3257 10.5736 24.1907L12.8657 16.8749H8.63659C8.51231 16.8749 8.39073 16.8392 8.28687 16.7722C8.18301 16.7052 8.1014 16.6097 8.05213 16.4977C8.00287 16.3856 7.98809 16.2618 8.00963 16.1416C8.03117 16.0214 8.08808 15.91 8.17334 15.8212L18.3548 5.19679C18.4532 5.09405 18.5841 5.02701 18.7262 5.00659C18.8683 4.98616 19.0132 5.01355 19.1375 5.0843V5.08555ZM10.1091 15.6249H13.7273C13.8269 15.6249 13.9251 15.6479 14.014 15.6919C14.1029 15.736 14.1801 15.7999 14.2393 15.8785C14.2984 15.9572 14.338 16.0484 14.3547 16.1448C14.3715 16.2412 14.3649 16.3402 14.3357 16.4337L12.5946 21.9871L19.8896 14.375H16.2727C16.1731 14.375 16.0749 14.3521 15.986 14.3081C15.8971 14.264 15.8199 14.2001 15.7607 14.1214C15.7016 14.0428 15.662 13.9515 15.6453 13.8551C15.6285 13.7587 15.6351 13.6598 15.6643 13.5663L17.4054 8.01288L10.1091 15.6249Z" fill="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10029 17.7143H10.2003V20.9286H8.10029V17.7143ZM13.3503 13.4286H15.4503V20.9286H13.3503V13.4286ZM18.6003 8.07143H20.7003V20.9286H18.6003V8.07143ZM17.8578 7.31381C18.0547 7.11288 18.3218 7 18.6003 7H20.7003C20.9788 7 21.2458 7.11288 21.4428 7.31381C21.6397 7.51475 21.7503 7.78727 21.7503 8.07143V20.9286C21.7503 20.9286 21.7503 20.9286 21.7503 20.9286H22.275C22.4142 20.9286 22.5478 20.9851 22.6462 21.0856C22.7447 21.186 22.8 21.3223 22.8 21.4644C22.8 21.6064 22.7447 21.7427 22.6462 21.8432C22.5478 21.9436 22.4142 22.0001 22.275 22.0001H6.525C6.38576 22.0001 6.25223 21.9436 6.15377 21.8432C6.05531 21.7427 6 21.6064 6 21.4644C6 21.3223 6.05531 21.186 6.15377 21.0856C6.25223 20.9851 6.38576 20.9286 6.525 20.9286H7.05029C7.05029 20.9286 7.05029 20.9286 7.05029 20.9286V17.7143C7.05029 17.4301 7.16092 17.1576 7.35783 16.9567C7.55474 16.7557 7.82182 16.6429 8.10029 16.6429H10.2003C10.4788 16.6429 10.7458 16.7557 10.9428 16.9567C11.1397 17.1576 11.2503 17.4301 11.2503 17.7143V20.9286C11.2503 20.9286 11.2503 20.9286 11.2503 20.9286H12.3003C12.3003 20.9286 12.3003 20.9286 12.3003 20.9286V13.4286C12.3003 13.1444 12.4109 12.8719 12.6078 12.671C12.8047 12.47 13.0718 12.3571 13.3503 12.3571H15.4503C15.7288 12.3571 15.9958 12.47 16.1928 12.671C16.3897 12.8719 16.5003 13.1444 16.5003 13.4286V20.9286C16.5003 20.9286 16.5003 20.9286 16.5003 20.9286H17.5503C17.5503 20.9286 17.5503 20.9286 17.5503 20.9286V8.07143C17.5503 7.78727 17.6609 7.51475 17.8578 7.31381Z" fill="#C4C4C4"/>
+                                     </svg>
+                                 </a>
+                                 <a href="#">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                         <circle cx="15" cy="15" r="15" fill="#E5E5E5"/>
+                                         <path d="M14.576 10.5149L15 11.1936L15.424 10.5149C16.1928 9.28456 17.547 8.5 19.0909 8.5C21.5062 8.5 23.5 10.5175 23.5 13C23.5 14.1023 23.0015 15.2499 22.188 16.3797C21.378 17.5047 20.2875 18.5679 19.1799 19.4909C18.0747 20.4119 16.967 21.1813 16.1343 21.721C15.7184 21.9906 15.3723 22.2021 15.131 22.3457C15.0835 22.374 15.0401 22.3997 15.001 22.4226C14.9617 22.3994 14.9181 22.3735 14.8704 22.3448C14.629 22.2001 14.2828 21.9871 13.8668 21.7159C13.034 21.1729 11.9261 20.3995 10.8206 19.4757C9.71277 18.5499 8.62195 17.4852 7.81179 16.3618C6.99783 15.2332 6.5 14.0911 6.5 13C6.5 10.5175 8.49384 8.5 10.9091 8.5C12.453 8.5 13.8072 9.28456 14.576 10.5149Z" stroke="#C4C4C4"/>
+                                     </svg>
+
+                                 </a>
+                             </div>
+                         </div>
+                         <img src="img/card.jpg" alt="alt" class="tab_item--img">
+                         <div class="tab_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                         <div class="tab_item--gray">Производитель: Sinteros
+                             Ширина рулона (м): 3, 1.5, 2, 2.5, 5
+                         </div>
+                         <div class="tab_item--black">Нет в наличии</div>
+                         <div class="tab_item--bottom">
+                             <div class="tab_item--price">
+                                 212 грн
+                             </div>
+                             <button class="tab_item--btn">В корзину</button>
+                         </div>
+                     </div>
+                 </div>
+
+             </div>
+
+             <div class="watched_arrow">
+                 <button href="#" class="watched_arrow1">
+                     <img src="img/Arrow5.svg" alt="alt">
+                 </button>
+                 <button class="watched_arrow2">
+                     <img src="img/Arrow4.svg" alt="alt">
+                 </button>
+             </div>
          </div>
      </div>
-       
-     <div class="follow follow_inner">
+     
+     <div class="follow">
          <div class="container">
              <div class="follow_row">
                  <div class="follow_text">

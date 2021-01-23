@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>start</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+       <link rel="stylesheet" href="libs/slick.css">
+       <link rel="stylesheet" href="libs/slick-theme.css">
+       <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+       <link rel="stylesheet" href="libs/perfect-scrollbar.min.css">
+       <link rel="stylesheet" href="libs/nouislider.min.css">
+       <link rel="stylesheet" href="css/styles.css">
+       
+    </head>
+
+ <body> 
+      
+      <header class="header">
+          <div class="header_top">
+             <div class="container">
+                 <div class="header_top--row">
+                 <div class="header_mnu">
+                     <ul>
+                         <li><a href="#">О компании</a></li>
+                         <li><a href="#">Доставка и оплата</a></li>
+                         <li><a href="#">Акции и распродажи</a></li>
+                         <li><a href="#">Отзывы</a></li>
+                         <li><a href="#">Контакты</a></li>
+                         <li><a href="#">Оптовикам</a></li>
+                     </ul>
+                 </div>
+                 <div class="header_small">
+                     <div class="header_currency">
+                         <span>&#36; 27.83</span>
+                         <span>&#8364; 32.77</span>
+                     </div>
+                     <div class="header_lang">
+                         <div class="header_lang--item active">рус</div>
+                         <div class="header_lang--item dis">укр</div>
+                     </div>
+                 </div>
+             </div>
+            </div>
+          </div>
+          <div class="header_bottom">
+              <div class="container">
+                  <div class="header_bottom--row">
+                  <a href="#moba" data-fancybox class="header_burger">
+                      <img src="img/menu.svg" alt="alt">
+                  </a>
+                  <a href="index.html" class="header_logo">
+                      <img src="img/logo.svg" alt="alt" class="header_logo--desk">
+                      <img src="img/logomob.svg" alt="alt" class="header_logo--mob">
+                  </a>
+                  <div class="header_search">
+                    <div class="header_search--left">
+                        <div class="header_search--all">
+                            <button class="dropdown-toggle">
+                                <span>
+                                    Везде
+                                </span>
+                                <img src="img/arrow-search.svg" alt="alt">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Везде</a></li>
+                                <li><a href="#">Везде</a></li>
+                                <li><a href="#">Везде</a></li>
+                                <li><a href="#">Везде</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="header_search--input" placeholder="Поиск товара по каталогу">
+                    </div>
+                      <div class="header_search--btn">
+                          <button>
+                              <img src="img/search.svg" alt="alt">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="header_tels">
+                      <img src="img/numbers.svg" alt="alt" class="header_tels--mob">
+                      <img src="img/tel-arrow.svg" alt="alt" class="header_tels--img">
+                      <div class="header_tels--row">
+                          <div class="header_tels--number">
+                              +38 (067) 200 56 60
+                          </div>
+                          <div class="header_tels--grey">По будням с 9:00 до 18:00</div>
+                      </div>
+                      <div class="header_tels--hidden">
+                          <ul>
+                              <li>
+                                  <img src="img/tels-tel.svg" alt="alt">
+                                  <a href="tel:+38(067)2005660">+38 (067) 200-56-60</a>
+                              </li>
+                              <li>
+                                  <img src="img/tels-tel.svg" alt="alt">
+                                  <a href="tel:+38(050)0831410">+38 (050) 083-14-10</a>
+                              </li>
+                              <li>
+                                  <img src="img/tels-mail.svg" alt="alt">
+                                  <a href="mailto:sales@profpidloga.com.ua">sales@profpidloga.com.ua
+                                  </a>
+                              </li>
+                              <li class="header_tels--soc">
+                                  <a href="#" target="_blank"><img src="img/telegram.png" alt="alt"></a>
+                                  <a href="#" target="_blank"><img src="img/viber.png" alt="alt"></a>
+                                  <a href="#" target="_blank"><img src="img/whatsapp.png" alt="alt"></a>
+                              </li>
+                          </ul>
+                          <a href="#callback" data-fancybox class="header_tels--btn">Заказать звонок</a>
+                      </div>
+                  </div>
+                      <div class="header_buttons">
+                          <div>
+                              <button data-fancybox href="#form" class="header_buttons--item header_buttons--entry">
+                                 <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M15.8257 10.0625C16.2386 10.1823 16.6317 10.3449 17.005 10.5502C17.3784 10.7556 17.7693 11.0679 18.1778 11.4872C18.5863 11.9064 18.9355 12.4006 19.2254 12.9696C19.5153 13.5386 19.7568 14.2745 19.9501 15.1772C20.1434 16.0799 20.24 17.0917 20.24 18.2126C20.24 19.5303 19.8008 20.6576 18.9223 21.5946C18.0438 22.5315 16.9853 23 15.7466 23H4.49339C3.25474 23 2.19618 22.5315 1.31771 21.5946C0.439236 20.6576 0 19.5303 0 18.2126C0 17.0917 0.0966319 16.0799 0.289896 15.1772C0.48316 14.2745 0.72474 13.5386 1.01464 12.9696C1.30453 12.4006 1.65372 11.9064 2.06221 11.4872C2.4707 11.0679 2.86162 10.7556 3.23497 10.5502C3.60832 10.3449 4.00144 10.1823 4.41432 10.0625C3.72033 8.99293 3.37333 7.82924 3.37333 6.57143C3.37333 5.68155 3.55122 4.83231 3.90701 4.02372C4.26279 3.21512 4.74375 2.51562 5.3499 1.92522C5.95604 1.33482 6.67419 0.86635 7.50435 0.51981C8.33451 0.17327 9.20639 0 10.12 0C11.0336 0 11.9055 0.17327 12.7357 0.51981C13.5658 0.86635 14.284 1.33482 14.8901 1.92522C15.4962 2.51562 15.9772 3.21512 16.333 4.02372C16.6888 4.83231 16.8667 5.68155 16.8667 6.57143C16.8667 7.82924 16.5197 8.99293 15.8257 10.0625ZM10.12 1.64286C8.72323 1.64286 7.5307 2.12416 6.54242 3.08677C5.55414 4.04939 5.06 5.21094 5.06 6.57143C5.06 7.93192 5.55414 9.09347 6.54242 10.0561C7.5307 11.0187 8.72323 11.5 10.12 11.5C11.5168 11.5 12.7093 11.0187 13.6976 10.0561C14.6859 9.09347 15.18 7.93192 15.18 6.57143C15.18 5.21094 14.6859 4.04939 13.6976 3.08677C12.7093 2.12416 11.5168 1.64286 10.12 1.64286ZM15.7466 21.3571C16.5197 21.3571 17.1807 21.0512 17.7298 20.4395C18.2788 19.8277 18.5533 19.0854 18.5533 18.2126C18.5533 16.1676 18.2085 14.5547 17.5189 13.3739C16.8293 12.1931 15.8389 11.5727 14.5475 11.5128C13.2737 12.5995 11.7979 13.1429 10.12 13.1429C8.44212 13.1429 6.96628 12.5995 5.6925 11.5128C4.40115 11.5727 3.41067 12.1931 2.72107 13.3739C2.03147 14.5547 1.68667 16.1676 1.68667 18.2126C1.68667 19.0854 1.96119 19.8277 2.51023 20.4395C3.05928 21.0512 3.72033 21.3571 4.49339 21.3571H15.7466Z" fill="#525252"/>
+                                  </svg><span class="header_buttons--text">Вход</span></button>
+                          </div>
+                          <div>
+                              <button data-fancybox href="#comparison" class="header_buttons--item header_buttons--compare">
+                                 <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.50024 16.4286H3.25024V21.3571H6.50024V16.4286ZM14.6252 9.85714H11.3752V21.3571H14.6252V9.85714ZM22.7502 1.64286H19.5002V21.3571H22.7502V1.64286ZM19.5002 0C19.0693 0 18.6559 0.173086 18.3512 0.481182C18.0464 0.789277 17.8752 1.20714 17.8752 1.64286V21.3571C17.8752 21.7929 18.0464 22.2107 18.3512 22.5188C18.6559 22.8269 19.0693 23 19.5002 23H22.7502C23.1812 23 23.5945 22.8269 23.8993 22.5188C24.204 22.2107 24.3752 21.7929 24.3752 21.3571V1.64286C24.3752 1.20714 24.204 0.789277 23.8993 0.481182C23.5945 0.173086 23.1812 0 22.7502 0H19.5002ZM9.75024 9.85714C9.75024 9.42143 9.92145 9.00356 10.2262 8.69547C10.5309 8.38737 10.9443 8.21429 11.3752 8.21429H14.6252C15.0562 8.21429 15.4695 8.38737 15.7743 8.69547C16.079 9.00356 16.2502 9.42143 16.2502 9.85714V21.3571C16.2502 21.7929 16.079 22.2107 15.7743 22.5188C15.4695 22.8269 15.0562 23 14.6252 23H11.3752C10.9443 23 10.5309 22.8269 10.2262 22.5188C9.92145 22.2107 9.75024 21.7929 9.75024 21.3571V9.85714ZM1.62524 16.4286C1.62524 15.9929 1.79645 15.575 2.1012 15.2669C2.40594 14.9588 2.81927 14.7857 3.25024 14.7857H6.50024C6.93122 14.7857 7.34455 14.9588 7.64929 15.2669C7.95404 15.575 8.12524 15.9929 8.12524 16.4286V21.3571C8.12524 21.7929 7.95404 22.2107 7.64929 22.5188C7.34455 22.8269 6.93122 23 6.50024 23H3.25024C2.81927 23 2.40594 22.8269 2.1012 22.5188C1.79645 22.2107 1.62524 21.7929 1.62524 21.3571V16.4286Z" fill="#525252"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 22.1784C0 21.9605 0.0856024 21.7516 0.237976 21.5975C0.390349 21.4435 0.597012 21.3569 0.8125 21.3569H25.1875C25.403 21.3569 25.6097 21.4435 25.762 21.5975C25.9144 21.7516 26 21.9605 26 22.1784C26 22.3962 25.9144 22.6052 25.762 22.7592C25.6097 22.9132 25.403 22.9998 25.1875 22.9998H0.8125C0.597012 22.9998 0.390349 22.9132 0.237976 22.7592C0.0856024 22.6052 0 22.3962 0 22.1784Z" fill="#525252"/>
+                                  </svg>
+                                  <span class="header_buttons--text">Сравнение</span>
+                                  <span class="header_buttons--total">2</span>
+                              </button>
+                          </div>
+                          <div>
+                              <button data-fancybox href="#basket" class="header_buttons--item header_buttons--basket">
+                                 <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#525252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#525252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#525252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg><span class="header_buttons--text">Корзина</span>
+                                <span class="header_buttons--total">3</span>
+                              </button>
+                          </div>
+                      </div>
+                      <button data-fancybox href="#basket" class="header_basket">
+                          <img src="img/basketmob.svg" alt="alt">
+                          <span class="header_basket--total">3</span>
+                      </button>
+              </div>
+              </div>
+          </div>
+          <div class="header_nav">
+                 <nav class="flexmenu">
+                     <div class="flexmenu_container">
+                     <ul class="navmenu">
+                         <li><a href="#">Ламинат</a></li>
+                         <li><a href="#">Ковролин</a></li>
+                         <li><a href="#">Линолеум</a></li>
+                         <li><a href="#">Виниловая плитка</a></li>
+                         <li><a href="#">Паркетная доска</a></li>
+                         <li><a href="#">Плинтуса</a></li>
+                         <li><a href="#">Ламинат</a></li>
+                         <li><a href="#">Ковролин</a></li>
+                         <li><a href="#">Линолеум</a></li>
+                     </ul>
+                     </div>
+                 </nav>
+          </div>
+      </header>
+      
+      <div class="top">
+          <div class="container">
+              <div class="top_row">
+                  <div class="breadcrumbs">
+                      <ul>
+                          <li>
+                              <a href="#">Главная</a>
+                          </li>
+                          <li class="breadcrumbs_active">
+                              <span>Оформление заказа</span>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+     <div class="zakazano">
+        <div class="container">
+            <div class="zakazano_title h2">Оформление заказа</div>
+            <div class="zakazano_row">
+                <div class="zakazano_left">
+                    <div class="zakazano_left--top">
+                        <label class="zakazano_left--label">
+                            <input type="radio" name="name">
+                            <i class="zakazano_left--radio"></i>
+                            <p>Заказываю впервые</p>
+                        </label>
+                        <label class="zakazano_left--label zakazano_left--label2">
+                            <input type="radio" name="name">
+                            <i class="zakazano_left--radio"></i>
+                            <p>Уже есть аккаунт</p>
+                        </label>
+                    </div>
+                    <div class="zakazano_left--form">
+                        <input type="text" class="zakazano_left--input" placeholder="ФИО">
+                        <input type="tel" class="zakazano_left--input" placeholder="Контактный номер">
+                        <input type="email" class="zakazano_left--input" placeholder="Ваш email">
+                        <input type="text" class="zakazano_left--input" placeholder="Город/Адрес">
+                        <textarea class="zakazano_left--textarea" placeholder="Комментарий">
+                            
+                        </textarea>
+                    </div>
+                    <div class="zakazano_left--bottom">
+                        <div class="zakazano_left--price">
+                            Общая стоимость
+                            <span>9999грн</span>
+                        </div>
+                        <button class="zakazano_left--btn">
+                            Оформить заказ
+                        </button>
+                    </div>
+                </div>
+                <div class="zakazano_right">
+                    <div class="zakazano_right--item">
+                        <img src="img/slider-card1.jpg" alt="alt" class="zakazano_right--img">
+                        <div class="zakazano_right--p">
+                            Линолеум Sinteros Delta Aurora 1
+                        </div>
+                        <div class="zakazano_right--price">1467 грн</div>
+                        <div class="zakazano_right--calc">
+                            <span class="minus">-</span>
+                            <input class="numb" type="text" value="1">
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="zakazano_right--close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M14.2245 0.656781C12.4833 2.39853 10.7412 4.14028 9.00146 5.88277C7.25945 4.14176 5.51745 2.39964 3.7747 0.656781C1.7601 -1.3579 -1.36414 1.76476 0.650841 3.78092C2.39211 5.5212 4.13485 7.26368 5.8739 9.00322C4.13337 10.7442 2.39026 12.4867 0.650841 14.2255C-1.3634 16.2402 1.75899 19.3629 3.7747 17.35C5.51597 15.6079 7.25798 13.8662 9.00146 12.124C10.7435 13.8658 12.484 15.6068 14.2245 17.35C16.2395 19.3636 19.3626 16.2383 17.3495 14.2262C15.6071 12.4845 13.8651 10.7435 12.1227 9.00026L17.3495 3.77427C19.3634 1.76033 16.2413 -1.36381 14.2245 0.650502" fill="#E5E5E5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="zakazano_right--item">
+                        <img src="img/slider-card1.jpg" alt="alt" class="zakazano_right--img">
+                        <div class="zakazano_right--p">
+                            Линолеум Sinteros Delta Aurora 1
+                        </div>
+                        <div class="zakazano_right--price">1467 грн</div>
+                        <div class="zakazano_right--calc">
+                            <span class="minus">-</span>
+                            <input class="numb" type="text" value="1">
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="zakazano_right--close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M14.2245 0.656781C12.4833 2.39853 10.7412 4.14028 9.00146 5.88277C7.25945 4.14176 5.51745 2.39964 3.7747 0.656781C1.7601 -1.3579 -1.36414 1.76476 0.650841 3.78092C2.39211 5.5212 4.13485 7.26368 5.8739 9.00322C4.13337 10.7442 2.39026 12.4867 0.650841 14.2255C-1.3634 16.2402 1.75899 19.3629 3.7747 17.35C5.51597 15.6079 7.25798 13.8662 9.00146 12.124C10.7435 13.8658 12.484 15.6068 14.2245 17.35C16.2395 19.3636 19.3626 16.2383 17.3495 14.2262C15.6071 12.4845 13.8651 10.7435 12.1227 9.00026L17.3495 3.77427C19.3634 1.76033 16.2413 -1.36381 14.2245 0.650502" fill="#E5E5E5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="zakazano_right--item">
+                        <img src="img/slider-card1.jpg" alt="alt" class="zakazano_right--img">
+                        <div class="zakazano_right--p">
+                            Линолеум Sinteros Delta Aurora 1
+                        </div>
+                        <div class="zakazano_right--price">1467 грн</div>
+                        <div class="zakazano_right--calc">
+                            <span class="minus">-</span>
+                            <input class="numb" type="text" value="1">
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="zakazano_right--close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M14.2245 0.656781C12.4833 2.39853 10.7412 4.14028 9.00146 5.88277C7.25945 4.14176 5.51745 2.39964 3.7747 0.656781C1.7601 -1.3579 -1.36414 1.76476 0.650841 3.78092C2.39211 5.5212 4.13485 7.26368 5.8739 9.00322C4.13337 10.7442 2.39026 12.4867 0.650841 14.2255C-1.3634 16.2402 1.75899 19.3629 3.7747 17.35C5.51597 15.6079 7.25798 13.8662 9.00146 12.124C10.7435 13.8658 12.484 15.6068 14.2245 17.35C16.2395 19.3636 19.3626 16.2383 17.3495 14.2262C15.6071 12.4845 13.8651 10.7435 12.1227 9.00026L17.3495 3.77427C19.3634 1.76033 16.2413 -1.36381 14.2245 0.650502" fill="#E5E5E5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="zakazano_right--item">
+                        <img src="img/slider-card1.jpg" alt="alt" class="zakazano_right--img">
+                        <div class="zakazano_right--p">
+                            Линолеум Sinteros Delta Aurora 1
+                        </div>
+                        <div class="zakazano_right--price">1467 грн</div>
+                        <div class="zakazano_right--calc">
+                            <span class="minus">-</span>
+                            <input class="numb" type="text" value="1">
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="zakazano_right--close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M14.2245 0.656781C12.4833 2.39853 10.7412 4.14028 9.00146 5.88277C7.25945 4.14176 5.51745 2.39964 3.7747 0.656781C1.7601 -1.3579 -1.36414 1.76476 0.650841 3.78092C2.39211 5.5212 4.13485 7.26368 5.8739 9.00322C4.13337 10.7442 2.39026 12.4867 0.650841 14.2255C-1.3634 16.2402 1.75899 19.3629 3.7747 17.35C5.51597 15.6079 7.25798 13.8662 9.00146 12.124C10.7435 13.8658 12.484 15.6068 14.2245 17.35C16.2395 19.3636 19.3626 16.2383 17.3495 14.2262C15.6071 12.4845 13.8651 10.7435 12.1227 9.00026L17.3495 3.77427C19.3634 1.76033 16.2413 -1.36381 14.2245 0.650502" fill="#E5E5E5"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="zakazano_right--bottom">
+                        <div class="zakazano_right--p">Общая стоимость</div>
+                        <div class="zakazano_right--itog">9999грн</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+       
+     <div class="follow">
+         <div class="container">
+             <div class="follow_row">
+                 <div class="follow_text">
+                     50 баллов дарим всем за подписку на новости, скидки, акции!
+                 </div>
+                 <div class="follow_form">
+                     <input type="text" class="follow_form--input" placeholder="Введите ваш email"><button class="follow_form--btn">Подписаться</button>
+                 </div>
+                 <div class="follow_socials">
+                     <a href="#" class="follow_socials--item"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51" fill="none">
+                         <path d="M49.9995 25.2064C49.9995 11.4332 38.8082 0.270508 24.9998 0.270508C11.1913 0.270508 0 11.4332 0 25.2064C0 38.9796 11.1913 50.1423 24.9998 50.1423C25.1462 50.1423 25.2927 50.1423 25.4392 50.1326V30.7293H20.0682V24.4856H25.4392V19.8881C25.4392 14.56 28.7009 11.6573 33.4665 11.6573C35.7516 11.6573 37.7145 11.8228 38.2809 11.9008V17.4724H34.9997C32.4118 17.4724 31.904 18.6997 31.904 20.5017V24.4759H38.1051L37.2946 30.7196H31.904V49.178C42.3531 46.1877 49.9995 36.5932 49.9995 25.2064Z" fill="#C4C4C4"/>
+                         </svg></a>
+                     <a href="#" class="follow_socials--item"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                         <path d="M29.174 24.5651L23.325 21.8359C22.8146 21.599 22.3953 21.8646 22.3953 22.4297V27.5703C22.3953 28.1354 22.8146 28.401 23.325 28.1641L29.1714 25.4349C29.6844 25.1953 29.6844 24.8047 29.174 24.5651ZM24.9995 0C11.1922 0 -0.000488281 11.1927 -0.000488281 25C-0.000488281 38.8073 11.1922 50 24.9995 50C38.8068 50 49.9995 38.8073 49.9995 25C49.9995 11.1927 38.8068 0 24.9995 0ZM24.9995 35.1562C12.2026 35.1562 11.9787 34.0026 11.9787 25C11.9787 15.9974 12.2026 14.8437 24.9995 14.8437C37.7964 14.8437 38.0203 15.9974 38.0203 25C38.0203 34.0026 37.7964 35.1562 24.9995 35.1562Z" fill="#C4C4C4"/>
+                         </svg></a>
+                     <a href="#" class="follow_socials--item">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51" fill="none">
+                             <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000488281 25.2059C-0.000488281 11.4363 11.1944 0.27002 24.9993 0.27002C38.8041 0.27002 49.999 11.4363 49.999 25.2059C49.999 38.9756 38.8041 50.1418 24.9993 50.1418C11.1944 50.1418 -0.000488281 38.9756 -0.000488281 25.2059ZM38.6008 34.5851C38.9556 33.6742 39.1986 32.6335 39.268 31.1093C39.3382 29.5823 39.3546 29.0946 39.3546 25.2059C39.3546 21.3173 39.3382 20.8295 39.2684 19.3026C39.1986 17.7784 38.956 16.7377 38.6008 15.8268C38.2407 14.8714 37.6754 14.0062 36.9453 13.2908C36.2281 12.5622 35.3603 11.9983 34.4024 11.6387C33.4892 11.2853 32.4459 11.0433 30.9177 10.974C29.3869 10.904 28.8979 10.8873 24.9993 10.8873C21.1007 10.8873 20.6116 10.904 19.0808 10.9736C17.5527 11.0433 16.5094 11.2853 15.5961 11.6391C14.6383 11.9987 13.7704 12.5622 13.0537 13.2908C12.3232 14.0058 11.7578 14.8714 11.3973 15.8268C11.0426 16.7377 10.8 17.7784 10.7305 19.3026C10.6603 20.8295 10.6439 21.3173 10.6439 25.2059C10.6439 29.0946 10.6603 29.5823 10.7309 31.1096C10.8003 32.6335 11.0433 33.6745 11.3981 34.5851C11.7586 35.5405 12.3235 36.4061 13.0537 37.121C13.7708 37.8497 14.6383 38.4132 15.5965 38.7728C16.5094 39.1266 17.5531 39.3686 19.0808 39.4382C20.612 39.5079 21.1007 39.5246 24.9996 39.5246C28.8982 39.5246 29.3873 39.5079 30.9181 39.4382C32.4459 39.3686 33.4896 39.1266 34.4024 38.7728C36.3307 38.0289 37.8551 36.5084 38.6008 34.5851ZM36.1901 16.7619C35.9601 16.1402 35.5932 15.5774 35.1163 15.1155C34.6532 14.6399 34.0894 14.2739 33.4657 14.0445C32.9599 13.8485 32.2 13.6153 30.8004 13.5517C29.2864 13.4829 28.8324 13.468 24.9995 13.468C21.1661 13.468 20.7122 13.4825 19.1985 13.5513C17.7989 13.6153 17.0386 13.8485 16.5332 14.0445C15.9095 14.2739 15.3453 14.6399 14.8826 15.1155C14.4058 15.5774 14.0388 16.1398 13.8084 16.7619C13.6119 17.2664 13.3781 18.0247 13.3144 19.4208C13.2453 20.9305 13.2305 21.3833 13.2305 25.2069C13.2305 29.03 13.2453 29.4828 13.3144 30.9929C13.3781 32.389 13.6119 33.1469 13.8084 33.6514C14.0388 34.2735 14.4054 34.8359 14.8822 35.2978C15.3453 35.7734 15.9091 36.1394 16.5328 36.3689C17.0386 36.5652 17.7989 36.7984 19.1985 36.862C20.7122 36.9309 21.1657 36.9453 24.9991 36.9453C28.8328 36.9453 29.2868 36.9309 30.8 36.862C32.1996 36.7984 32.9599 36.5652 33.4657 36.3689C34.7177 35.8872 35.7072 34.9002 36.1901 33.6514C36.3866 33.1469 36.6204 32.389 36.6845 30.9929C36.7536 29.4828 36.7681 29.03 36.7681 25.2069C36.7681 21.3833 36.7536 20.9305 36.6845 19.4208C36.6208 18.0247 36.387 17.2664 36.1901 16.7619ZM24.9995 32.559C20.9281 32.559 17.6276 29.2674 17.6276 25.2065C17.6276 21.1455 20.9281 17.8539 24.9995 17.8539C29.0705 17.8539 32.3709 21.1455 32.3709 25.2065C32.3709 29.2674 29.0705 32.559 24.9995 32.559ZM32.6623 19.2815C31.711 19.2815 30.9396 18.5122 30.9396 17.5632C30.9396 16.6143 31.711 15.8449 32.6623 15.8449C33.6137 15.8449 34.385 16.6143 34.385 17.5632C34.3847 18.5122 33.6137 19.2815 32.6623 19.2815ZM29.7847 25.2061C29.7847 27.8421 27.6424 29.979 24.9996 29.979C22.3568 29.979 20.2145 27.8421 20.2145 25.2061C20.2145 22.57 22.3568 20.4331 24.9996 20.4331C27.6424 20.4331 29.7847 22.57 29.7847 25.2061Z" fill="url(#paint0_linear)" style="fill: #525252;fill: url(#paint0_linear);"/>
+                             <defs>
+                                 <linearGradient id="paint0_linear" x1="43.0005" y1="6" x2="12.0005" y2="45.5" gradientUnits="userSpaceOnUse">
+                                     <stop stop-color="#584DCD"/>
+                                     <stop offset="0.323899" stop-color="#DD277C"/>
+                                     <stop offset="0.666667" stop-color="#F65835"/>
+                                     <stop offset="1" stop-color="#FFDD7A"/>
+                                 </linearGradient>
+                             </defs>
+                         </svg>
+                     </a>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <footer class="footer">
+         <div class="container">
+             <div class="footer_row">
+                 <div class="footer_col">
+                     <div class="footer_title">категории</div>
+                     <nav class="footer_nav">
+                         <ul>
+                             <li><a href="#">ламинат</a></li>
+                             <li><a href="#">ковролин</a></li>
+                             <li><a href="#">линолеум</a></li>
+                         </ul>
+                         <ul>
+                             <li><a href="#">виниловая плитка</a></li>
+                             <li><a href="#">паркетная доска</a></li>
+                             <li><a href="#">плинтуса</a></li>
+                         </ul>
+                     </nav>
+                 </div>
+                 <div class="footer_col">
+                     <div class="footer_title">Информация</div>
+                     <nav class="footer_nav">
+                         <ul>
+                             <li><a href="#">Возврат товара</a></li>
+                             <li><a href="#">Оптовые продажи</a></li>
+                             <li><a href="#">Филиалы</a></li>
+                         </ul>
+                         <ul>
+                             <li><a href="#">Новости</a></li>
+                             <li><a href="#">Статьи (Блог)</a></li>
+                             <li><a href="#">Информация о доставке</a></li>
+                         </ul>
+                     </nav>
+                 </div>
+                 <div class="footer_col">
+                     <div class="footer_title">контакты</div>
+                     <nav class="footer_nav footer_nav--contacts">
+                         <ul>
+                             <li>
+                             <img src="img/f-tel.svg" alt="alt">
+                             <a href="tel:+38(067)2005660">+38 (067) 200-56-60</a>
+                             </li>
+                             <li>
+                                 <img src="img/f-tel.svg" alt="alt">
+                                 <a href="tel:+38(050)0831410">+38 (050) 083-14-10</a>
+                             </li>
+                             <li class="footer_nav--soc">
+                                 <a href="#" target="_blank"><img src="img/telegram.png" alt="alt"></a>
+                                 <a href="#" target="_blank"><img src="img/viber.png" alt="alt"></a>
+                                 <a href="#" target="_blank"><img src="img/whatsapp.png" alt="alt"></a>
+                             </li>
+                         </ul>
+                         <ul>
+                             <li>
+                             <img src="img/f-mail.svg" alt="alt">
+                                 <a href="#">sales@profpidloga.com.ua
+                                     </a>
+                             </li>
+                             <li>
+                                 <img src="img/f-geo.svg" alt="alt">
+                                 <p>Кривой Рог, ул.Телевизионная 2/12</p>
+                             </li>
+                             <li>
+                                 <p class="last-child">По будням с 9:00 до 18:00</p>
+                             </li>
+                         </ul>
+                     </nav>
+                 </div>
+             </div>
+             <div class="footer_bottom">
+                 © Profpidloga 2017 - 2021. Все права защищены.
+             </div>
+         </div>
+     </footer>
+
+     <div style="display: none;">
+         <div id="moba" class="mobmenu">
+           <div class="mobmenu_top">
+               <a href="index.html" class="mobmenu_logo">
+                   <img src="img/logo.svg" alt="alt" class="mobmenu__logo--img">
+               </a>
+               <div class="mobmenu_small">
+                   <div class="mobmenu_currency">
+                       <span>&#36; 27.83</span>
+                       <span>&#8364; 32.77</span>
+                   </div>
+                   <div class="mobmenu_lang">
+                       <div class="mobmenu_lang--item active">рус</div>
+                       <div class="mobmenu_lang--item">укр</div>
+                   </div>
+               </div>
+           </div>
+           <div class="mobmenu1">
+               <ul>
+                   <li>
+                       <img src="img/m1.svg" alt="alt">
+                       <a href="#">Каталог товаров</a>
+                   </li>
+                   <li>
+                       <img src="img/m2.svg" alt="alt">
+                       <a href="#form" data-fancybox>Вход</a>
+                   </li>
+                   <li>
+                       <img src="img/m3.svg" alt="alt">
+                       <a href="#comparison" data-fancybox>Сравнение</a>
+                       
+                   </li>
+                   <li>
+                       <img src="img/m4.svg" alt="alt">
+                       <a href="#basket" data-fancybox>Корзина</a>
+                       <span class="total">3</span>
+                   </li>
+                   <li>
+                       <img src="img/m-last.svg" alt="alt">
+                       <a href="#callback" data-fancybox>Заказать звонок</a>
+                   </li>
+               </ul>
+           </div>
+           <div class="mobmenu1">
+                 <ul>
+                     <li>
+                         <a href="#">О компании</a>
+                     </li>
+                     <li>
+                         <a href="#">Доставка и оплата</a>
+                     </li>
+                     <li>
+                         <a href="#">Акции и распродажи</a>
+                     </li>
+                     <li>
+                         <a href="#">Отзывы</a>
+                     </li>
+                     <li>
+                         <a href="#">Контакты</a>
+                     </li>
+                     <li>
+                         <a href="#">Оптовикам</a>
+                     </li>
+                 </ul>
+             </div>
+             <div class="mobmenu_soc">
+                 <a href="#" class="mobmenu_soc--item" target="_blank">
+                     <img src="img/fbmob.svg" alt="alt">
+                 </a>
+                 <a href="#" class="mobmenu_soc--item" target="_blank">
+                     <img src="img/ytmob.svg" alt="alt">
+                 </a>
+                 <a href="#" class="mobmenu_soc--item" target="_blank">
+                     <img src="img/instmob.svg" alt="alt">
+                 </a>
+             </div>
+         </div>
+     </div>
+     
+     <div style="display: none;">
+         <div id="basket" class="basket">
+             <div class="basket_content">
+                 <div class="basket_top">
+                     <div class="basket_top--title">Ваша корзина</div>
+                     <div class="basket_top--gray">(всего 300 товаров)</div>
+                 </div>
+                 <div class="basket_items scroll">
+                     <div class="basket_item">
+                         <img src="img/review.jpg" alt="alt" class="basket_item--img">
+                         <div class="basket_item--text">
+                             <div class="basket_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                             <div class="basket_item--desc">Производитель: Sinteros
+                                 Ширина рулона (м): 3</div>
+                             <div class="basket_item--bottom">
+                                 <div class="basket_item--price">439 грн</div>
+                                 <button class="basket_item--del">Удалить товар</button>
+                             </div>
+                         </div>
+                         <div class="basket_item--input">
+                             <span class="plus">+</span>
+                             <input class="numb" type="text" value="1">
+                             <span class="minus">-</span>
+                         </div>
+                     </div>
+                     <div class="basket_item">
+                         <img src="img/review.jpg" alt="alt" class="basket_item--img">
+                         <div class="basket_item--text">
+                             <div class="basket_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                             <div class="basket_item--desc">Производитель: Sinteros
+                                 Ширина рулона (м): 3</div>
+                             <div class="basket_item--bottom">
+                                 <div class="basket_item--price">439 грн</div>
+                                 <button class="basket_item--del">Удалить товар</button>
+                             </div>
+                         </div>
+                         <div class="basket_item--input">
+                             <span class="plus">+</span>
+                             <input class="numb" type="text" value="1">
+                             <span class="minus">-</span>
+                         </div>
+                     </div>
+                     <div class="basket_item">
+                         <img src="img/review.jpg" alt="alt" class="basket_item--img">
+                         <div class="basket_item--text">
+                             <div class="basket_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                             <div class="basket_item--desc">Производитель: Sinteros
+                                 Ширина рулона (м): 3</div>
+                             <div class="basket_item--bottom">
+                                 <div class="basket_item--price">439 грн</div>
+                                 <button class="basket_item--del">Удалить товар</button>
+                             </div>
+                         </div>
+                         <div class="basket_item--input">
+                             <span class="plus">+</span>
+                             <input class="numb" type="text" value="1">
+                             <span class="minus">-</span>
+                         </div>
+                     </div>
+                     <div class="basket_item">
+                         <img src="img/review.jpg" alt="alt" class="basket_item--img">
+                         <div class="basket_item--text">
+                             <div class="basket_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                             <div class="basket_item--desc">Производитель: Sinteros
+                                 Ширина рулона (м): 3</div>
+                             <div class="basket_item--bottom">
+                                 <div class="basket_item--price">439 грн</div>
+                                 <button class="basket_item--del">Удалить товар</button>
+                             </div>
+                         </div>
+                         <div class="basket_item--input">
+                             <span class="plus">+</span>
+                             <input class="numb" type="text" value="1">
+                             <span class="minus">-</span>
+                         </div>
+                     </div>
+                     <div class="basket_item">
+                         <img src="img/review.jpg" alt="alt" class="basket_item--img">
+                         <div class="basket_item--text">
+                             <div class="basket_item--title">Линолеум Sinteros Delta Aurora 1</div>
+                             <div class="basket_item--desc">Производитель: Sinteros
+                                 Ширина рулона (м): 3</div>
+                             <div class="basket_item--bottom">
+                                 <div class="basket_item--price">439 грн</div>
+                                 <button class="basket_item--del">Удалить товар</button>
+                             </div>
+                         </div>
+                         <div class="basket_item--input">
+                             <span class="plus">+</span>
+                             <input class="numb" type="text" value="1">
+                             <span class="minus">-</span>
+                         </div>
+                     </div>
+
+                 </div>
+                 <div class="basket_bottom">
+                     <div>
+                         <div class="basket_bottom--gray">Итого</div>
+                         <div class="basket_bottom--price">444 598 грн</div>
+                     </div>
+                     <button class="basket_bottom--btn">
+                         Оформить заказ
+                     </button>
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+     <div style="display: none;">
+         <div id="comparison" class="comparison">
+             <div class="comparison_top">
+                 <div class="comparison_top--title">Списки сравнения</div>
+             </div>
+             <div class="comparison_content">
+                 <div class="comparison_item">
+                     <div class="comparison_item--flex">
+                         <div class="comparison_item--green">Клей</div>
+                         <div class="comparison_item--gray">4 товара</div>
+                     </div>
+                     <button data-fancybox href="#del" class="comparison_item--del">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                             <path d="M12.7589 7.24609C12.5002 7.24609 12.2905 7.45577 12.2905 7.71448V16.5669C12.2905 16.8255 12.5002 17.0353 12.7589 17.0353C13.0176 17.0353 13.2273 16.8255 13.2273 16.5669V7.71448C13.2273 7.45577 13.0176 7.24609 12.7589 7.24609Z" fill="#A5A5A5"/>
+                             <path d="M7.23254 7.24609C6.97384 7.24609 6.76416 7.45577 6.76416 7.71448V16.5669C6.76416 16.8255 6.97384 17.0353 7.23254 17.0353C7.49125 17.0353 7.70093 16.8255 7.70093 16.5669V7.71448C7.70093 7.45577 7.49125 7.24609 7.23254 7.24609Z" fill="#A5A5A5"/>
+                             <path d="M3.20333 5.95419V17.4942C3.20333 18.1762 3.45344 18.8168 3.89035 19.2764C4.32525 19.7373 4.93049 19.9989 5.56391 20H14.4259C15.0594 19.9989 15.6647 19.7373 16.0994 19.2764C16.5363 18.8168 16.7864 18.1762 16.7864 17.4942V5.95419C17.6549 5.72366 18.2177 4.8846 18.1016 3.99339C17.9852 3.10236 17.2261 2.43583 16.3274 2.43565H13.9293V1.85017C13.932 1.35782 13.7374 0.885048 13.3888 0.537238C13.0403 0.18961 12.5668 -0.00396362 12.0744 6.15416e-05H7.91533C7.42298 -0.00396362 6.94948 0.18961 6.60093 0.537238C6.25239 0.885048 6.05772 1.35782 6.06046 1.85017V2.43565H3.66238C2.76367 2.43583 2.00456 3.10236 1.8882 3.99339C1.77202 4.8846 2.33481 5.72366 3.20333 5.95419ZM14.4259 19.0632H5.56391C4.76308 19.0632 4.14009 18.3753 4.14009 17.4942V5.99536H15.8497V17.4942C15.8497 18.3753 15.2267 19.0632 14.4259 19.0632ZM6.99723 1.85017C6.99412 1.60628 7.08999 1.37154 7.26307 1.19938C7.43597 1.02721 7.67126 0.932619 7.91533 0.936827H12.0744C12.3185 0.932619 12.5538 1.02721 12.7267 1.19938C12.8998 1.37136 12.9956 1.60628 12.9925 1.85017V2.43565H6.99723V1.85017ZM3.66238 3.37242H16.3274C16.793 3.37242 17.1705 3.74987 17.1705 4.2155C17.1705 4.68114 16.793 5.05859 16.3274 5.05859H3.66238C3.19674 5.05859 2.81929 4.68114 2.81929 4.2155C2.81929 3.74987 3.19674 3.37242 3.66238 3.37242Z" fill="#A5A5A5"/>
+                             <path d="M9.99524 7.24609C9.73653 7.24609 9.52686 7.45577 9.52686 7.71448V16.5669C9.52686 16.8255 9.73653 17.0353 9.99524 17.0353C10.2539 17.0353 10.4636 16.8255 10.4636 16.5669V7.71448C10.4636 7.45577 10.2539 7.24609 9.99524 7.24609Z" fill="#A5A5A5"/>
+                         </svg>
+
+                     </button>
+                 </div>
+                 <div class="comparison_item">
+                     <div class="comparison_item--flex">
+                         <div class="comparison_item--green">Линолеум</div>
+                         <div class="comparison_item--gray">2 товара</div>
+                     </div>
+                     <button data-fancybox href="#del" class="comparison_item--del">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                             <path d="M12.7589 7.24609C12.5002 7.24609 12.2905 7.45577 12.2905 7.71448V16.5669C12.2905 16.8255 12.5002 17.0353 12.7589 17.0353C13.0176 17.0353 13.2273 16.8255 13.2273 16.5669V7.71448C13.2273 7.45577 13.0176 7.24609 12.7589 7.24609Z" fill="#A5A5A5"/>
+                             <path d="M7.23254 7.24609C6.97384 7.24609 6.76416 7.45577 6.76416 7.71448V16.5669C6.76416 16.8255 6.97384 17.0353 7.23254 17.0353C7.49125 17.0353 7.70093 16.8255 7.70093 16.5669V7.71448C7.70093 7.45577 7.49125 7.24609 7.23254 7.24609Z" fill="#A5A5A5"/>
+                             <path d="M3.20333 5.95419V17.4942C3.20333 18.1762 3.45344 18.8168 3.89035 19.2764C4.32525 19.7373 4.93049 19.9989 5.56391 20H14.4259C15.0594 19.9989 15.6647 19.7373 16.0994 19.2764C16.5363 18.8168 16.7864 18.1762 16.7864 17.4942V5.95419C17.6549 5.72366 18.2177 4.8846 18.1016 3.99339C17.9852 3.10236 17.2261 2.43583 16.3274 2.43565H13.9293V1.85017C13.932 1.35782 13.7374 0.885048 13.3888 0.537238C13.0403 0.18961 12.5668 -0.00396362 12.0744 6.15416e-05H7.91533C7.42298 -0.00396362 6.94948 0.18961 6.60093 0.537238C6.25239 0.885048 6.05772 1.35782 6.06046 1.85017V2.43565H3.66238C2.76367 2.43583 2.00456 3.10236 1.8882 3.99339C1.77202 4.8846 2.33481 5.72366 3.20333 5.95419ZM14.4259 19.0632H5.56391C4.76308 19.0632 4.14009 18.3753 4.14009 17.4942V5.99536H15.8497V17.4942C15.8497 18.3753 15.2267 19.0632 14.4259 19.0632ZM6.99723 1.85017C6.99412 1.60628 7.08999 1.37154 7.26307 1.19938C7.43597 1.02721 7.67126 0.932619 7.91533 0.936827H12.0744C12.3185 0.932619 12.5538 1.02721 12.7267 1.19938C12.8998 1.37136 12.9956 1.60628 12.9925 1.85017V2.43565H6.99723V1.85017ZM3.66238 3.37242H16.3274C16.793 3.37242 17.1705 3.74987 17.1705 4.2155C17.1705 4.68114 16.793 5.05859 16.3274 5.05859H3.66238C3.19674 5.05859 2.81929 4.68114 2.81929 4.2155C2.81929 3.74987 3.19674 3.37242 3.66238 3.37242Z" fill="#A5A5A5"/>
+                             <path d="M9.99524 7.24609C9.73653 7.24609 9.52686 7.45577 9.52686 7.71448V16.5669C9.52686 16.8255 9.73653 17.0353 9.99524 17.0353C10.2539 17.0353 10.4636 16.8255 10.4636 16.5669V7.71448C10.4636 7.45577 10.2539 7.24609 9.99524 7.24609Z" fill="#A5A5A5"/>
+                         </svg>
+
+                     </button>
+                 </div>
+                 <div class="comparison_item">
+                     <div class="comparison_item--flex">
+                         <div class="comparison_item--green">Плитка</div>
+                         <div class="comparison_item--gray">2 товара</div>
+                     </div>
+                     <button data-fancybox href="#del" class="comparison_item--del">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                             <path d="M12.7589 7.24609C12.5002 7.24609 12.2905 7.45577 12.2905 7.71448V16.5669C12.2905 16.8255 12.5002 17.0353 12.7589 17.0353C13.0176 17.0353 13.2273 16.8255 13.2273 16.5669V7.71448C13.2273 7.45577 13.0176 7.24609 12.7589 7.24609Z" fill="#A5A5A5"/>
+                             <path d="M7.23254 7.24609C6.97384 7.24609 6.76416 7.45577 6.76416 7.71448V16.5669C6.76416 16.8255 6.97384 17.0353 7.23254 17.0353C7.49125 17.0353 7.70093 16.8255 7.70093 16.5669V7.71448C7.70093 7.45577 7.49125 7.24609 7.23254 7.24609Z" fill="#A5A5A5"/>
+                             <path d="M3.20333 5.95419V17.4942C3.20333 18.1762 3.45344 18.8168 3.89035 19.2764C4.32525 19.7373 4.93049 19.9989 5.56391 20H14.4259C15.0594 19.9989 15.6647 19.7373 16.0994 19.2764C16.5363 18.8168 16.7864 18.1762 16.7864 17.4942V5.95419C17.6549 5.72366 18.2177 4.8846 18.1016 3.99339C17.9852 3.10236 17.2261 2.43583 16.3274 2.43565H13.9293V1.85017C13.932 1.35782 13.7374 0.885048 13.3888 0.537238C13.0403 0.18961 12.5668 -0.00396362 12.0744 6.15416e-05H7.91533C7.42298 -0.00396362 6.94948 0.18961 6.60093 0.537238C6.25239 0.885048 6.05772 1.35782 6.06046 1.85017V2.43565H3.66238C2.76367 2.43583 2.00456 3.10236 1.8882 3.99339C1.77202 4.8846 2.33481 5.72366 3.20333 5.95419ZM14.4259 19.0632H5.56391C4.76308 19.0632 4.14009 18.3753 4.14009 17.4942V5.99536H15.8497V17.4942C15.8497 18.3753 15.2267 19.0632 14.4259 19.0632ZM6.99723 1.85017C6.99412 1.60628 7.08999 1.37154 7.26307 1.19938C7.43597 1.02721 7.67126 0.932619 7.91533 0.936827H12.0744C12.3185 0.932619 12.5538 1.02721 12.7267 1.19938C12.8998 1.37136 12.9956 1.60628 12.9925 1.85017V2.43565H6.99723V1.85017ZM3.66238 3.37242H16.3274C16.793 3.37242 17.1705 3.74987 17.1705 4.2155C17.1705 4.68114 16.793 5.05859 16.3274 5.05859H3.66238C3.19674 5.05859 2.81929 4.68114 2.81929 4.2155C2.81929 3.74987 3.19674 3.37242 3.66238 3.37242Z" fill="#A5A5A5"/>
+                             <path d="M9.99524 7.24609C9.73653 7.24609 9.52686 7.45577 9.52686 7.71448V16.5669C9.52686 16.8255 9.73653 17.0353 9.99524 17.0353C10.2539 17.0353 10.4636 16.8255 10.4636 16.5669V7.71448C10.4636 7.45577 10.2539 7.24609 9.99524 7.24609Z" fill="#A5A5A5"/>
+                         </svg>
+                     </button>
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+     <div style="display: none;">
+         <div id="form" class="form">
+             <div class="form_title">Уже есть аккаунт или хотите зарегистрироваться?</div>
+             <div class="form_row">
+                 <button data-fancybox href="#formin" class="form_in">Войти</button>
+                 <button data-fancybox href="#formup" class="form_up">Зарегистрироваться</button>
+             </div>
+         </div>
+     </div>
+     
+     <div style="display: none;">
+         <div id="formin" class="formin">
+             <div class="formin_title">Вход</div>
+             <div class="formin_form">
+                 <input type="email" class="formin_input" placeholder="Ваш email" required>
+                 <input type="password" class="formin_input" placeholder="Ваш пароль" required>
+                 <button class="formin_btn">
+                     Авторизироваться
+                 </button>
+             </div>
+             <div class="formin_bottom">
+                 <div class="formin_bottom--div">
+                     <p>Первый раз?</p> <a href="#formup" data-fancybox>Зарегистрируйтесь</a>
+                 </div>
+                 <button class="formin_bottom--btn">Забыли пароль?</button>
+             </div>
+         </div>
+     </div>
+     
+     <div style="display: none;">
+         <div id="formup" class="formup">
+             <div class="formup_title">Регистрация</div>
+             <div class="formup_form">
+                 <div class="formup_form--row">
+                     <input type="text" class="formup_input--half formup_input" placeholder="Ваше имя" required>
+                     <input type="text" class="formup_input--half formup_input" placeholder="Ваша фамилия" required>
+                 </div>
+                 <input type="email" class="formup_input" placeholder="Ваш email" required>
+                 <input type="tel" class="formup_input" placeholder="Контактный номер" required>
+                 <input type="password" class="formup_input" placeholder="Придумайте пароль" required>
+                 <button class="formup_btn">
+                     Зарегистрироваться
+                 </button>
+             </div>
+             <div class="formup_bottom">
+                 <p>Уже есть аккаунт?</p> <a href="#formin" data-fancybox>Войдите</a>
+             </div>
+         </div>
+     </div>
+       
+     <div style="display: none;">
+         <div id="callback" class="callback">
+             <div class="callback_title">Закажите звонок и мы быстро 
+                 перезвоним вам!</div>
+             <div class="callback_form">
+                 <input type="text" class="callback_input" placeholder="Ваше имя" required>
+                 <input type="tel" class="callback_input" placeholder="Контактный номер" required>
+                 <button class="callback_btn">
+                     Заказать звонок
+                 </button>
+             </div>
+         </div>
+     </div>
+     
+     <div style="display: none;">
+         <div id="del" class="del">
+             <div class="del_title">Вы действительно хотите удалить товар из списка сравнеия?</div>
+             <div class="del_row">
+                 <button class="del_cancel">Отмена</button>
+                 <button class="del_delete">Удалить</button>
+             </div>
+         </div>
+     </div>
+     
+     <div style="display: none;">
+         <div id="zakaz" class="zakaz">
+             <div class="zakaz_title">Товар <span class="name">Ламинат Egger Honex Forte
+                 Дуб Кортина</span> добавлен в вашу корзину</div>
+             <div class="zakaz_row">
+                 <button class="zakaz_next">Продолжить покупки</button>
+                 <button class="zakaz_delete">Оформить заказ</button>
+             </div>
+         </div>
+     </div>
+     
+     <div style="display: none;">
+         <div id="sravnenie" class="zakaz">
+             <div class="zakaz_title">Товар <span class="name">Ламинат Egger Honex Forte
+                 Дуб Кортина</span> добавлен в список сравнения
+                 </div>
+             <div class="zakaz_row">
+                 <button class="zakaz_next">Продолжить покупки</button>
+                 <button class="zakaz_delete">Перейти к списку</button>
+             </div>
+         </div>
+     </div>
+          
+     <div style="display: none;">
+         <div id="fmnu" class="fmnu">
+            <div class="fmnu_item">
+                <div class="fmnu_top">
+                    <img src="img/fmnu-arrow.svg" alt="alt">
+                    <div class="fmnu_top--p">Фильтры</div>
+                </div>
+            </div>
+             <div class="navbar">
+                 <div class="navbar_item">
+                     <div class="navbar_top">
+                         <img src="img/navbar-arrow.svg" alt="alt">
+                         <div class="navbar_top--p">
+                             Стоимость, грн.
+                         </div>
+                     </div>
+                     <div class="navbar_content">
+                         <div class="range__div2">
+                             <label class="range__label2">
+                                 <input type="text" class="range__input2">
+                             </label>  
+
+                             <label class="range__label2">
+                                 <input type="text" class="range__input2">
+                             </label>
+                         </div>
+                         <div class="range">
+                             <div id="sliderPrice2" class="range__slider-price2" data-min="100" data-max="1000" data-step="10"></div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="navbar_item">
+                     <div class="navbar_top">
+                         <img src="img/navbar-arrow.svg" alt="alt">
+                         <div class="navbar_top--p">
+                             Производитель
+                         </div>
+                     </div>
+                     <div class="navbar_content">
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox" checked>
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Balterio
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Classen
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Egger
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Tarkett
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Коростень
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="navbar_item">
+                     <div class="navbar_top">
+                         <img src="img/navbar-arrow.svg" alt="alt">
+                         <div class="navbar_top--p">
+                             Цвет
+                         </div>
+                     </div>
+                     <div class="navbar_content">
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox" checked>
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Светлое дерево
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Классическое дерево
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Серый
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Темное дерево
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Абстракция
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Черный
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="navbar_item">
+                     <div class="navbar_top">
+                         <img src="img/navbar-arrow.svg" alt="alt">
+                         <div class="navbar_top--p">
+                             Класс износостойкости
+                         </div>
+                     </div>
+                     <div class="navbar_content">
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 32
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 33
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="navbar_item">
+                     <div class="navbar_top">
+                         <img src="img/navbar-arrow.svg" alt="alt">
+                         <div class="navbar_top--p">
+                             Толщина доски
+                         </div>
+                     </div>
+                     <div class="navbar_content">
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 8 мм
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 10 мм
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 12 мм
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="navbar_item">
+                     <div class="navbar_top">
+                         <img src="img/navbar-arrow.svg" alt="alt">
+                         <div class="navbar_top--p">
+                             Фаска
+                         </div>
+                     </div>
+                     <div class="navbar_content">
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox" checked>
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Четырехсторонняя (4 V)
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Двухсторонняя (2 V)
+                             </div>
+                         </div>
+                         <div class="check_div">
+                             <label class="check_label">
+                                 <input type="checkbox">
+                                 <i></i>
+                             </label>
+                             <div class="check_p">
+                                 Без фаски
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="navbar_item">
+                     <div class="navbar_top">
+                         <img src="img/navbar-arrow.svg" alt="alt">
+                         <div class="navbar_top--p">
+                             Страна - производитель
+                         </div>
+                     </div>
+                     <div class="navbar_content">
+                         <div>
+                             <div class="check_div">
+                                 <label class="check_label">
+                                     <input type="checkbox">
+                                     <i></i>
+                                 </label>
+                                 <div class="check_p">
+                                     Германия
+                                 </div>
+                             </div>
+                             <div class="check_div">
+                                 <label class="check_label">
+                                     <input type="checkbox">
+                                     <i></i>
+                                 </label>
+                                 <div class="check_p">
+                                     Бельгия
+                                 </div>
+                             </div>
+                             <div class="check_div">
+                                 <label class="check_label">
+                                     <input type="checkbox">
+                                     <i></i>
+                                 </label>
+                                 <div class="check_p">
+                                     Украина
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="navbar_btns">
+                     <button class="navbar_apply">Применить (1255)</button>
+                     <button class="navbar_off">Сбросить</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+     <div class="loader">
+         <div class="loader_inner"></div> 
+     </div>
+   
+    <script src="libs/jquery-3.2.1.min.js"></script>
+    <script src="libs/perfect-scrollbar.jquery.min.js"></script>
+    <script src="libs/flexmenu.min.js"></script>
+    <script src="libs/jquery.fancybox.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+    <script src="libs/nouislider.min.js"></script>
+    <script src="js/script.js"></script>
+    
+ </body>
+</html>
