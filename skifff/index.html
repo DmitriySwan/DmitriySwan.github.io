@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>skiff</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+       <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+       <link rel="stylesheet" href="libs/slick.css">
+       <link rel="stylesheet" href="libs/slick-theme.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+      
+      <header class="header">
+          <div class="container">
+              <div class="header_row">
+                  <a href="index.html" class="header_logo">
+                      <img src="img/logo.svg" alt="alt">
+                      <p class="header_logo--p">
+                          Группа
+                          компаний
+                      </p>    
+                  </a>
+                  <nav class="header_nav">
+                      <ul>
+                          <li>
+                              <a href="#" class="active">Главная</a>
+                          </li>
+                          <li>
+                              <a href="#">Строительство</a>
+                          </li>
+                          <li>
+                              <a href="#">Строительные материалы</a>
+                          </li>
+                          <li>
+                              <a href="#">Системная интеграция</a>
+                          </li>
+                      </ul>
+                  </nav>
+                  <div class="header_tel">
+                      <a href="tel:+38(068)6307303" class="header_tel--a">
+                      <img src="img/icon_phone.svg" alt="alt">
+                          <p>(068) 630 73 03</p>
+                      </a>
+                      <a href="#callback" data-fancybox class="header_tel--btn">
+                          Заказать звонок
+                      </a>
+                      <div class="btn_mnu">
+                          <div class="btn_row"></div>
+                          <div class="btn_row"></div>
+                          <div class="btn_row"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+      
+      <main>
+          
+          <section class="intro" style="background-image: url(./img/intro.jpg);">
+              <div class="container">
+                  <div class="intro_block">
+                      <div class="intro_h1">Предоставим комплексное решение по строительству 
+                          и проектированию “под ключ” </div>
+                      <div class="intro_desc">СК Скиф  - широкопрофильная компания, выполняющая высококачественное строительство и управление проектами</div>
+                      <a href="#callback" data-fancybox class="intro_btn">Оставить заявку</a>
+                  </div>
+              </div>
+              <a href="#next" class="intro_down">
+                  <img src="img/down.svg" alt="alt">
+              </a>
+          </section>
+          
+          <section class="section why" id="next">
+              <div class="container">
+                  <div class="h2">Почему выбирают нас</div>
+                  <div class="why_row">
+                      <div class="why_item">
+                          <img src="img/why1.svg" alt="alt" class="why_item--img">
+                          <div class="why_item--title">
+                              В работе используем многолетный опыт
+                          </div>
+                          <div class="why_item--desc">
+                              Имеем большой опыт в сфере строительства, проектирования и монтажа. Обладаем знаниями современных технологий
+                          </div>
+                      </div>
+                      <div class="why_item">
+                          <img src="img/why2.svg" alt="alt" class="why_item--img">
+                          <div class="why_item--title">
+                              Строительство зданий “под ключ”
+                          </div>
+                          <div class="why_item--desc">
+                              Благодаря чему нивелируются финансовые риски и запланированный результат получается в оговоренные сроки
+                          </div>
+                      </div>
+                      <div class="why_item">
+                          <img src="img/why3.svg" alt="alt" class="why_item--img">
+                          <div class="why_item--title">
+                              Многоуровневый контроль
+                          </div>
+                          <div class="why_item--desc">
+                              Что позволяет гарантировать высокое качество предоставляемых услуг
+                          </div>
+                      </div>
+                      <div class="why_item">
+                          <img src="img/why4.svg" alt="alt" class="why_item--img">
+                          <div class="why_item--title">
+                              Высококачественные 
+                              материалы
+                          </div>
+                          <div class="why_item--desc">
+                              В работе используем материалы провереных поставщиков, которые являються нашими партнерами
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          
+          <section class="section project">
+              <div class="container">
+                  <div class="project_h2 h2">Реализованные проекты</div>
+                  <div class="project_slider">
+                      <div>
+                          <div class="project_item">
+                              <div class="project_item--right">
+                                  <img src="img/baku.jpg" alt="alt">
+                                  <div class="project_item--text">
+                                      ЖК “Баку”
+                                  </div>
+                              </div>
+                              <div class="project_item--left">
+                                  <img src="img/city.jpg" alt="alt">
+                                  <img src="img/lagoon.jpg" alt="alt">
+                              </div>
+                          </div>
+                      </div>
+                      <div>
+                          <div class="project_item">
+                              <div class="project_item--right">
+                                  <img src="img/baku2.jpg" alt="alt">
+                                  <div class="project_item--text">
+                                      ЖК “Баку”
+                                  </div>
+                              </div>
+                              <div class="project_item--left">
+                                  <img src="img/city2.jpg" alt="alt">
+                                  <img src="img/lagoon2.jpg" alt="alt">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <a href="#" class="project_a">
+                      Посмотреть проекты
+                  </a>
+              </div>
+          </section>
+          
+          <section class="banner">
+              <div class="container">
+                 <div class="banner_block">
+                     <div class="banner_text">
+                         <div class="banner_text--title">Также наша компания занимается продажей строительных материалов</div>
+                         <div class="banner_text--desc">Мы являемся официальным дистрибьютором ТМ Baumit</div>
+                         <a href="" class="banner_text--btn">
+                             Перейти в калатог
+                         </a>
+                     </div>
+                 </div>
+              </div>
+          </section>
+          
+          <section class="section about">
+              <div class="container">
+                  <div class="h2">О компании Skiff</div>
+                  <div class="about_row">
+                      <div class="about_text">
+                          <div class="about_p">
+                              Группы компаний Скиф  специализируется на строительстве зданий и объектов промышленного и гражданского назначения. При этом, компания выполняет полный технологический цикл от предпроектного исследования до сдачи объекта «под ключ». Так же компания выполняет комплекс работ по реконструкции, ремонту зданий начиная с разработки проектно – сметной документации, утверждая ее в установленном порядке до производства строительно-монтажных работ и ввода в эксплуатацию с подписанием необходимых актов.
+                          </div>
+                          <div class="about_showmore">
+                              <div class="about_p">
+                                  В своей работе, компания применяет современные строительные решения, использует новейшие производственные технологии. Благодаря высокому уровню управления строительством, а так же первоклассному штату сотрудников мы гарантируем соблюдение сроков работ и оптимальную стоимость строительства.
+                              </div>
+                              <div class="about_p">
+                                  Используя ресурсы для проведения проектных, строительных  и монтажных работ, группа компаний "Скиф" осуществляет качественное строительство зданий «под ключ». Благодаря этому, строительство зданий « под ключ» становится еще более привлекательной услугой для инвесторов, так как нивелируются финансовые риски и запланированный результат получается в оговоренные сроки. 
+                              </div>
+                          </div>
+                          <div class="about_more">
+                              Читать всё
+                          </div>
+                      </div>
+                      <div class="about_img">
+                          <div class="about_img--div">
+                              <img src="img/about.jpg" alt="alt">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          
+          <section class="section form" style="background-image: url(./img/forma.jpg);">
+              <div class="container">
+                  <div class="form_h2">Интересует сотрудничество с нами?</div>
+                  <div class="form_desc">Заполните форму и наш менеджер свяжется с вами в ближайшее время</div>
+                  <form>
+                      <div class="form_row">
+                          <label class="form_label">
+                              <span>Имя</span>
+                              <input type="text" required>
+                          </label>
+                          <label class="form_label">
+                              <span>Телефон</span>
+                              <input type="tel" class="phone_ua" required>
+                          </label>
+                          <button class="form_btn">
+                              Отправить
+                          </button>
+                      </div>
+                  </form>
+              </div>
+          </section>
+          
+          <section class="section spons">
+              <div class="container">
+                 <div class="spons_top">
+                     <div class="h2 spons_h2">Нашу компанию рекомендуют</div>
+                     <div class="spons_arrow">
+                         <div class="spons_arrow1">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                 <path d="M8.64453 13.4382L19.4353 2.608C19.6894 2.353 20.0969 2.353 20.351 2.608C20.605 2.863 20.605 3.27196 20.351 3.52696L10.0203 13.8953L20.351 24.2637C20.605 24.5187 20.605 24.9276 20.351 25.1826C20.2263 25.3077 20.0585 25.3751 19.8955 25.3751C19.7326 25.3751 19.5648 25.3125 19.4401 25.1826L8.64933 14.3524C8.39526 14.1022 8.39526 13.6884 8.64453 13.4382Z" fill="#083844"/>
+                             </svg>
+                         </div>
+                         <div class="spons_arrow2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                 <path d="M20.3555 13.4382L9.56466 2.608C9.31059 2.353 8.90312 2.353 8.64905 2.608C8.39498 2.863 8.39498 3.27196 8.64905 3.52696L18.9797 13.8953L8.64905 24.2637C8.39498 24.5187 8.39498 24.9276 8.64905 25.1826C8.77369 25.3077 8.94147 25.3751 9.10446 25.3751C9.26745 25.3751 9.43523 25.3125 9.55987 25.1826L20.3507 14.3524C20.6047 14.1022 20.6047 13.6884 20.3555 13.4382Z" fill="#083844"/>
+                             </svg>
+                         </div>
+                     </div>
+                 </div>
+                  <div class="spons_slider">
+                      <div>
+                          <img src="img/spons1.jpg" alt="alt">
+                      </div>
+                      <div>
+                          <img src="img/spons2.jpg" alt="alt">
+                      </div>
+                      <div>
+                          <img src="img/spons3.jpg" alt="alt">
+                      </div>
+                      <div>
+                          <img src="img/spons4.jpg" alt="alt">
+                      </div>
+                      <div>
+                          <img src="img/spons1.jpg" alt="alt">
+                      </div>
+                      <div>
+                          <img src="img/spons2.jpg" alt="alt">
+                      </div>
+                      <div>
+                          <img src="img/spons3.jpg" alt="alt">
+                      </div>
+                      <div>
+                          <img src="img/spons4.jpg" alt="alt">
+                      </div>
+                  </div>
+              </div>
+          </section>
+          
+          <section class="section contacts">
+              <div class="contacts_map">
+                  <iframe width="100%" height="100%" src="https://maps.google.com/maps?hl=ru&amp;q=%D0%B4%D0%BD%D0%B5%D0%BF%D1%80+(Skiff)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+              <div class="container">
+                  <div class="contacts_row">
+                      <div class="contacts_blue">
+                          <div class="contacts_blue--title">
+                              Контакты
+                          </div>
+                          <div class="contacts_blue--ul">
+                              <ul>
+                                  <li class="contacts_blue--li">
+                                      <img src="img/icon_phone.svg" alt="alt">
+                                      <p>
+                                          (067) 375 77 58, (067) 537  57 27
+                                          (097) 095 29 67
+                                      </p>
+                                  </li>
+                                  <li class="contacts_blue--li">
+                                      <img src="img/message.svg" alt="alt">
+                                      <p>
+                                          sales@skiff.dp.ua
+                                      </p>
+                                  </li>
+                                  <li class="contacts_blue--li">
+                                      <img src="img/geo.svg" alt="alt">
+                                      <p>
+                                          м. Дніпро, вул. 20-річчя Перемоги, буд. 26, кім. 109Б.
+                                      </p>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          
+      </main>
+      
+      <footer class="footer">
+          <div class="container">
+              <div class="footer_row">
+                  <a href="index.html" class="footer_logo">
+                      <img src="img/logo.svg" alt="alt">
+                      <p class="footer_logo--p">
+                          Группа
+                          компаний
+                      </p>    
+                  </a>
+                  <div class="footer_center">
+                      © 2021 All rights reserved.
+                  </div>
+                  <div class="footer_tel">
+                      <a href="tel:+38(067)3757758">(067) 375 77 58</a>
+                      <a href="tel:+38(067)5375727">(067) 537 57 27</a>
+                      <a href="tel:+38(097)0952967">(097) 095 29 67</a>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      
+      <div style="display: none">
+          <div id="callback" class="callback">
+              <div class="callback_title">
+                  Заполните форму и наш менеджер свяжется с вами в ближайшее время
+              </div>
+              <form>
+                  <div class="callback_row">
+                      <label class="callback_label">
+                          <span>Имя</span>
+                          <input type="text" required>
+                      </label>
+                      <label class="callback_label">
+                          <span>Телефон</span>
+                          <input type="tel" class="phone_ua" required>
+                      </label>
+                      <button class="callback_btn">
+                          Отправить
+                      </button>
+                      <label class="callback_check">
+                      <div class="callback_check--item">
+                          <input type="checkbox" required>
+                          <i></i>
+                      </div>
+                      <p>
+                          Отправляя данные, даю согласие на хранение и обработку моих персональных данных
+                      </p>
+                      </label>
+                  </div>
+              </form>
+          </div>
+       </div>
+       
+        
+        <script src="libs/jquery-3.2.1.min.js"></script>
+        <script src="libs/jquery.maskedinput.min.js"></script>
+        <script src="libs/slick.min.js"></script>
+        <script src="libs/jquery.fancybox.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
