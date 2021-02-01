@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>skiff</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+       <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+       <link rel="stylesheet" href="libs/slick.css">
+       <link rel="stylesheet" href="libs/slick-theme.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+      
+      <header class="header">
+          <div class="container">
+              <div class="header_row">
+                  <a href="index.html" class="header_logo">
+                      <img src="img/logo.svg" alt="alt">
+                      <p class="header_logo--p">
+                          Группа
+                          компаний
+                      </p>    
+                  </a>
+                  <nav class="header_nav">
+                      <ul>
+                          <li>
+                              <a href="#" class="active">Главная</a>
+                          </li>
+                          <li>
+                              <a href="#">Строительство</a>
+                          </li>
+                          <li>
+                              <a href="#">Строительные материалы</a>
+                          </li>
+                          <li>
+                              <a href="#">Системная интеграция</a>
+                          </li>
+                      </ul>
+                  </nav>
+                  <div class="header_tel">
+                      <a href="tel:+38(068)6307303" class="header_tel--a">
+                      <img src="img/icon_phone.svg" alt="alt">
+                          <p>(068) 630 73 03</p>
+                      </a>
+                      <a href="#callback" data-fancybox class="header_tel--btn">
+                          Заказать звонок
+                      </a>
+                      <div class="btn_mnu">
+                          <div class="btn_row"></div>
+                          <div class="btn_row"></div>
+                          <div class="btn_row"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+      
+        <div class="thanks">
+            <div class="container">
+                <div class="thanks_row">
+                    <div class="thanks_p1">Сообщение успешно отправлено.</div>
+                    <div class="thanks_p2">Мы ответим Вам в ближайшее время.
+                        <div class="thanks_line">Спасибо за Ваш запрос!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+     
+      <footer class="footer footer_inner">
+            <div class="container">
+                <div class="footer_row">
+                    <div class="footer_left">
+                        <a href="index.html" class="footer_logo">
+                            <img src="img/logo.svg" alt="alt">
+                            <p class="footer_logo--p">
+                                Группа
+                                компаний
+                            </p>    
+                        </a>
+                        <a href="https://en-design.com.ua/" class="footer_site" target="_blank">
+                            <img src="img/lgo-ste.svg" alt="alt" class="footer_site--img">
+                            <div class="footer_site--p">
+                                Powered by EnDesign studio
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer_center">
+                        © 2021 All rights reserved.
+                    </div>
+                    <div class="footer_tel">
+                        <a href="tel:+38(067)3757758">(067) 375 77 58</a>
+                        <a href="tel:+38(067)5375727">(067) 537 57 27</a>
+                        <a href="tel:+38(097)0952967">(097) 095 29 67</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+      <div style="display: none">
+          <div id="callback" class="callback">
+              <div class="callback_title">
+                  Заполните форму и наш менеджер свяжется с вами в ближайшее время
+              </div>
+              <form>
+                  <div class="callback_row">
+                      <label class="callback_label">
+                          <span>Имя</span>
+                          <input type="text" required>
+                      </label>
+                      <label class="callback_label">
+                          <span>Телефон</span>
+                          <input type="tel" class="phone_ua" required>
+                      </label>
+                      <button class="callback_btn">
+                          Отправить
+                      </button>
+                      <label class="callback_check">
+                      <div class="callback_check--item">
+                          <input type="checkbox" required>
+                          <i></i>
+                      </div>
+                      <p>
+                          Отправляя данные, даю согласие на хранение и обработку моих персональных данных
+                      </p>
+                      </label>
+                  </div>
+              </form>
+          </div>
+       </div>
+       
+        
+        <script src="libs/jquery-3.2.1.min.js"></script>
+        <script src="libs/jquery.maskedinput.min.js"></script>
+        <script src="libs/slick.min.js"></script>
+        <script src="libs/jquery.fancybox.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
