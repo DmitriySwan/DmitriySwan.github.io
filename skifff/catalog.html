@@ -68,8 +68,8 @@
                     Фильтр
                 </button>
                 <div class="catalog_search">
-                    <input type="text">
-                    <button>
+                    <input type="text" id="search">
+                    <button id="search_btn">
                         <img src="img/search.svg" alt="alt">
                     </button>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="catalog_filter">
                     <div class="catalog_filter--title">Фильтр</div>
                     <div class="catalog_filter--h3">Торговая марка</div>
-                    <label class="catalog_check">
+                    <label class="catalog_check catalog_check--first">
                         <div class="catalog_check--item">
                             <input type="checkbox" required checked>
                             <i></i>
@@ -87,7 +87,7 @@
                             Baumit
                         </p>
                     </label>
-                    <label class="catalog_check">
+                    <label class="catalog_check catalog_check--first">
                         <div class="catalog_check--item">
                             <input type="checkbox" required>
                             <i></i>
@@ -98,26 +98,106 @@
                     </label>
                     <div class="catalog_filter--h3">Категория товара</div>
                     <div>
-                        <div class="catalog_filter--h4">Фасадные материалы</div>
-                        <div class="catalog_filter--p">Фасадные штукатурки и краски </div>
-                        <div class="catalog_filter--p">Системы наружной изоляции</div>
-                        <div class="catalog_filter--p">Компоненты для теплоизоляции</div>
-                        <div class="catalog_filter--p">Компоненты для обновления и ремонта</div>
-                        <div class="catalog_filter--p">Штукатурные смеси</div>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--h4">Фасадные материалы</div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Фасадные штукатурки и краски </div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Системы наружной изоляции</div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Компоненты для теплоизоляции</div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Компоненты для обновления и ремонта</div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Штукатурные смеси</div>
+                        </label>
                     </div>
                     <div>
-                        <div class="catalog_filter--h4">Материалы для внутренних работ</div>
-                        <div class="catalog_filter--p">Краски и шпаклевки</div>
-                        <div class="catalog_filter--p">Штукатурки для ручного нанесения и тонкослойные штукатурки</div>
-                        <div class="catalog_filter--p">Базовые покрытия и вспомогательные материалы</div>
-                        <div class="catalog_filter--p">Штукатурки для механизированного нанесения</div>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--h4">Материалы для внутренних работ</div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Краски и шпаклевки</div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Штукатурки для ручного нанесения и тонкослойные штукатурки</div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Базовые покрытия и вспомогательные материалы</div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Штукатурки для механизированного нанесения</div>
+                        </label>
                     </div>
                     <div>
-                        <div class="catalog_filter--h4">Другие материалы </div>
-                        <div class="catalog_filter--p">Облицовка плиткой</div>
-                        <div class="catalog_filter--p">Материалы для пола</div>
-                        <div class="catalog_filter--p">Смеси для кладки</div>
-                        <div class="catalog_filter--p">Бетонные смеси</div>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--h4">Другие материалы</div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Облицовка плиткой</div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Материалы для пола</div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Смеси для кладки</div>
+                        </label>
+                        <label class="catalog_check">
+                            <div class="catalog_check--item">
+                                <input type="checkbox" required>
+                            </div>
+                            <div class="catalog_filter--p">Бетонные смеси</div>
+                        </label>
                     </div>
                 </div>
                 <div class="catalog_right">
@@ -283,7 +363,7 @@
            <div id="filter" class="filter">
                <div class="catalog_filter--title">Фильтр</div>
                <div class="catalog_filter--h3">Торговая марка</div>
-               <label class="catalog_check">
+               <label class="catalog_check catalog_check--first">
                    <div class="catalog_check--item">
                        <input type="checkbox" required checked>
                        <i></i>
@@ -292,7 +372,7 @@
                        Baumit
                    </p>
                </label>
-               <label class="catalog_check">
+               <label class="catalog_check catalog_check--first">
                    <div class="catalog_check--item">
                        <input type="checkbox" required>
                        <i></i>
@@ -303,28 +383,109 @@
                </label>
                <div class="catalog_filter--h3">Категория товара</div>
                <div>
-                   <div class="catalog_filter--h4">Фасадные материалы</div>
-                   <div class="catalog_filter--p">Фасадные штукатурки и краски </div>
-                   <div class="catalog_filter--p">Системы наружной изоляции</div>
-                   <div class="catalog_filter--p">Компоненты для теплоизоляции</div>
-                   <div class="catalog_filter--p">Компоненты для обновления и ремонта</div>
-                   <div class="catalog_filter--p">Штукатурные смеси</div>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--h4">Фасадные материалы</div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Фасадные штукатурки и краски </div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Системы наружной изоляции</div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Компоненты для теплоизоляции</div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Компоненты для обновления и ремонта</div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Штукатурные смеси</div>
+                   </label>
                </div>
                <div>
-                   <div class="catalog_filter--h4">Материалы для внутренних работ</div>
-                   <div class="catalog_filter--p">Краски и шпаклевки</div>
-                   <div class="catalog_filter--p">Штукатурки для ручного нанесения и тонкослойные штукатурки</div>
-                   <div class="catalog_filter--p">Базовые покрытия и вспомогательные материалы</div>
-                   <div class="catalog_filter--p">Штукатурки для механизированного нанесения</div>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--h4">Материалы для внутренних работ</div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Краски и шпаклевки</div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Штукатурки для ручного нанесения и тонкослойные штукатурки</div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Базовые покрытия и вспомогательные материалы</div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Штукатурки для механизированного нанесения</div>
+                   </label>
                </div>
                <div>
-                   <div class="catalog_filter--h4">Другие материалы </div>
-                   <div class="catalog_filter--p">Облицовка плиткой</div>
-                   <div class="catalog_filter--p">Материалы для пола</div>
-                   <div class="catalog_filter--p">Смеси для кладки</div>
-                   <div class="catalog_filter--p">Бетонные смеси</div>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--h4">Другие материалы</div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Облицовка плиткой</div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Материалы для пола</div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Смеси для кладки</div>
+                   </label>
+                   <label class="catalog_check">
+                       <div class="catalog_check--item">
+                           <input type="checkbox" required>
+                       </div>
+                       <div class="catalog_filter--p">Бетонные смеси</div>
+                   </label>
                </div>
            </div>
+
        </div>
        
         

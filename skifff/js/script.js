@@ -11,7 +11,7 @@ $(function(){
         dots: false,
         autoplay: true,
         autoplaySpeed: 5000,
-        speed: 1000,
+        speed: 500,
         fade: true
     });
     
@@ -43,7 +43,8 @@ $(function(){
         var currentSlide;
         var slidesCount;
         var sliderCounter = document.createElement('div');
-        sliderCounter.classList.add('build_counter');
+        
+        sliderCounter.classList.add('build_counter'); 
 
         var updateSliderCounter = function(slick, currentIndex) {
             currentSlide = slick.slickCurrentSlide() + 1;
@@ -67,10 +68,13 @@ $(function(){
             dots: false,
             autoplay: true,
             autoplaySpeed: 5000,
-            speed: 1000,
+            speed: 500,
             fade: true
         });
+        
     }
+    
+    $('.build_counter').appendTo('.build_img');
     
     $('.build_arrow1').on('click', function() {
         $slider.slick('slickPrev');
@@ -118,6 +122,10 @@ $(function(){
         $(".card_p--show").click(function() {
             $(".card_p--more").slideToggle();
             $(this).toggleClass('active');
+        });
+        
+        $("#search_btn").click(function() {
+            $("#search").slideToggle();
         });
     }
     
