@@ -127,6 +127,10 @@ $(function(){
         $("#search_btn").click(function() {
             $("#search").slideToggle();
         });
+        
+        $(".close").click(function() {
+            $("#search").slideToggle();
+        });
     }
     
     
