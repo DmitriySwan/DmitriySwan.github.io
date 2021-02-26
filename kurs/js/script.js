@@ -114,7 +114,7 @@ $(function(){
     
     $(".header").removeClass("default");
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 320) {
+        if ($(this).scrollTop() > 131) {
             $(".header").addClass("default").fadeIn('fast');
         } else {
             $(".header").removeClass("default").fadeIn('fast');
