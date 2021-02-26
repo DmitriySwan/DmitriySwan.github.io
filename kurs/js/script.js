@@ -112,12 +112,12 @@ $(function(){
         $(this).toggleClass('active');
     });
     
-    $(".header").removeClass("default");
+    $(".header_bottom").removeClass("default");
     $(window).scroll(function(){
         if ($(this).scrollTop() > 46) {
-            $(".header").addClass("default").fadeIn();
+            $(".header_bottom").addClass("default").fadeIn();
         } else {
-            $(".header").removeClass("default").fadeIn();
+            $(".header_bottom").removeClass("default").fadeIn();
         };
     });
     
