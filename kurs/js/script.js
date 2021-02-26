@@ -114,10 +114,10 @@ $(function(){
     
     $(".header").removeClass("default");
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 131) {
-            $(".header").addClass("default").fadeIn('fast');
+        if ($(this).scrollTop() > 46) {
+            $(".header").addClass("default").fadeIn();
         } else {
-            $(".header").removeClass("default").fadeIn('fast');
+            $(".header").removeClass("default").fadeIn();
         };
     });
     
