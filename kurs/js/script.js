@@ -112,19 +112,34 @@ $(function(){
         $(this).toggleClass('active');
     });
     
+    $(".faq_body--down").click(function() {
+        $(this).parent('.faq_body').slideToggle(500);
+    });
+    
     $(".header_bottom").removeClass("default");
     $(window).scroll(function(){
         if ($(this).scrollTop() > 46) {
             $(".header_bottom").addClass("default").fadeIn();
+            $(".menu").addClass("mob").fadeIn();
         } else {
             $(".header_bottom").removeClass("default").fadeIn();
+            $(".menu").removeClass("mob").fadeIn();
         };
     });
+    
     
     $(".btn_mnu").click(function() {
         $(this).toggleClass("active");
         $(".menu").toggleClass("active");
     });
+    
+    $(".faq_item").slice(4).hide();
+
+    $(".redownarrow").click(function() {
+        $(".faq_item").slice(4).toggle();
+        $(this).toggleClass('active');
+    });
+    
 
 });
 
