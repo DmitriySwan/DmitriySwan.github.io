@@ -133,12 +133,20 @@ $(function(){
         $(".menu").toggleClass("active");
     });
     
-    $(".faq_item").slice(4).hide();
+    $(".faq_item").slice(8).hide();
 
     $(".redownarrow").click(function() {
-        $(".faq_item").slice(4).toggle();
-        $(this).toggleClass('active');
+        $(".faq_item").slice(8).toggle();
+        $(this).toggleText('Переглянути всі часті питання', 'Згорнути');
     });
+    
+
+    $.fn.extend({
+        toggleText: function(a, b){
+            return this.text(this.text() == b ? a : b);
+        }
+    });
+
     
 
 });
