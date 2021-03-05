@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>start</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <link rel="stylesheet" href="libs/perfect-scrollbar.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="container-full">
+                <div class="header_row">
+                    <a href="index.html" class="header_logo">
+                        <img src="img/logo.svg" alt="alt">
+                    </a>
+                    <div class="header_left">
+                        <nav class="header_nav">
+                            <ul>
+                                <li><a href="index.html">Головна</a></li>
+                                <li><a href="rating.html">Рейтинг компаній</a></li>
+                                <li><a href="text2.html">Статті</a></li>
+                                <li><a href="about.html">Про нас</a></li>
+                            </ul>
+                        </nav>
+                        <div class="btn_mnu">
+                            <div class="btn_row"></div>
+                            <div class="btn_row"></div>
+                            <div class="btn_row"></div>
+                        </div>
+                        <div class="header_lang">
+                            <div class="header_lang--item active" id="ua">
+                                Укр
+                            </div>
+                            <div class="header_lang--item" id="ru">
+                                Рус
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="intro-inner">
+            <div class="container">
+                <div class="intro-inner__block">
+                    <img src="img/union.svg" alt="alt" class="intro-inner__img">
+                    <div class="intro-inner__col">
+                       <div class="intro-inner__title intro-inner__title--ml">
+                           Чесний рейтинг
+                       </div>
+                       <div class="intro_search">
+                           <input type="text" class="intro_search--input"><button class="intro_search--btn">
+                           <img src="img/search.svg" alt="alt">
+                           </button>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how">
+            <div class="container">
+                <div class="how_title">Как рассчитывается рейтинг рефератных компаний?</div>
+                <div class="how_row">
+                    <div class="how_img">
+                        <img src="img/true.jpg" alt="alt">
+                    </div>
+                    <div class="how_text">
+                       <p>
+                           Обычно при формировании рейтинга на основе отзывов используют стандартный способ ранжирования: чем выше средняя оценка, тем выше компания находится в рейтинге.
+                       </p>
+                        
+
+                        <p>Однако такой способ по нашему мнению не очень эффективен. Поскольку компании с двумя отзывами будет значительно легче иметь средний балл 5/5, чем компании в которой более 100 отзывов.</p>
+
+                        <p>Поскольку на сайте Реф-рейтинг собраны все украинские рефератные компании и отзывов очень много, мы решили ранжировать компании по нашему собственному алгоритму. Мы не утверждаем, что этот метод идеален, но он значительно объективнее чем ранжирование по средней оценке. Вот как он рассчитывается:</p>
+
+                        <p>за оценки "4" и "5" - мы даем дополнительные баллы, а за оценки "1", "2" и "3" - снимаем баллы <br>
+                            за оценку "5" - мы добавляем 2 балла <br>
+                            за оценку "4" - мы добавляем 1 балл <br>
+                            за оценку "3" - мы снимаем 1 балл <br>
+                            за оценку "2" - мы снимаем 2 балла <br>
+                            за оценку "1" - мы снимаем 3 балла <br>
+                            Затем мы суммируем баллы и ранжируем по общему количеству - чем больше баллов, тем выше компания в рейтинге.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="top top__inner">
+            <div class="container">
+                <div class="top_block">
+                    <div class="top_up">
+                        <div class="top_up--p"></div>
+                        <div class="top_up--p">Средняя оценка</div>
+                        <div class="top_up--p">Отзывов</div>
+                        <div class="top_up--p">Рейтинг</div>
+                    </div>
+                    <div>
+                        <div class="top_item">
+                            <div class="top_item--col top_item--col1">
+                                <div class="top_item--number">1</div>
+                                <div class="top_item--name">Агентство Магистр</div>
+                            </div>
+                            <div class="top_item--col top_item--col2">
+                                <div class="top_item--rating">4.8</div>
+                                <div class="top_item--stars">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star-gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="top_item--col top_item--col3">
+                                <img src="img/coment.svg" alt="alt">
+                                <a href="#" class="top_item--coment">40</a>
+                            </div>
+                            <div class="top_item--indicator top_item--col4">
+                                <div class="top_item--fill">75</div>
+                            </div>
+                        </div>
+                        <div class="top_item">
+                            <div class="top_item--col top_item--col1">
+                                <div class="top_item--number">2</div>
+                                <div class="top_item--name">Агентство Магистр</div>
+                            </div>
+                            <div class="top_item--col top_item--col2">
+                                <div class="top_item--rating">4.8</div>
+                                <div class="top_item--stars">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star-gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="top_item--col top_item--col3">
+                                <img src="img/coment.svg" alt="alt">
+                                <a href="#" class="top_item--coment">40</a>
+                            </div>
+                            <div class="top_item--indicator top_item--col4">
+                                <div class="top_item--fill">75</div>
+                            </div>
+                        </div>
+                        <div class="top_item">
+                            <div class="top_item--col top_item--col1">
+                                <div class="top_item--number">3</div>
+                                <div class="top_item--name">Агентство Магистр</div>
+                            </div>
+                            <div class="top_item--col top_item--col2">
+                                <div class="top_item--rating">4.8</div>
+                                <div class="top_item--stars">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star-gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="top_item--col top_item--col3">
+                                <img src="img/coment.svg" alt="alt">
+                                <a href="#" class="top_item--coment">40</a>
+                            </div>
+                            <div class="top_item--indicator top_item--col4">
+                                <div class="top_item--fill">75</div>
+                            </div>
+                        </div>
+                        <div class="top_item">
+                            <div class="top_item--col top_item--col1">
+                                <div class="top_item--number">4</div>
+                                <div class="top_item--name">Агентство Магистр</div>
+                            </div>
+                            <div class="top_item--col top_item--col2">
+                                <div class="top_item--rating">4.8</div>
+                                <div class="top_item--stars">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star-gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="top_item--col top_item--col3">
+                                <img src="img/coment.svg" alt="alt">
+                                <a href="#" class="top_item--coment">40</a>
+                            </div>
+                            <div class="top_item--indicator top_item--col4">
+                                <div class="top_item--fill">75</div>
+                            </div>
+                        </div>
+                        <div class="top_item">
+                            <div class="top_item--col top_item--col1">
+                                <div class="top_item--number">5</div>
+                                <div class="top_item--name">Агентство Магистр</div>
+                            </div>
+                            <div class="top_item--col top_item--col2">
+                                <div class="top_item--rating">4.8</div>
+                                <div class="top_item--stars">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star-gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="top_item--col top_item--col3">
+                                <img src="img/coment.svg" alt="alt">
+                                <a href="#" class="top_item--coment">40</a>
+                            </div>
+                            <div class="top_item--indicator top_item--col4">
+                                <div class="top_item--fill">75</div>
+                            </div>
+                        </div>
+                        <div class="top_item">
+                            <div class="top_item--col top_item--col1">
+                                <div class="top_item--number">6</div>
+                                <div class="top_item--name">Агентство Магистр</div>
+                            </div>
+                            <div class="top_item--col top_item--col2">
+                                <div class="top_item--rating">4.8</div>
+                                <div class="top_item--stars">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star-gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="top_item--col top_item--col3">
+                                <img src="img/coment.svg" alt="alt">
+                                <a href="#" class="top_item--coment">40</a>
+                            </div>
+                            <div class="top_item--indicator top_item--col4">
+                                <div class="top_item--fill">75</div>
+                            </div>
+                        </div>
+                        <div class="top_item">
+                            <div class="top_item--col top_item--col1">
+                                <div class="top_item--number">7</div>
+                                <div class="top_item--name">Агентство Магистр</div>
+                            </div>
+                            <div class="top_item--col top_item--col2">
+                                <div class="top_item--rating">4.8</div>
+                                <div class="top_item--stars">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star-gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="top_item--col top_item--col3">
+                                <img src="img/coment.svg" alt="alt">
+                                <a href="#" class="top_item--coment">40</a>
+                            </div>
+                            <div class="top_item--indicator top_item--col4">
+                                <div class="top_item--fill">75</div>
+                            </div>
+                        </div>
+                        <div class="top_item">
+                            <div class="top_item--col top_item--col1">
+                                <div class="top_item--number">8</div>
+                                <div class="top_item--name">Агентство Магистр</div>
+                            </div>
+                            <div class="top_item--col top_item--col2">
+                                <div class="top_item--rating">4.8</div>
+                                <div class="top_item--stars">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star-gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="top_item--col top_item--col3">
+                                <img src="img/coment.svg" alt="alt">
+                                <a href="#" class="top_item--coment">40</a>
+                            </div>
+                            <div class="top_item--indicator top_item--col4">
+                                <div class="top_item--fill">75</div>
+                            </div>
+                        </div>
+                        <div class="top_item">
+                            <div class="top_item--col top_item--col1">
+                                <div class="top_item--number">9</div>
+                                <div class="top_item--name">Агентство Магистр</div>
+                            </div>
+                            <div class="top_item--col top_item--col2">
+                                <div class="top_item--rating">4.8</div>
+                                <div class="top_item--stars">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star-gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="top_item--col top_item--col3">
+                                <img src="img/coment.svg" alt="alt">
+                                <a href="#" class="top_item--coment">40</a>
+                            </div>
+                            <div class="top_item--indicator top_item--col4">
+                                <div class="top_item--fill">75</div>
+                            </div>
+                        </div>
+                        <div class="top_item">
+                            <div class="top_item--col top_item--col1">
+                                <div class="top_item--number">10</div>
+                                <div class="top_item--name">Агентство Магистр</div>
+                            </div>
+                            <div class="top_item--col top_item--col2">
+                                <div class="top_item--rating">4.8</div>
+                                <div class="top_item--stars">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star-gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="top_item--col top_item--col3">
+                                <img src="img/coment.svg" alt="alt">
+                                <a href="#" class="top_item--coment">40</a>
+                            </div>
+                            <div class="top_item--indicator top_item--col4">
+                                <div class="top_item--fill">75</div>
+                            </div>
+                        </div>
+                        <div class="top_item">
+                            <div class="top_item--col top_item--col1">
+                                <div class="top_item--number">11</div>
+                                <div class="top_item--name">Агентство Магистр</div>
+                            </div>
+                            <div class="top_item--col top_item--col2">
+                                <div class="top_item--rating">4.8</div>
+                                <div class="top_item--stars">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star-gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="top_item--col top_item--col3">
+                                <img src="img/coment.svg" alt="alt">
+                                <a href="#" class="top_item--coment">40</a>
+                            </div>
+                            <div class="top_item--indicator top_item--col4">
+                                <div class="top_item--fill">75</div>
+                            </div>
+                        </div>
+                        <div class="top_item">
+                            <div class="top_item--col top_item--col1">
+                                <div class="top_item--number">12</div>
+                                <div class="top_item--name">Агентство Магистр</div>
+                            </div>
+                            <div class="top_item--col top_item--col2">
+                                <div class="top_item--rating">4.8</div>
+                                <div class="top_item--stars">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star.svg" alt="alt">
+                                    <img src="img/star-gray.svg" alt="alt">
+                                </div>
+                            </div>
+                            <div class="top_item--col top_item--col3">
+                                <img src="img/coment.svg" alt="alt">
+                                <a href="#" class="top_item--coment">40</a>
+                            </div>
+                            <div class="top_item--indicator top_item--col4">
+                                <div class="top_item--fill">75</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <footer class="footer">
+            <div class="container-full">
+                <div class="footer_row">
+                    <a href="index.html" class="footer_logo">
+                        <img src="img/logo-footer.svg" alt="alt">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="libs/jquery-3.2.1.min.js"></script>
+        <script src="libs/perfect-scrollbar.jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
