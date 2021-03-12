@@ -2493,7 +2493,6 @@ input::placeholder {
   }
   .modal-detailed__item:first-child {
     flex: 0 0 100%;
-    text-align: center;
   }
   .modal-detailed__item:last-child {
     padding-top: 50px;
