@@ -221,14 +221,17 @@ $(document).ready(function(){
 	document.addEventListener("touchstart", function(){}, true);
 
 
+    jQuery(function($){
+        $(".tel").mask("+38 (999) 999-9999");
+    });
+    
 	/*anchor*/
-	$('.anchor').on('click', function (e) {
-		e.preventDefault();
-		var $anchor = $(this).attr('href');
-		var $stop = $($anchor).offset().top - 5;
-		$('body,html').stop(true, true).animate({scrollTop: $stop}, 1000);
-		return false;
-	});
+    $(".welcome-global-btn").click(function(e) {
+        e.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
 
 	/*adaptive*/
 
