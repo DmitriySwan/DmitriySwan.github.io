@@ -713,6 +713,7 @@ input::placeholder {
     opacity: 0.85;
     padding: 0;
     line-height: 46px;
+    font-size: 14px;
 }
 
 .catalog-item-content-btn__details {
@@ -981,7 +982,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 194px;
+    width: 240px;
     height: 54px;
     border: 1px solid #4E4E4E;
 }
@@ -1009,6 +1010,7 @@ input::placeholder {
     line-height: 58px;
     padding: 0;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .my-picture-content-btn__btn {
@@ -1241,7 +1243,7 @@ input::placeholder {
 }
 .step-work-item__title {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1;
     padding: 3px 5px;
     display: inline-block;
@@ -2459,12 +2461,22 @@ input::placeholder {
   }
   .section-promo {
     padding: 65px 0;
+      text-align: center;
   }
+    .section-promo .global-title::before {
+        display: none;
+    }
   .promo-form {
     justify-content: center;
     max-width: 300px;
     margin: 0 auto;
   }
+    .promo-bottom {
+        width: min-content;
+        justify-content: center;
+        margin: 20px auto 0;
+        min-width: 250px;
+    }
     .promo__btn {
         width: 300px;
     }
@@ -2565,7 +2577,7 @@ input::placeholder {
     padding-bottom: 12px;
   }
   .modal-buy-form {
-    padding-top: 40px;
+    padding-top: 25px;
       flex-direction: column;
   }
   .modal-buy-form-item input {
@@ -2618,17 +2630,48 @@ input::placeholder {
     .my-picture-content {
         order: 2;
         position: relative;
-        margin-top: 88px;
+        margin-top: 25px;
     }
     .my-picture-content__title {
         position: absolute;
-        top: -679px;
+        top: -587px;
     }
     .my-picture--slider .slick-dots {
         left: -80px;
     }
     .my-picture-content-btn__btn {
         width: 199px;
+    }
+    .my-picture--slider::before {
+        width: 320px;
+        height: 404px;
+    }
+    .about-product-slider .slick-prev {
+        bottom: -28px;
+        right: 50px;
+    }
+    .about-product-slider .slick-next {
+        bottom: -28px;
+    }
+    .welcome-img {
+        display: block;
+        order: -1;
+        position: relative;
+        top: 104px;
+    }
+    .welcome-img::before {
+        width: 305px;
+        height: 251px;
+        top: 55px;
+        left: -8px;
+    }
+    .welcome-content__title {
+        position: absolute;
+        top: -345px;
+    }
+    .welcome-content__description {
+        max-width: 380px;
+        padding-top: 75px;
     }
 }
 
