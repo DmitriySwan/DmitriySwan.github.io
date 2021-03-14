@@ -1264,6 +1264,21 @@ input::placeholder {
     margin-top: 23px;
 }
 
+.step-bottom--item {
+    position: relative;
+}
+
+.step-work-number { 
+    position: absolute;
+    top: 30px; left: 17px;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 70px;
+    color: #232222;
+    opacity: .25;
+    text-shadow: 0px 1px 0 rgba(252,191,66, 0.25),0px -1px 0 rgba(252,191,66, 0.25),1px 0px 0 rgba(252,191,66, 0.25),-1px 0px 0 rgba(252,191,66, 0.25),1px 1px 0 rgba(252,191,66, 0.25),1px -1px 0 rgba(252,191,66, 0.25),-1px 1px 0 rgba(252,191,66, 0.25),-1px -1px 0 rgba(252,191,66, 0.25);
+}
+
 .step-work-item:last-child .step-work-item__icon::after{
   display: none;
 }
@@ -1571,12 +1586,12 @@ input::placeholder {
 }
 .modal-detailed-slider .slick-prev:hover,
 .modal-detailed-slider .slick-next:hover {
-    background-color: #060605;
+    background-color: #FCDE42;
 }
 .modal-detailed-slider .slick-prev:hover::before,
 .modal-detailed-slider .slick-next:hover::before {
-    border-left: 1px solid #765e2b;
-    border-bottom: 1px solid #765e2b;
+    border-left: 1px solid #161616;
+    border-bottom: 1px solid #161616;
 }
 .modal-detailed-slider .slick-prev {
     left: -33px;
