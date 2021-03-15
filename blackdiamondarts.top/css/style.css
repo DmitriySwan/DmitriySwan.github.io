@@ -462,7 +462,13 @@ input::placeholder {
     padding-left: 0;
     opacity: 1;
 }
-
+.about-product-content-desc {
+    font-size: 19px;
+    line-height: 168%;
+    margin-top: 15px;
+    color: #EFEFEF;
+    max-width: 530px;
+}
 .about-product-content-list {
   max-width: 600px;
     margin-top: 40px;
