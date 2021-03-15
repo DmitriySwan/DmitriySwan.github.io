@@ -1302,6 +1302,8 @@ input::placeholder {
     font-size: 18px;
     line-height: 30px;
     color: #EFEFEF;
+    position: relative;
+    z-index: 2;
 }
 
 .step-bottom--p {
@@ -1566,7 +1568,7 @@ input::placeholder {
     top: unset;
     width: 48px;
     height: 48px;
-    background: #000000;
+    background: #676767;
     border-radius: 1000px;
     top: 50%;
     transition: all .3s;
@@ -1581,8 +1583,8 @@ input::placeholder {
     position: absolute;
     top: 50%;
     left: 50%;
-    border-left: 1px solid #7a7a7a;
-    border-bottom: 1px solid #7a7a7a;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 .modal-detailed-slider .slick-prev:hover,
 .modal-detailed-slider .slick-next:hover {
@@ -2671,22 +2673,31 @@ input::placeholder {
     .welcome-img {
         display: block;
         order: -1;
-        position: relative;
-        top: 104px;
     }
     .welcome-img::before {
         width: 305px;
         height: 251px;
         top: 55px;
-        left: -8px;
+        left: -11px;
     }
-    .welcome-content__title {
-        position: absolute;
-        top: -345px;
+    .welcome-global-btn {
+        margin: auto;
     }
     .welcome-content__description {
         max-width: 380px;
-        padding-top: 75px;
+    }
+    .welcome__wrap {
+        justify-content: center;
+        text-align: center;
+    }
+    .welcome-content {
+        padding-top: 12px;
+    }
+    .welcome_trig--item {
+        width: 284px;
+    }
+    .welcome_trig {
+        align-items: center;
     }
 }
 
