@@ -19,6 +19,13 @@ $(function(){
         $(this).toggleClass('active');
     });
     
+    $(".work_item--more").hide();
+    
+    $('.work_item--arrow').click(function() {
+        $(this).closest('.work_item').find('.work_item--more').slideToggle();
+        $(this).toggleClass('active');
+    });
+    
     $('.scroll').perfectScrollbar();
 
 });
