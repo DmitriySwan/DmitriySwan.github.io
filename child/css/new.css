@@ -4,7 +4,7 @@
     box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.07);
     border-radius: 8px;
 }
-
+ 
 .modal-rewiew--title {
     font-size: 33px;
     line-height: 48px;
@@ -395,7 +395,7 @@
 
 @media screen and (min-width: 900px) {
     .about-product {
-        background-position: right 216px top 80px;
+        background-position: right 216px top 138px;
     }
     .goods__title {
         margin-bottom: 25px;
@@ -414,14 +414,15 @@
 }
 
 .goods-card__link {
-    background: #FFE7C2;
-    border: 2px solid  #FFDD98;
-    color: #C06D00;
+    background: #FFDD98;
+    color: #6D3500;
+    text-transform: uppercase;
+    border: none;
 }
 
 .goods-card__link:hover {
-    background-color: transparent;
-    color: #C06D00;
+    background: #FF9A22;
+    color: #fff;
 }
 
 .tab_content {
@@ -691,20 +692,6 @@
     }
 }
 
-@media screen and (max-width:900px) {
-    .wrapper {
-        display: none;
-    }
-    .goods__list--mob {
-        display: flex;
-    }
-    .goods__desc {
-        display: none;
-    }
-    .goods-card__img-wrap {
-        padding-top: 66.6%;
-    }
-}
 
 @media screen and (max-width:1099px) {
     .page-header__mob-group {
@@ -718,4 +705,37 @@
 
 .logo-mob {
     margin-top: 25px;
+}
+
+.goods-card__slider .slick-slide img {
+    height: 304px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-info__title {
+    width: 100%;
+}
+
+@media screen and (max-width: 544px) {
+    .goods-card__slider .slick-slide img {
+        height: 200px;
+    }
+
+    .goods-card__arrow2,
+    .goods-card__arrow1 {
+        display: none !important;
+    }
+    .goods-card__title {
+        font-size: 1.3rem;
+    }
+    .goods-card__desc {
+        font-size: 1.1rem;
+    }
+    .goods__title {
+        margin-bottom: 17px;
+    }
+    .goods__desc {
+        margin-bottom: 25px;
+    }
 }
